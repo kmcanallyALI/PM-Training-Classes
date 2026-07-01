@@ -142,7 +142,7 @@ const QUIZZES = {
   ],
   2: [
     { q:"What is the purpose of Lockout/Tagout (LO/TO)?", options:["To speed up repairs", "To keep a hazard de-energized, such as removing a negative battery cable and locking/tagging access", "To label parts for inventory", "It only applies to electrical contractors"], answer:1 },
-    { q:"Per FMCSA out-of-service criteria, what pushrod stroke condition takes a brake out of service?", options:["Any stroke at all", "Pushrod stroke beyond the legal adjustment limit, based on brake chamber size and the 49CFR", "Stroke under 1 inch", "Only if the pushrod is painted"], answer:1 },
+    { q:"Per FMCSA out-of-service criteria, what pushrod stroke condition takes a brake out of service?", options:["Any stroke at all", "Pushrod stroke beyond the legal adjustment limit", "Stroke under 1 inch", "Only if the pushrod is painted"], answer:1 },
     { q:"What is the FMCSA minimum brake lining thickness for drum brake shoes on steering, drive, and trailer axles before it's Out of Service?", options:["1/2 inch", "1/4 inch", "1/8 inch", "There is no minimum"], answer:1 },
     { q:"What is the FMCSA minimum friction material thickness for air disc brake pads before Out of Service?", options:["1/4 inch", "1/8 inch", "1 inch", "There is no minimum"], answer:1 },
     { q:"Repeated need to manually adjust an automatic slack adjuster is best understood as:", options:["Completely normal and not worth noting", "A symptom indicating an underlying issue that needs diagnosis", "A sign the brakes are perfectly adjusted", "Something only relevant to steer axles"], answer:1 },
@@ -162,7 +162,27 @@ const QUIZZES = {
     { q:"Why does preventative maintenance matter for spill prevention?", options:["It doesn't relate to spill prevention", "It reduces spill risk through secondary containment integrity, drip prevention, and early leak-path identification", "Only emergency response matters, not PM", "Spill prevention is solely the driver's responsibility"], answer:1 },
     { q:"Under 49 CFR trailer body damage standards, what is the maximum allowable dent/gouge depth at a weld?", options:["1/10 inch", "1/2 inch", "1 full inch", "No limit at welds"], answer:1 },
     { q:"What must happen if a weld or structural defect (crack, pinhole, incomplete fusion) is found on a cargo tank?", options:["Note it and continue using the tank", "The tank must be taken out of HazMat service until repaired", "Only report it if it's leaking", "Structural defects are acceptable if minor"], answer:1 },
-    { q:"What is required before returning a tank to HazMat service if any source of leakage is found?", options:["Nothing, as long as the leak is small", "All sources of leakage must be properly repaired", "Only document it for the next audit", "Leakage only matters for pressure tests"], answer:1 }
+    { q:"What is required before returning a tank to HazMat service if any source of leakage is found?", options:["Nothing, as long as the leak is small", "All sources of leakage must be properly repaired", "Only document it for the next audit", "Leakage only matters for pressure tests"], answer:1 },
+    { q:"What is the primary purpose of the cargo tank shell?", options:["To improve fuel economy", "To contain the product while withstanding internal pressure, surge, vibration, temperature change, and vehicle movement", "To reduce tare weight only", "It serves no structural purpose"], answer:1 },
+    { q:"What do the front and rear heads of a cargo tank do?", options:["Strengthen the tank and resist pressure loads", "Control unloading speed", "House the pressure relief device only", "Provide electrical grounding"], answer:0 },
+    { q:"Why do baffles reduce risk during braking, acceleration, and turning?", options:["They increase product temperature", "They slow liquid movement inside the tank, improving braking, steering control, and reducing rollover risk", "They have no effect on vehicle handling", "They only affect fuel economy"], answer:1 },
+    { q:"What is the main purpose of bulkheads in a cargo tank?", options:["To divide the tank into compartments, separating products, preventing contamination, and reducing surge", "To act as the primary pressure relief device", "To replace the need for manways", "To increase tare weight for stability"], answer:0 },
+    { q:"Since baffles are internal, how do technicians verify their condition?", options:["By listening for rattling while driving", "Through scheduled internal inspections required by 49 CFR 180.407", "Baffles never need to be inspected", "By checking tire pressure"], answer:1 },
+    { q:"What does leakage around a manway indicate?", options:["Normal operation", "That the sealing system has failed", "The tank needs to be repainted", "Nothing — manways are not sealed"], answer:1 },
+    { q:"Why is a bottom outlet assembly considered especially vulnerable?", options:["It is exposed underneath the cargo tank and prone to road impact, corrosion, and damaged threads", "It never experiences product exposure", "It is the least inspected component by design", "It has no moving parts"], answer:0 },
+    { q:"What should you check when inspecting internal valves?", options:["Only the exterior paint", "Valve movement, return spring, seat condition, leakage, linkage, and actuator", "Tire pressure and tread depth", "The DEF tank level"], answer:1 },
+    { q:"When is an external valve considered unsafe?", options:["When it operates smoothly", "When it will not fully close", "When it is a different color than the tank", "When it was recently lubricated"], answer:1 },
+    { q:"What should technicians inspect gaskets, seals, and O-rings for?", options:["Hardening, swelling, cracking, compression set, cuts, and chemical deterioration", "Only visible color changes", "Brand name and manufacture date", "Nothing — these components don't require inspection"], answer:0 },
+    { q:"Repairs affecting pressure-retaining components on a cargo tank require proper qualification under which regulation?", options:["49 CFR Part 178", "49 CFR Part 180", "49 CFR Part 393", "49 CFR Part 396"], answer:1 },
+    { q:"Why is material compatibility important for cargo tank construction?", options:["It isn't important as long as the tank is clean", "Incompatible materials can react with product, accelerate corrosion, and damage seals — e.g., strong acids attack carbon steel", "All tanks use the exact same materials regardless of product", "It only matters for tank color selection"], answer:1 },
+    { q:"Which of the following is part of routine cargo tank preventative maintenance?", options:["Lubricating valve stems, pivot points, linkage, and shutoff cables", "Ignoring seal wear until failure", "Skipping documentation to save time", "Only inspecting the tank after an incident"], answer:0 },
+    { q:"A Preventative Maintenance Inspection (PMI) on a cargo tank should verify all of the following EXCEPT:", options:["Structural condition (shell, heads, mounting, welds)", "Leak prevention (valves, caps, flanges, gaskets, bottom outlets)", "Safety systems (relief devices, shutoffs, vents)", "The driver's personal cell phone contacts"], answer:3 },
+    { q:"Under the cargo tank Inspection Criteria, which condition is classified as 'Needs Repair' rather than 'Out of Service'?", options:["An active hazardous material leak", "Minor corrosion, stiff valves, or aging seals", "A cracked shell", "A failed emergency shutoff"], answer:1 },
+    { q:"Which of the following immediately takes a cargo tank Out of Service?", options:["Minor seepage noted for the next scheduled repair", "Surface rust on a fitting", "An expired cargo tank qualification required by 49 CFR §180.407", "A slightly stiff external valve handle"], answer:2 },
+    { q:"Per 49 CFR 180.407, how often is the Internal Visual Inspection (I) required for lined tanks or certain hazardous materials?", options:["Annually", "Every 2 years", "Every 5 years", "Every 10 years"], answer:2 },
+    { q:"Per 49 CFR 180.407, how often is the Leakage Test (K) required?", options:["Annually (every 1 year)", "Every 2 years", "Every 5 years", "Only after a repair"], answer:0 },
+    { q:"Per 49 CFR 180.407, how often is the Upper Coupler Inspection (UC) required?", options:["Annually", "Every 2 years", "Every 5 years", "Never — it isn't a regulated component"], answer:2 },
+    { q:"Which 49 CFR part covers cargo tank design and manufacturing specifications?", options:["Part 178", "Part 180", "Part 393", "Part 396"], answer:0 }
   ]
 };
 const QUIZ_PASS_THRESHOLD = 0.8; // 80%
@@ -281,7 +301,7 @@ const slides = [
   ["Out of Service", [
     "Audible chamber leak or a loose chamber.",
     "Broken pushrod or missing clevis pin.",
-    "Pushrod stroke exceeds FMCSA adjustment limits. These limits vary based on brake chamber size, typically stamped on the side of the chamber. Most Andrews equipment runs a 30/30L"]]
+    "Pushrod stroke exceeds FMCSA adjustment limits."]]
   ]},
 {type:"content", title:"Air Brake PMI: Drum Brake Shoes", intro:"Inspect for uneven wear, oil contamination, cracks, loose or broken lining, heat checking, and rivets close to the drum.", sections:[
   ["In Service", [
@@ -456,20 +476,115 @@ const slides = [
   ["DOT LIGHTING COMPLIANCE","Review headlights, markers, turn signals, brake lights, and reflective conspicuity. Reliable lighting is critical for safe night and adverse-weather operations."]]},
 {type:"test", testNum:2, title:"Test Time! — Section 2"},
 {type:"section", title:"Section 3", sub:"Tanker Systems"},
-{type:"content", title:"HazMat Tanker Design & Containment", images:["img40"], sections:[
-  ["BASIC COMPONENTS & TERMINOLOGY","Shell construction, baffles, manways, and compartment layouts define how product is contained and controlled."],
-  ["CONTAINMENT IS THE PRIMARY GOAL","Corrosion, impact damage, and improper repairs can compromise integrity and trigger hazardous releases."],
-  ["CLEANLINESS & MATERIAL COMPATIBILITY","Residue control and compatible materials are critical for chemical and corrosive cargos under regulatory scrutiny."]]},
-{type:"content", title:"Valves & Leak Prevention", images:["img41"], sections:[
-  ["HIGH-RISK COMPONENTS","Internal/external valves, bottom outlets, emergency shutoffs, gaskets, seals, and caps are common leak sources on HazMat tankers."],
-  ["INSPECTION & OPERATION","Look for wear, corrosion, misalignment, and poor seating; verify compatible materials and correct torque so seals hold under pressure."],
-  ["PREVENTATIVE MAINTENANCE","Routine lubrication, seal replacement, and functional testing prevent minor gasket failures from escalating into reportable spills."]]},
-{type:"content", title:"Pressure & Vacuum Relief Devices", images:["img42"], youtube:["hQVG702nXL4","0N17tEW_WEU","VS6IckF1CM0"], sections:[
-  ["HOW THEY PROTECT THE TANK","Prevent overpressure or shell collapse during loading, unloading, and temperature-driven expansion or contraction."],
-  ["INSPECTION & FAILURE MODES","Check certification intervals, set points, and signs of sticking, corrosion, damage, or obstruction; blocked vents can cause tanker damage or product release."],
-  ["PREVENTION & COMPLIANCE","Keep vents clean and unobstructed, document inspections, and follow HazMat requirements; case studies show small lapses can escalate quickly."]],
+{type:"content", title:"Cargo Tank Fundamentals", images:["img40"], intro:"Reference: 49 CFR Parts 178, 180, 393 & 396.", body:"Cargo tanks are engineered pressure vessels designed to safely transport hazardous materials while protecting the driver, the public, emergency responders, and the environment. Unlike dry freight trailers, cargo tanks rely on pressure-retaining components, surge-control devices, and specialized safety equipment that require routine inspection and maintenance. Preventative maintenance ensures these systems remain compliant with FMCSA regulations and reduces the likelihood of hazardous material releases.", bullets:[
+  "49 CFR Part 178 — Cargo Tank Specifications",
+  "49 CFR Part 180 — Qualification, Inspection & Testing",
+  "49 CFR Part 393 — Safe Vehicle Equipment",
+  "49 CFR Part 396 — Inspection, Repair & Maintenance"]},
+{type:"content", title:"Cargo Tank Construction & Basic Components", sections:[
+  ["SHELL", [
+    "The shell contains the product and must withstand internal pressure, product surge, road vibration, temperature changes, and vehicle movement.",
+    "Inspect for cracks, dents, corrosion, distortion, product seepage, and unauthorized repairs."]],
+  ["HEADS", [
+    "The front and rear heads strengthen the tank and resist pressure loads.",
+    "Inspect for buckling, impact damage, weld cracks, and corrosion."]],
+  ["TANK MOUNTING SYSTEM", [
+    "Secures the cargo tank to the chassis — inspect mounting brackets, saddle supports, U-bolts, frame attachments, and fasteners.",
+    "Loose mounts increase stress on the shell and piping."]]
+  ]},
+{type:"content", title:"Baffles, Bulkheads & Compartments", intro:"Liquid cargo naturally surges during braking, acceleration, and turning.", sections:[
+  ["BAFFLES", [
+    "Reduce surge by slowing liquid movement inside the tank.",
+    "Benefits: improved braking, better steering control, reduced rollover risk, and less structural stress."]],
+  ["BULKHEADS", [
+    "Divide tanks into multiple compartments to separate products, prevent contamination, improve axle loading, and reduce surge."]],
+  ["INSPECTION NOTE", [
+    "Since baffles are internal, technicians verify their condition through scheduled internal inspections required by 49 CFR 180.407."]]
+  ]},
+{type:"content", title:"Manways & Closures", images:["img41"], intro:"Manways allow access to the tank for cleaning, internal inspection, thickness testing, and repairs.", sections:[
+  ["COMPONENTS", ["Cover, gasket, hold-down bolts, hinges, and locking hardware."]],
+  ["INSPECT FOR", [
+    "Cracked covers, missing bolts, damaged hinges, worn gaskets, product residue, and improper sealing.",
+    "Any leakage around a manway indicates the sealing system has failed."]]
+  ]},
+{type:"content", title:"High-Risk Leak Components", intro:"Most hazardous material leaks originate from moving or sealed components rather than the tank shell.", bullets:[
+  "Internal valves",
+  "External valves",
+  "Bottom outlet assemblies",
+  "Pressure relief devices",
+  "Emergency shutoff systems",
+  "Gaskets, O-rings, and valve packing",
+  "Outlet caps and flanged connections"],
+  body:"These components experience frequent operation, vibration, chemical exposure, pressure cycling, and temperature changes — routine inspection is critical."},
+{type:"content", title:"Internal & External Valves", sections:[
+  ["INTERNAL VALVES", [
+    "Installed inside the cargo tank to automatically stop product flow, protect product during accidents, and reduce spill volume.",
+    "Inspect valve movement, return spring, seat condition, leakage, linkage, and actuator."]],
+  ["EXTERNAL VALVES", [
+    "Control unloading operations — inspect handle condition, stem wear, packing leaks, corrosion, bent linkage, and mounting hardware.",
+    "Operate each valve completely. A valve that will not fully close is unsafe."]]
+  ]},
+{type:"content", title:"Bottom Outlet Assemblies", intro:"Bottom outlets are especially vulnerable because they are exposed underneath the cargo tank.", bullets:[
+  "Inspect: protective housing, outlet piping, threads, caps, valves, welds, and product residue.",
+  "Common failures: road impact, corrosion, loose fittings, and damaged threads.",
+  "Bottom outlets account for many cargo tank leaks following roadway incidents."]},
+{type:"content", title:"Gaskets, Seals & O-Rings", images:["img42"], intro:"Sealing components prevent product leakage at every mechanical connection.", sections:[
+  ["COMMON LOCATIONS", ["Manways, valves, flanges, pressure relief devices, and bottom outlets."]],
+  ["INSPECT FOR", ["Hardening, swelling, cracking, compression set, cuts, and chemical deterioration."]]
+  ],
+  body:"Replace worn seals before leakage develops."},
+{type:"content", title:"Pressure Relief Devices & Vent Systems", youtube:["hQVG702nXL4","0N17tEW_WEU","VS6IckF1CM0"], sections:[
+  ["WHY TANKS NEED VENTING", [
+    "Cargo tanks experience pressure changes from product loading/unloading and temperature-driven expansion or contraction.",
+    "Pressure relief devices prevent excessive internal pressure; vacuum relief systems prevent shell collapse during unloading.",
+    "Without proper venting, tanks may bulge, collapse, leak, or rupture."]],
+  ["INSPECTION", [
+    "Check certification intervals, tamper evidence, corrosion, damaged springs, and blocked vents (dirt, ice, insect nests, product residue).",
+    "Never paint over or obstruct vent openings — blocked vents may cause catastrophic tank failure."]]
+  ],
   body:"Watch these videos (instructor-provided links): Rail car implodes – Vacuum; Brenner Tank Implosion Demo; Nitrogen Tanker Venting - Normal Pressure relief."},
-{type:"content", title:"Tanker Inspections", images:["img43"], bullets:[
+{type:"content", title:"Corrosion, Damage & Improper Repairs", sections:[
+  ["CORROSION", ["Inspect for rust, pitting, white oxidation, scaling, and chemical attack."]],
+  ["IMPACT DAMAGE", ["Look for dents, gouges, bent reinforcing rings, and distorted piping."]],
+  ["IMPROPER REPAIRS", [
+    "Watch for unauthorized welds, poor grinding, homemade patches, and unapproved modifications.",
+    "Repairs affecting pressure-retaining components require proper qualification under 49 CFR Part 180."]]
+  ]},
+{type:"content", title:"Cleanliness & Material Compatibility", intro:"Residual hazardous materials may contaminate future loads, react with incompatible chemicals, accelerate corrosion, and damage seals.", bullets:[
+  "Construction materials must be compatible with transported products.",
+  "Inspect liners, coatings, gaskets, valve materials, and hose materials.",
+  "Example: strong acids attack carbon steel.",
+  "Example: caustics can damage aluminum.",
+  "Example: solvents can degrade elastomer seals."]},
+{type:"content", title:"Preventative Maintenance Practices", sections:[
+  ["LUBRICATION", ["Lubricate valve stems, pivot points, linkage, and shutoff cables."]],
+  ["SEAL REPLACEMENT", ["Replace gaskets, O-rings, valve packing, and worn caps."]],
+  ["FUNCTIONAL TESTING", [
+    "Test emergency shutoffs, internal valves, external valves, bottom outlets, and pressure relief devices per manufacturer and regulatory requirements.",
+    "Document all maintenance."]]
+  ]},
+{type:"content", title:"Preventative Maintenance Inspection (PMI): What to Verify", intro:"A PMI should verify the following on every cargo tank.", sections:[
+  ["STRUCTURAL CONDITION", ["Shell, heads, mounting system, and welds."]],
+  ["LEAK PREVENTION", ["Valves, caps, flanges, gaskets, and bottom outlets."]],
+  ["SAFETY SYSTEMS", ["Pressure relief devices, emergency shutoffs, and vent systems."]],
+  ["REGULATORY COMPLIANCE", ["Inspection documentation, cargo tank qualification dates, and required repairs completed."]]
+  ]},
+{type:"content", title:"Cargo Tank Inspection Criteria", intro:"Use these categories during every PM to classify what you find.", sections:[
+  ["In Service", [
+    "No leaks; valves operate correctly.",
+    "No structural damage; proper vent operation.",
+    "Current inspection intervals."]],
+  ["Needs Repair", [
+    "Minor corrosion, stiff valves, aging seals, damaged caps.",
+    "Surface rust or minor seepage — repair during scheduled maintenance before the condition worsens."]],
+  ["Out of Service", [
+    "Immediately remove the vehicle from HazMat service if any of the following are found:",
+    "Active hazardous material leak; cracked shell; structural failure.",
+    "Failed emergency shutoff; missing pressure-retaining components.",
+    "Severe corrosion affecting structural integrity; pressure relief device failure.",
+    "Unauthorized structural repair; expired cargo tank qualification required by 49 CFR §180.407."]]
+  ]},
+{type:"content", title:"Tanker Inspections", images:["img43"], intro:"Key Regulatory References: 49 CFR Part 178 (design/manufacturing specs) · Part 180, Subpart E (qualification, maintenance, repair, inspection, and periodic requalification) · Part 393 (safe vehicle equipment) · Part 396 (systematic inspection, repair, maintenance & recordkeeping).", bullets:[
   "Key Inspection Intervals (49 CFR 180.407):",
   "External Visual Inspection (V): Annual (every 1 year)",
   "Internal Visual Inspection (I): Every 5 years (required for lined tanks or certain hazardous materials)",
