@@ -1,0 +1,99 @@
+{
+  "name": "KELBY MCANALLY",
+  "testNum": 3,
+  "score": 80,
+  "passed": true,
+  "timestamp": "2026-07-01T20:47:03.677Z",
+  "answers": [
+    {
+      "question": "What should you check when inspecting internal valves?",
+      "selected": "Valve movement, return spring, seat condition, leakage, linkage, and actuator",
+      "correctAnswer": "Valve movement, return spring, seat condition, leakage, linkage, and actuator",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Upper Coupler Inspection (UC) required?",
+      "selected": "Every 5 years",
+      "correctAnswer": "Every 5 years",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the External Visual Inspection (V) required on a cargo tank?",
+      "selected": "Annually (every 1 year)",
+      "correctAnswer": "Annually (every 1 year)",
+      "isCorrect": true
+    },
+    {
+      "question": "Since baffles are internal, how do technicians verify their condition?",
+      "selected": "Through scheduled internal inspections required by 49 CFR 180.407",
+      "correctAnswer": "Through scheduled internal inspections required by 49 CFR 180.407",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Leakage Test (K) required?",
+      "selected": "Annually (every 1 year)",
+      "correctAnswer": "Annually (every 1 year)",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the main purpose of bulkheads in a cargo tank?",
+      "selected": "To divide the tank into compartments, separating products, preventing contamination, and reducing surge",
+      "correctAnswer": "To divide the tank into compartments, separating products, preventing contamination, and reducing surge",
+      "isCorrect": true
+    },
+    {
+      "question": "Which components are described as common high-risk leak sources on HazMat tankers?",
+      "selected": "Internal/external valves, bottom outlets, emergency shutoffs, gaskets, seals, and caps",
+      "correctAnswer": "Internal/external valves, bottom outlets, emergency shutoffs, gaskets, seals, and caps",
+      "isCorrect": true
+    },
+    {
+      "question": "Why does preventative maintenance matter for spill prevention?",
+      "selected": "It reduces spill risk through secondary containment integrity, drip prevention, and early leak-path identification",
+      "correctAnswer": "It reduces spill risk through secondary containment integrity, drip prevention, and early leak-path identification",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Pressure Test (P) required?",
+      "selected": "Annually",
+      "correctAnswer": "Every 5 years",
+      "isCorrect": false
+    },
+    {
+      "question": "What should technicians inspect gaskets, seals, and O-rings for?",
+      "selected": "Hardening, swelling, cracking, compression set, cuts, and chemical deterioration",
+      "correctAnswer": "Hardening, swelling, cracking, compression set, cuts, and chemical deterioration",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Thickness Test (T) required?",
+      "selected": "Every 5 years",
+      "correctAnswer": "Every 2 years",
+      "isCorrect": false
+    },
+    {
+      "question": "Which of the following immediately takes a cargo tank Out of Service?",
+      "selected": "An expired cargo tank qualification required by 49 CFR §180.407",
+      "correctAnswer": "An expired cargo tank qualification required by 49 CFR §180.407",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the primary purpose of the cargo tank shell?",
+      "selected": "To contain the product while withstanding internal pressure, surge, vibration, temperature change, and vehicle movement",
+      "correctAnswer": "To contain the product while withstanding internal pressure, surge, vibration, temperature change, and vehicle movement",
+      "isCorrect": true
+    },
+    {
+      "question": "A Preventative Maintenance Inspection (PMI) on a cargo tank should verify all of the following EXCEPT:",
+      "selected": "The driver's personal cell phone contacts",
+      "correctAnswer": "The driver's personal cell phone contacts",
+      "isCorrect": true
+    },
+    {
+      "question": "Repairs affecting pressure-retaining components on a cargo tank require proper qualification under which regulation?",
+      "selected": "49 CFR Part 178",
+      "correctAnswer": "49 CFR Part 180",
+      "isCorrect": false
+    }
+  ]
+}
