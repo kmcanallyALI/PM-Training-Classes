@@ -1,0 +1,69 @@
+{
+  "name": "KELBY MCANALLY",
+  "testNum": 1,
+  "score": 100,
+  "passed": true,
+  "timestamp": "2026-07-01T18:46:15.207Z",
+  "answers": [
+    {
+      "question": "Which federal agency's regulations establish the preventative maintenance inspection requirements covered in this course?",
+      "selected": "FMCSA",
+      "correctAnswer": "FMCSA",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a), who is responsible for systematically inspecting, repairing, and maintaining every motor vehicle the carrier controls?",
+      "selected": "The motor carrier",
+      "correctAnswer": "The motor carrier",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 396.3(c), how long must maintenance records generally be kept where the vehicle is housed or maintained?",
+      "selected": "1 year (or 6 months after the vehicle leaves the carrier's control)",
+      "correctAnswer": "1 year (or 6 months after the vehicle leaves the carrier's control)",
+      "isCorrect": true
+    },
+    {
+      "question": "What is Fleetrock used for at Andrew's Logistics?",
+      "selected": "The system of record for PM sheets, EDVIR repairs, and DOT compliance records",
+      "correctAnswer": "The system of record for PM sheets, EDVIR repairs, and DOT compliance records",
+      "isCorrect": true
+    },
+    {
+      "question": "On a PM sheet (a legal document), what tone/language should you use when describing an issue?",
+      "selected": "General industry terms, since the reader may not have a mechanic background",
+      "correctAnswer": "General industry terms, since the reader may not have a mechanic background",
+      "isCorrect": true
+    },
+    {
+      "question": "Roughly how long should a proficient technician expect a B-PM to take?",
+      "selected": "About 2 hours",
+      "correctAnswer": "About 2 hours",
+      "isCorrect": true
+    },
+    {
+      "question": "Why is Fleetrock's portability (accessible from any device) useful?",
+      "selected": "You can keep working on the same inspection from another device if your tablet battery dies",
+      "correctAnswer": "You can keep working on the same inspection from another device if your tablet battery dies",
+      "isCorrect": true
+    },
+    {
+      "question": "In Fleetrock, what is the first step immediately after receiving a unit you are assigned to PM?",
+      "selected": "Create a Repair Order",
+      "correctAnswer": "Create a Repair Order",
+      "isCorrect": true
+    },
+    {
+      "question": "What should you do with your assigned Fleetrock login and unit number during the hands-on practice slide?",
+      "selected": "Use them to log in and create the repair order for that unit",
+      "correctAnswer": "Use them to log in and create the repair order for that unit",
+      "isCorrect": true
+    },
+    {
+      "question": "Why do we perform PMs in the first place?",
+      "selected": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "correctAnswer": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "isCorrect": true
+    }
+  ]
+}
