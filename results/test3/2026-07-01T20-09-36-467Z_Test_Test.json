@@ -1,0 +1,69 @@
+{
+  "name": "Test Test",
+  "testNum": 3,
+  "score": 80,
+  "passed": true,
+  "timestamp": "2026-07-01T20:09:36.467Z",
+  "answers": [
+    {
+      "question": "What is the primary goal when inspecting HazMat tanker shell construction, baffles, manways, and compartments?",
+      "selected": "Containment — preventing hazardous release",
+      "correctAnswer": "Containment — preventing hazardous release",
+      "isCorrect": true
+    },
+    {
+      "question": "Which components are described as common high-risk leak sources on HazMat tankers?",
+      "selected": "Internal/external valves, bottom outlets, emergency shutoffs, gaskets, seals, and caps",
+      "correctAnswer": "Internal/external valves, bottom outlets, emergency shutoffs, gaskets, seals, and caps",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the function of Pressure & Vacuum Relief Devices (PRDs) on a tanker?",
+      "selected": "To prevent overpressure or shell collapse during loading, unloading, or temperature-driven expansion/contraction",
+      "correctAnswer": "To prevent overpressure or shell collapse during loading, unloading, or temperature-driven expansion/contraction",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the External Visual Inspection (V) required on a cargo tank?",
+      "selected": "Annually (every 1 year)",
+      "correctAnswer": "Annually (every 1 year)",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Pressure Test (P) required?",
+      "selected": "Every 2 years",
+      "correctAnswer": "Every 5 years",
+      "isCorrect": false
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Thickness Test (T) required?",
+      "selected": "Every 5 years",
+      "correctAnswer": "Every 2 years",
+      "isCorrect": false
+    },
+    {
+      "question": "Why does preventative maintenance matter for spill prevention?",
+      "selected": "It reduces spill risk through secondary containment integrity, drip prevention, and early leak-path identification",
+      "correctAnswer": "It reduces spill risk through secondary containment integrity, drip prevention, and early leak-path identification",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR trailer body damage standards, what is the maximum allowable dent/gouge depth at a weld?",
+      "selected": "1/2 inch",
+      "correctAnswer": "1/2 inch",
+      "isCorrect": true
+    },
+    {
+      "question": "What must happen if a weld or structural defect (crack, pinhole, incomplete fusion) is found on a cargo tank?",
+      "selected": "The tank must be taken out of HazMat service until repaired",
+      "correctAnswer": "The tank must be taken out of HazMat service until repaired",
+      "isCorrect": true
+    },
+    {
+      "question": "What is required before returning a tank to HazMat service if any source of leakage is found?",
+      "selected": "All sources of leakage must be properly repaired",
+      "correctAnswer": "All sources of leakage must be properly repaired",
+      "isCorrect": true
+    }
+  ]
+}
