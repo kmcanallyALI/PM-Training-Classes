@@ -142,7 +142,7 @@ const QUIZZES = {
   ],
   2: [
     { q:"What is the purpose of Lockout/Tagout (LO/TO)?", options:["To speed up repairs", "To keep a hazard de-energized, such as removing a negative battery cable and locking/tagging access", "To label parts for inventory", "It only applies to electrical contractors"], answer:1 },
-    { q:"Per FMCSA out-of-service criteria, what pushrod stroke condition takes a brake out of service?", options:["Any stroke at all", "Pushrod stroke beyond the legal adjustment limit", "Stroke under 1 inch", "Only if the pushrod is painted"], answer:1 },
+    { q:"Per FMCSA out-of-service criteria, what pushrod stroke condition takes a brake out of service?", options:["Any stroke at all", "Pushrod stroke beyond the legal adjustment limit, based on brake chamber size and the 49CFR", "Stroke under 1 inch", "Only if the pushrod is painted"], answer:1 },
     { q:"What is the FMCSA minimum brake lining thickness for drum brake shoes on steering, drive, and trailer axles before it's Out of Service?", options:["1/2 inch", "1/4 inch", "1/8 inch", "There is no minimum"], answer:1 },
     { q:"What is the FMCSA minimum friction material thickness for air disc brake pads before Out of Service?", options:["1/4 inch", "1/8 inch", "1 inch", "There is no minimum"], answer:1 },
     { q:"Repeated need to manually adjust an automatic slack adjuster is best understood as:", options:["Completely normal and not worth noting", "A symptom indicating an underlying issue that needs diagnosis", "A sign the brakes are perfectly adjusted", "Something only relevant to steer axles"], answer:1 },
@@ -281,7 +281,7 @@ const slides = [
   ["Out of Service", [
     "Audible chamber leak or a loose chamber.",
     "Broken pushrod or missing clevis pin.",
-    "Pushrod stroke exceeds FMCSA adjustment limits."]]
+    "Pushrod stroke exceeds FMCSA adjustment limits. These limits vary based on brake chamber size, typically stamped on the side of the chamber. Most Andrews equipment runs a 30/30L"]]
   ]},
 {type:"content", title:"Air Brake PMI: Drum Brake Shoes", intro:"Inspect for uneven wear, oil contamination, cracks, loose or broken lining, heat checking, and rivets close to the drum.", sections:[
   ["In Service", [
