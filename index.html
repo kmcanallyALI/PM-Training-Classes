@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Preventative Maintenance Training — Andrew's Logistics</title>
+<style>
+  :root{
+    --navy:#1E2761; --ice:#CADCFC; --white:#FFFFFF; --accent:#C0392B;
+    --gray:#5b6270; --bg:#F4F6FB;
+  }
+  *{box-sizing:border-box;}
+  body{margin:0;font-family:Calibri,Arial,sans-serif;background:var(--bg);color:#222;}
+  header{background:var(--navy);color:#fff;padding:22px 32px;}
+  header h1{margin:0;font-size:22px;letter-spacing:.5px;}
+  header p{margin:4px 0 0;color:var(--ice);font-size:13px;}
+  .wrap{max-width:880px;margin:0 auto;padding:24px 18px 60px;}
+  .progress-bar{height:8px;background:#dfe4f0;border-radius:6px;overflow:hidden;margin-bottom:18px;}
+  .progress-fill{height:100%;background:var(--accent);width:0%;transition:width .3s;}
+  .card{background:#fff;border-radius:10px;padding:28px 30px;box-shadow:0 2px 10px rgba(20,30,70,.08);min-height:340px;}
+  .section-card{background:var(--navy);color:#fff;text-align:center;padding:60px 30px;}
+  .section-card h2{font-size:26px;margin:0;}
+  .slide-title{color:var(--navy);font-size:22px;font-weight:bold;margin:0 0 14px;}
+  .slide-sub{color:var(--accent);font-weight:bold;font-size:14px;margin:14px 0 4px;}
+  ul{margin:4px 0 14px 20px;padding:0;}
+  ul.sub-list{margin:4px 0 16px 20px;}
+  ul.sub-list li{margin-bottom:6px;line-height:1.4;font-size:15px;}
+  li{margin-bottom:6px;line-height:1.4;font-size:15px;}
+  p.body-text{line-height:1.5;font-size:15px;}
+  .nav{display:flex;justify-content:space-between;align-items:center;margin-top:20px;}
+  button{font-family:inherit;cursor:pointer;border:none;border-radius:6px;padding:10px 18px;font-size:14px;font-weight:bold;}
+  .btn-primary{background:var(--navy);color:#fff;}
+  .btn-primary:disabled{background:#aab0c5;cursor:not-allowed;}
+  .btn-secondary{background:#e7eaf3;color:var(--navy);}
+  .slide-counter{font-size:13px;color:var(--gray);}
+  .test-box{border:2px dashed var(--accent);border-radius:10px;padding:20px;text-align:center;}
+  .test-box h2{color:var(--accent);margin-top:0;}
+  iframe.form-frame{width:100%;height:520px;border:1px solid #ccd;border-radius:8px;margin:14px 0;}
+  .gallery{display:flex;flex-wrap:wrap;gap:10px;margin:14px 0;}
+  .gallery img{max-width:260px;max-height:190px;border-radius:8px;border:1px solid #ddd;object-fit:cover;cursor:pointer;}
+  .gallery.banner{gap:0;}
+  .gallery.banner img{max-width:100%;width:100%;max-height:300px;height:260px;border-radius:8px;}
+  .gallery img:hover{opacity:.85;}
+  video.class-video{width:100%;max-height:480px;border-radius:8px;margin:14px 0;background:#000;}
+  iframe.yt{width:100%;height:380px;border:0;border-radius:8px;margin:10px 0;}
+  .lightbox{display:none;position:fixed;inset:0;background:rgba(10,12,25,.85);z-index:50;align-items:center;justify-content:center;}
+  .lightbox.open{display:flex;}
+  .lightbox img{max-width:92%;max-height:90%;border-radius:6px;}
+  .reveal-item{opacity:0;transform:translateY(4px);transition:opacity .5s ease,transform .5s ease;}
+  .reveal-item.visible{opacity:1;transform:translateY(0);}
+  .pace-toggle{display:flex;align-items:center;gap:8px;font-size:13px;color:var(--gray);margin-bottom:10px;}
+  .pace-toggle input{width:16px;height:16px;}
+  .step-row{display:flex;align-items:center;gap:16px;margin-bottom:16px;flex-wrap:wrap;}
+  .step-num{flex:0 0 30px;height:30px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;font-weight:bold;font-size:14px;}
+  .step-text{flex:1 1 auto;font-size:15px;line-height:1.4;}
+  .step-note{font-size:13px;color:var(--gray);font-style:italic;margin-top:4px;padding-left:4px;border-left:3px solid var(--ice);padding-left:8px;}
+  .step-img{flex:0 0 180px;max-width:180px;max-height:120px;border-radius:8px;border:1px solid #ddd;cursor:pointer;object-fit:cover;}
+  .video-locked-note{background:#fff7e0;border:1px solid #f0d27a;padding:10px 14px;border-radius:6px;font-size:13px;margin-bottom:8px;}
+  .video-locked-note.done{background:#e3f6e9;border-color:#bfe6cc;color:#1d7a3e;}
+  .credential-box{background:#eef2fb;border:1px solid #c7d2ec;border-radius:8px;padding:14px 18px;margin-bottom:16px;font-size:14px;}
+  .credential-box strong{color:var(--navy);}
+  .cred-row{margin-top:4px;}
+  .cred-row span{display:inline-block;width:90px;font-weight:bold;color:var(--gray);}
+  .score-entry{margin-top:16px;padding:16px;background:#fbf6f2;border-radius:8px;}
+  .score-entry label{font-size:14px;font-weight:bold;color:var(--navy);}
+  .score-entry input{padding:8px;font-size:15px;width:100px;margin:0 10px;border:1px solid #ccc;border-radius:5px;}
+  .result-msg{margin-top:14px;padding:12px 14px;border-radius:6px;font-weight:bold;font-size:14px;}
+  .pass{background:#e3f6e9;color:#1d7a3e;}
+  .fail{background:#fdeaea;color:#a8281c;}
+  .gate{background:#fff7e0;border:1px solid #f0d27a;padding:14px;border-radius:8px;font-size:14px;margin-top:12px;}
+  .name-card{max-width:440px;margin:60px auto;text-align:center;}
+  .name-card input{padding:10px;font-size:15px;width:46%;border:1px solid #ccc;border-radius:6px;margin:14px 1%;}
+  .score-summary{font-size:13px;color:var(--gray);margin-top:10px;}
+  a.qr-link{color:var(--accent);font-weight:bold;}
+  .final-card{text-align:center;}
+  .schedule-btn{background:var(--accent);color:#fff;margin-top:14px;}
+  .card{position:relative;}
+  .video-resource-link{position:absolute;top:18px;right:20px;display:flex;align-items:center;gap:6px;background:#eef2fb;border:1px solid #c7d2ec;color:var(--navy);font-size:13px;font-weight:bold;padding:8px 12px;border-radius:20px;cursor:pointer;text-decoration:none;}
+  .video-resource-link:hover{background:#dfe6f7;}
+  .video-resource-link{ }
+  .video-resource-link .vrl-tooltip{visibility:hidden;opacity:0;position:absolute;top:120%;right:0;width:220px;background:#1E2761;color:#fff;font-size:12px;font-weight:normal;padding:10px 12px;border-radius:8px;line-height:1.4;text-align:left;transition:opacity .15s ease;z-index:5;box-shadow:0 4px 14px rgba(0,0,0,.25);}
+  .video-resource-link:hover .vrl-tooltip{visibility:visible;opacity:1;}
+  .video-modal-overlay{display:none;position:fixed;inset:0;background:rgba(10,12,25,.85);z-index:60;align-items:center;justify-content:center;padding:20px;}
+  .video-modal-overlay.open{display:flex;}
+  .video-modal-box{background:#fff;border-radius:10px;padding:20px;max-width:800px;width:100%;}
+  .video-modal-box video{width:100%;border-radius:8px;background:#000;}
+  .video-modal-box p{font-size:14px;color:var(--gray);margin:10px 0;}
+  .video-modal-close{float:right;background:none;border:none;font-size:20px;cursor:pointer;color:var(--gray);}
+</style>
+</head>
+<body>
+<header>
+  <h1>Preventative Maintenance for Andrew's Logistics</h1>
+  <p>Heavy-Duty Trucks &amp; Tanker Trailers — Interactive Training Module</p>
+  <label class="pace-toggle" style="margin-top:10px;color:var(--ice);">
+    <input type="checkbox" id="paceToggle" checked> Reveal text gradually at reading speed
+  </label>
+  <div class="pace-toggle" id="speedRow" style="margin-top:6px;color:var(--ice);">
+    <span>Speed:</span>
+    <input type="range" id="speedSlider" min="0" max="2" step="1" value="0" style="width:140px;">
+    <span id="speedLabel" style="font-weight:bold;min-width:32px;">1x</span>
+  </div>
+</header>
+<div class="wrap" id="app"></div>
+<div class="lightbox" id="lightbox"><img id="lightboxImg" src=""></div>
+<div class="video-modal-overlay" id="videoModalOverlay">
+  <div class="video-modal-box">
+    <button class="video-modal-close" id="videoModalClose">&times;</button>
+    <h3 style="color:var(--navy);margin-top:0;">Fleetrock Walkthrough Video</h3>
+    <p id="videoModalDesc"></p>
+    <video id="videoModalPlayer" controls></video>
+  </div>
+</div>
+
+<script>
+const IMG = {"img3": "images/img3.jpg", "img4": "images/img4.jpg", "img6": "images/img6.jpg", "img7": "images/img7.jpg", "img8": "images/img8.jpg", "img9": "images/img9.jpg", "img10": "images/img10.jpg", "img12": "images/img12.jpg", "img11": "images/img11.jpg", "img13": "images/img13.jpg", "img14": "images/img14.jpg", "img19": "images/img19.jpg", "img20": "images/img20.jpg", "img22": "images/img22.jpg", "img21": "images/img21.jpg", "img23": "images/img23.jpg", "img27": "images/img27.jpg", "img26": "images/img26.jpg", "img25": "images/img25.jpg", "img24": "images/img24.jpg", "img28": "images/img28.jpg", "img30": "images/img30.jpg", "img31": "images/img31.jpg", "img33": "images/img33.jpg", "img32": "images/img32.jpg", "img34": "images/img34.jpg", "img37": "images/img37.jpg", "img36": "images/img36.jpg", "img35": "images/img35.jpg", "img40": "images/img40.jpg", "img41": "images/img41.jpg", "img42": "images/img42.jpg", "img43": "images/img43.jpg", "img45": "images/img45.jpg", "img44": "images/img44.jpg", "img46": "images/img46.jpg", "img_step6": "images/img_step6.jpg", "img_step8": "images/img_step8.jpg", "img_step7a": "images/img_step7a.jpg", "img_step7b": "images/img_step7b.jpg", "img_step9": "images/img_step9.jpg", "img_step10": "images/img_step10.jpg"};
+// ---------- DATA ----------
+const TEST_URLS = {
+  1: "https://forms.cloud.microsoft/r/jsXjuNGr6j",
+  2: "https://forms.cloud.microsoft/r/yEwRmifaxC",
+  3: "https://forms.cloud.microsoft/r/BD1x1Wjs0r"
+};
+const REPORT_EMAIL = "kmcanally@andrewslogistics.com";
+
+const CREDENTIALS = [
+  {name:"Phil McCraken", username:"PMcCracken", password:"PMcCraken1"},
+  {name:"Rusty Boltz", username:"Rboltz", password:"RBoltz11"},
+  {name:"Johnny Brakecheck", username:"JBrakecheck", password:"JBrakecheck1"},
+  {name:"Axle Greasewell", username:"AGreasewell", password:"AGreasewell1"},
+  {name:"Wrench McTorque", username:"WMcTorque", password:"WMcTorque1"}
+];
+
+const UNIT_NUMBERS = ["1111","2222","3333","4444","5555"];
+
+const slides = [
+{type:"title", title:"PREVENTATIVE MAINTENANCE FOR ANDREW'S LOGISTICS", sub:"Heavy-Duty Trucks & Tanker Trailers", body:"This training covers 49 CFR 396, safety-critical systems, and hazmat tanker controls."},
+{type:"content", title:"Introduction – Instructor and Class", images:["img3"], showCredentials:true, bullets:[
+  "Please take breaks as needed. You can pause and resume as required.",
+  "Please pay attention — no phone watching during instruction (no scrolling social media or YouTube while learning).",
+  "If something is moving too fast or you don't understand a concept, ask questions! Call or text: 409-791-7852. The only dumb question is the one you don't ask."]},
+{type:"content", title:"Course Purpose, Scope & Safety", images:["img4"], sections:[
+  ["PURPOSE","Reduce failures, product releases, and regulatory violations through consistent, compliant, well-documented preventative maintenance."],
+  ["SCOPE","Covers power unit systems (engine, brakes, suspension, electrical) plus tanker systems (valves, piping, PRDs, spill prevention)."],
+  ["SAFETY EMPHASIS","PPE, lockout/tagout, and hazard awareness; learn early warning signs and inspection discipline using real DOT and incident examples."]],
+  body:"In this class the student progresses from regulatory basics to system-level inspections and hands-on application — improving driver, public, and environmental safety."},
+{type:"content", title:"Terminal Learning Objectives", bullets:[
+  "Perform complete PM inspections on tractor & tanker systems (in-person, after this class)",
+  "Identify DOT-compliant vs non-compliant conditions",
+  "Correctly classify defects: Acceptable, Needs Repair, or Out-of-Service",
+  "Apply 49 CFR Parts 393, 396, and 180 in real inspection scenarios",
+  "Recognize critical defects affecting safety and compliance",
+  "Demonstrate decision-making under DOT inspection conditions"]},
+{type:"section", title:"Section 1", sub:"Regulatory Foundations and Fleetrock Instruction"},
+{type:"content", title:"FMCSA, DOT & HazMat Overview", images:["img6"], imageStyle:"banner", sections:[
+  ["WHAT THIS COURSE COVERS","FMCSA, DOT, and HMR (Hazardous Materials Regulations) requirements shape daily preventative maintenance for heavy-duty trucks and HazMat tanker trailers — especially inspection tasks, service intervals, and documentation."],
+  ["KEY REGULATORY ANCHORS","Part 396 (inspection, repair, maintenance), Part 393 (vehicle components/accessories), and Part 180 (cargo tank inspections/tests) translate directly into work orders, checklists, and records."],
+  ["ENFORCEMENT & CONSEQUENCES","DOT focus areas (brakes, lights, tires, steering) can quickly trigger out-of-service violations; HazMat adds leak prevention, valve integrity, and PRD checks. Non-compliance risks fines, CSA impacts, OOS orders, and civil liability."]]},
+{type:"content", title:"FMCSA and PM Inspections — 396.3", intro:"The below information is from the 49 CFR 396.3. It is important to understand this concept, not just memorize the information contained in the chapter.", images:["img7"], imagePosition:"bottom", imageWithLastLine:true, bullets:[
+  "(a) General: every motor carrier must systematically inspect, repair, and maintain all motor vehicles it controls.",
+  "(1) Parts/accessories (frame, suspension, axles, wheels, steering) must be safe and in proper operating condition at all times.",
+  "(2) Pushout windows, emergency doors, and emergency door marking lights in buses must be inspected at least every 90 days.",
+  "(b) Required records: motor carriers must maintain records for each vehicle they control, including ID, due dates, inspection/repair history, and bus door tests.",
+  "(c) Record retention: records kept where the vehicle is housed/maintained for 1 year, or 6 months after the vehicle leaves the carrier's control."],
+  body:"Fleetrock — Maintenance Tracking System: Andrew's Logistics' system of record for PM sheets, EDVIR repairs, warranty repairs, and other DOT compliance records."},
+{type:"content", title:"Maintenance Documentation", images:["img8"], sections:[
+  ["Compliance", [
+    {num:1, text:"Proper recordkeeping, including the certificate from this course, is imperative for our DOT compliance."},
+    {num:2, text:"Drivers and the Maintenance teams are both responsible for the trucks remaining in compliance with the appropriate chapters of the 49 CFR."},
+    {num:3, text:"Drivers' responsibilities include DVIRs — this is where the driver communicates with the maintenance team about any dash lights, issues, or damage/defects they find on the unit."}]],
+  ["Audit Readiness", [
+    "Having consistent, documented PMs ensures that if there is an incident, we are prepared for the DOT audit afterward.",
+    "These audits are designed to keep the companies and drivers honest, and provide evidence of good-faith compliance when needed.",
+    "The PM sheets we fill out are a legal document — please make sure you are filling them out with that in mind. You don't want to put something on there that could call into question your professional abilities. Don't use overly technical language; layman's terms are encouraged, remembering that the person reading this is not likely to have a mechanic background."]],
+  ["Records", [
+    "Accurate documentation is the final, essential component of a preventative maintenance program.",
+    "Proper records improve maintenance planning by tracking defects, trends, and corrective actions. This lowers the overall cost of running the fleet, which is good for all of us, as there is more profitability in the company."]]
+  ]},
+{type:"content", title:"PM Timing & Fleetrock Basics", bullets:[
+  "A B-PM should take you approximately 2 hours, and an A-PM should take about 1.5 hours, once you are proficient.",
+  "Fleetrock is portable, which means you can access the current inspection you are working on from any device. So if the battery dies on your tablet, you do not need to worry — you can use another device while that one is charging.",
+  "We perform PMs to prevent failures, on-the-road breakdowns, and emergency services outside our terminals."]},
+{type:"steps", title:"Fleetrock — Creating a PM Repair Order", intro:"You should have your Fleetrock sign-in information — you will need it. These steps must be completed in this order.", videoResource:{file:"PM_Training_Video.mp4", description:"Use this video for assistance with creating a repair order and opening the Inspection."}, steps:[
+  {text:"Log in to Fleetrock", image:"img9"},
+  {text:"Create a Repair Order", note:"This is the first step of any PM, immediately after receiving the unit you are to PM.", image:"img10"},
+  {text:"There will be a banner at the top of the repair order for the PM you are conducting, with a \"+ Add Task\" button", image:"img12"},
+  {text:"At the top of the RO click start repair order, then enter an expected finish date and time. Then clock on the task.", image:"img13"},
+  {text:"Create a PM form (Add Inspection)", image:"img14"}],
+  stepsAfter:[
+  {text:"Complete PM", images:["img_step6"]},
+  {text:"Add Parts used on PM", images:["img_step7a","img_step7b"]},
+  {text:"Attach Inspection to repair order", images:["img_step8"]},
+  {text:"Turn off the task timer", images:["img_step9"]},
+  {text:"Finish repair order by clicking the Finish Repair Order button at the top of the RO", images:["img_step10"]}]},
+{type:"content", title:"Hands-On Practice: Create Your PM Work Order", showAssignment:true, bullets:[
+  "Log in to Fleetrock using your assigned login from the Introduction slide.",
+  "Create a Repair Order using your assigned unit number (shown below).",
+  "Create the PM that is assigned to that unit.",
+  "Create the correct inspection form for that PM.",
+  "Fill out the PM sheet completely and accurately.",
+  "Attach the completed PM sheet to the work order.",
+  "Place the work order in \"Finished\" status once everything is complete."],
+  body:"Take your time and follow each step carefully — this mirrors exactly what you'll do on a real PM in the field."},
+{type:"test", testNum:1, title:"Test Time! — Section 1"},
+{type:"section", title:"Section 2", sub:"Safety Items"},
+{type:"content", title:"PPE — Safety Devices — Lockout/Tagout", images:["img19"], sections:[
+  ["Personal Protective Equipment", [
+    "PPE is specialized clothing or gear worn to minimize exposure to hazards that can cause serious workplace injuries.",
+    "Long sleeves protect against zip-tie scratches and burns from hot exhaust components.",
+    "Safety glasses protect your eyes from falling debris and are mandatory.",
+    "Gloves protect your hands from chemicals, impacts, cuts, or burns."]],
+  ["Safety Devices", [
+    "Wheel chocks are wedge-shaped wood or rubber devices that prevent truck wheels from rolling.",
+    "Jacks should never be used alone — always use jack stands, which mechanically lock in place so the truck cannot fall."]],
+  ["Lockout/Tagout (LO/TO)", [
+    "LO/TO keeps a hazard de-energized — for example, removing a truck's negative battery cable and locking or tagging access to notify others.",
+    "Remove the keys and keep them on your person while under a truck to prevent someone from starting it on you."]],
+  ["If a Safety Item Has an Issue", [
+    "Stop, assess, and speak with the Foreman. Identify the issue and do not proceed until it's safe. Your life is precious — don't waste it."]]
+  ]},
+{type:"content", title:"Brake Systems: Air Brakes", images:["img20"], sections:[
+  ["FUNDAMENTALS & INSPECTION FOCUS","Air supply, chambers, slack adjusters, drums/discs, and friction materials are key DOT inspection targets."],
+  ["WEAR SIGNS & FAILURE MODES","Identify out-of-adjustment brakes, cracked drums/rotors, worn linings, air leaks, and spring brake chamber risks."]]},
+{type:"content", title:"Air Brake PMI: Air System", images:["img23"], intro:"Reference: 49 CFR Part 396 & Appendix A. Use these categories during every PM to classify what you find.", sections:[
+  ["In Service", [
+    "Air governor cuts in/out within manufacturer specifications.",
+    "Air pressure builds normally, with no audible air leaks.",
+    "Reservoirs are properly drained and the air dryer is functioning."]],
+  ["Needs Repair", [
+    "Minor fitting seepage or slow air build.",
+    "Excessive moisture in the reservoirs.",
+    "Air dryer is overdue for service."]],
+  ["Out of Service", [
+    "Audible leaks affecting brake performance.",
+    "Unable to maintain operating pressure.",
+    "Low-air warning system inoperative.",
+    "Spring brakes fail to apply/release properly, or the compressor can't maintain system pressure."]]
+  ]},
+{type:"content", title:"Air Brake PMI: Brake Chambers & Slack Adjusters", images:["img22","img21"], intro:"Inspect for loose mounting, broken or missing hardware, damaged pushrods, torn diaphragms, corrosion, and proper automatic slack adjuster function.", sections:[
+  ["In Service", [
+    "Components are secure with no air leaks.",
+    "Pushrod stroke is within legal adjustment limits."]],
+  ["Needs Repair", [
+    "Corrosion beginning, or slight binding.",
+    "Damaged rubber dust boots.",
+    "Repeated manual adjustment of automatic slack adjusters — Bendix considers this a symptom requiring diagnosis."]],
+  ["Out of Service", [
+    "Audible chamber leak or a loose chamber.",
+    "Broken pushrod or missing clevis pin.",
+    "Pushrod stroke exceeds FMCSA adjustment limits."]]
+  ]},
+{type:"content", title:"Air Brake PMI: Drum Brake Shoes", intro:"Inspect for uneven wear, oil contamination, cracks, loose or broken lining, heat checking, and rivets close to the drum.", sections:[
+  ["In Service", [
+    "Lining is secure with even wear and above minimum thickness."]],
+  ["Needs Repair", [
+    "Uneven wear pattern, heat spotting, minor edge cracking, or taper wear."]],
+  ["Out of Service", [
+    "Below FMCSA minimum (steering, drive, and trailer axles: less than 1/4 inch).",
+    "Oil soaked, cracked, or loose/missing lining."]]
+  ]},
+{type:"content", title:"Air Brake PMI: Air Disc Brake Pads", intro:"Inspect for taper wear, uneven inner/outer pad wear, cracked or missing friction material, and contamination.", sections:[
+  ["In Service", [
+    "Even pad wear with the rotor contacting evenly.",
+    "Friction material is above the manufacturer minimum."]],
+  ["Needs Repair", [
+    "Uneven wear, pad dragging, or heat discoloration."]],
+  ["Out of Service", [
+    "Less than 1/8 inch friction material remaining (FMCSA minimum).",
+    "Loose pad, oil contaminated, or missing friction material."]]
+  ]},
+{type:"content", title:"Air Brake PMI: Drums & Rotors", intro:"Drums — inspect for heat checks, bluing, cracks, deep scoring, and out-of-round condition. Rotors — inspect for heat checking, radial cracks, grooving, bluing, and thickness variation.", sections:[
+  ["Drums — In Service / Out of Service", [
+    "In Service: smooth braking surface with no structural damage.",
+    "Out of Service: cracked, broken, or missing sections; worn beyond the maximum inside diameter stamped by the manufacturer (check with a brake caliper); severe heat damage."]],
+  ["Rotors — In Service / Out of Service", [
+    "In Service: smooth surface, no significant cracks, above minimum thickness.",
+    "Out of Service: below minimum thickness, through-cracks, heavy grooving, severe heat damage, or excessive runout per OEM specs."]]
+  ]},
+{type:"content", title:"Signs of Brake Fatigue", intro:"Watch for these warning signs during every inspection — they often point to a developing problem before a component fully fails.", bullets:[
+  "Blue or purple discoloration, or a burnt brake odor.",
+  "Heat checking or glazed friction material.",
+  "Uneven or cracked friction material; excessive dust buildup.",
+  "Hot spots on the rotor or drum.",
+  "Loose or fatigued return springs; weak spring brake operation.",
+  "Repeated need to adjust automatic slack adjusters — this indicates an underlying issue, not normal maintenance."]},
+{type:"content", title:"FMCSA Automatic Out-of-Service Items (49 CFR 396, Appendix A)", intro:"A vehicle fails its periodic inspection if any of the following are found on the brake system.", bullets:[
+  "Missing braking action on any required wheel.",
+  "Broken, missing, or loose brake components.",
+  "Audible brake chamber air leak.",
+  "Pushrod stroke beyond the legal adjustment limit.",
+  "Brake lining below minimum thickness; oil or grease contamination.",
+  "Missing springs, anchor pins, or cam rollers.",
+  "Broken pushrods; loose air chambers, spiders, or camshaft brackets."]},
+{type:"content", title:"Air Brake PMI: Quick Reference", intro:"A condensed recap of the in-service, needs-repair, and out-of-service thresholds covered on the previous slides.", sections:[
+  ["Air System", ["In Service: no leaks, proper pressure.", "Needs Repair: slow build, moisture.", "Out of Service: can't maintain pressure, warning system failure."]],
+  ["Brake Chamber / Slack Adjuster", ["In Service: secure, stroke within limits.", "Needs Repair: corrosion, damaged boot, binding.", "Out of Service: air leak, broken pushrod, loose chamber, stroke exceeds limit."]],
+  ["Brake Shoes / Disc Pads", ["In Service: ≥1/4 in. (shoes) or ≥1/8 in. (pads), even wear.", "Needs Repair: uneven wear.", "Out of Service: below minimum thickness, cracked, oil-soaked, or contaminated."]],
+  ["Brake Drum", ["In Service: no cracks.", "Needs Repair: heat checks.", "Out of Service: cracked or oversize."]]
+  ]},
+{type:"content", title:"Suspension, Steering, and Frame Inspections", images:["img27","img26","img25","img24"], sections:[
+  ["SUSPENSION CHECKS","Inspect leaf springs, air components, torque arms, shocks, and mounts for fatigue, cracking, leaks, and loose fasteners that degrade stability and handling."],
+  ["STEERING CHECKS","Check tie rods, drag links, steering box, and power steering for wear, excess play, and fluid leaks; confirm issues aren't masking alignment problems and tire wear."],
+  ["FRAME & CROSSMEMBERS","In corrosive or high-vibration service, inspect for cracking, loose hardware, and damage — small defects can escalate into major safety hazards without thorough PM."]]},
+{type:"content", title:"Steering, Suspension & Frame PMI: Steering System", intro:"Reference: 49 CFR Part 396, Appendix A, and applicable Part 393 component requirements. FMCSA generally specifies rejection criteria rather than \"repair soon\" limits — the Needs Repair category reflects common fleet PMI best practice.", sections:[
+  ["In Service", [
+    "No loose components; steering operates smoothly with no binding.",
+    "No fluid leaks.",
+    "Steering wheel free play is within manufacturer specifications."]],
+  ["Needs Repair", [
+    "Minor seepage at the steering gear or hoses; worn dust boots.",
+    "Light corrosion or surface rust on steering linkage.",
+    "Slight steering wheel play approaching the OEM limit."]],
+  ["Out of Service", [
+    "Broken steering component, cracked steering gear mounting, or missing fasteners.",
+    "Loose pitman arm or tie rod end; steering binding.",
+    "Excessive steering wheel lash affecting safe operation.",
+    "Power steering leak severe enough to impair steering, or any condition likely to cause loss of steering control."]]
+  ]},
+{type:"content", title:"Steering, Suspension & Frame PMI: Suspension System", intro:"Inspect leaf springs, air springs, torque arms, radius rods, U-bolts, spring hangers, shackles, equalizers, shocks, bushings, and mounting brackets.", sections:[
+  ["In Service", [
+    "Components secure; no broken springs.",
+    "Bushings serviceable; air bags properly inflated with no significant leaks.",
+    "Shocks securely mounted."]],
+  ["Needs Repair", [
+    "Worn bushings; minor air bag weather checking.",
+    "Shock absorber seepage; light corrosion.",
+    "Slight movement at spring pins, or minor ride height variation."]],
+  ["Out of Service", [
+    "Broken or shifted leaf spring affecting axle location; missing leaf in a main spring.",
+    "Broken center bolt; loose or missing U-bolts; cracked spring hanger; broken torque arm.",
+    "Air spring failure causing improper ride height.",
+    "Suspension component contacting another component, or the axle is no longer properly secured."]]
+  ]},
+{type:"content", title:"Steering, Suspension & Frame PMI: Frame & Crossmembers", intro:"Inspect frame rails, crossmembers, welds, rivets, bolts, flanges, web cracks, corrosion, prior repairs, and body/suspension mounting points.", sections:[
+  ["In Service", [
+    "No structural cracks; crossmembers secure.",
+    "Mounting hardware tight; normal surface corrosion only."]],
+  ["Needs Repair", [
+    "Surface rust or minor corrosion.",
+    "Paint cracking around welds requiring closer inspection.",
+    "Loose accessory brackets (non-structural)."]],
+  ["Out of Service", [
+    "Cracked frame rail or broken frame member.",
+    "Cracked or broken crossmember affecting structural integrity.",
+    "Loose or missing frame fasteners affecting safety.",
+    "Unauthorized or failed structural repairs, or frame damage affecting steering or suspension alignment."]]
+  ]},
+{type:"content", title:"Steering, Suspension & Frame PMI: Wheel Bearings & Kingpins", intro:"Inspect kingpin movement, wheel bearing end play, lubrication, hub seals, and spindle condition.", sections:[
+  ["In Service", ["Proper lubrication; no excessive movement; seals intact."]],
+  ["Needs Repair", ["Minor grease seepage; slight measurable play within OEM limits; aging seals."]],
+  ["Out of Service", ["Excessive kingpin movement or loose wheel bearings.", "Failed hub seal causing lubricant loss; bearing or spindle damage affecting safe operation."]]
+  ]},
+{type:"content", title:"Steering & Suspension Fatigue Signs", intro:"Watch for these warning signs during every inspection — they often point to a developing problem before a component fully fails.", bullets:[
+  "Elongated bolt holes or metal fatigue cracks.",
+  "Flaking rust around rivets, or shiny metal indicating movement.",
+  "Broken or missing fasteners; torn rubber bushings; dry-rotted air springs.",
+  "Uneven ride height.",
+  "Abnormal tire wear — cupping, feathering, or shoulder wear.",
+  "Oil contamination on suspension components.",
+  "Bent or twisted steering linkage."]},
+{type:"content", title:"FMCSA Rejection Items: Steering, Suspension & Frame (49 CFR 396)", intro:"A vehicle should be rejected during a periodic inspection if any of the following are found.", bullets:[
+  "Cracked or broken steering components; loose steering gear or linkage; missing steering fasteners.",
+  "Excessive steering free play affecting safe operation.",
+  "Broken or displaced suspension components; loose axle attachment; broken spring assemblies.",
+  "Cracked or broken frame members; structural damage affecting safe vehicle operation.",
+  "Any steering, suspension, or frame defect likely to cause an accident or vehicle breakdown."]},
+{type:"content", title:"Steering, Suspension & Frame PMI: Quick Reference", intro:"A condensed recap of the in-service, needs-repair, and out-of-service thresholds covered on the previous slides. Best practice: use the Needs Repair category to catch wear — seepage, bushing wear, corrosion, developing cracks — during scheduled maintenance, before it becomes an out-of-service item.", sections:[
+  ["Steering", ["In Service: tight, smooth operation.", "Needs Repair: minor seepage, light wear.", "Out of Service: loose, broken, binding, or excessive play."]],
+  ["Steering Linkage", ["In Service: secure.", "Needs Repair: worn boots, light corrosion.", "Out of Service: loose tie rod, pitman arm, or drag link."]],
+  ["Suspension", ["In Service: components secure.", "Needs Repair: worn bushings, minor air leaks.", "Out of Service: broken spring, loose U-bolts, or failed air bag."]],
+  ["Shock Absorbers", ["In Service: secure, functional.", "Needs Repair: minor seepage.", "Out of Service: broken or detached mounts."]],
+  ["Frame", ["In Service: no structural damage.", "Needs Repair: surface rust, cosmetic corrosion.", "Out of Service: cracked rail, broken crossmember, or failed structural repair."]]
+  ]},
+{type:"content", title:"Tire Wear", images:["img28"], bullets:["Steer tires: removed at 6/32nds tread depth","Drive/Trailer tires: removed at 4/32nds tread depth"], body:"Tires at Andrew's Logistics are removed at the tread depths above. (See instructor for additional reference material.)"},
+{type:"content", title:"Tire Regulations (49 CFR 393.75)", intro:"A vehicle cannot be operated on a tire with any of the following conditions.", bullets:[
+  "Ply or belt material exposed through the tread or sidewall.",
+  "Any tread or sidewall separation.",
+  "A flat tire or an audible leak.",
+  "A cut deep enough to expose ply or belt material.",
+  "Front tires on a bus, truck, or truck tractor must have at least 4/32 inch tread depth in every major groove; other tires must have at least 2/32 inch (measurements exclude tie bars, humps, and fillets).",
+  "Buses cannot run regrooved, recapped, or retreaded tires on the front wheels; heavier-rated regrooved tires cannot go on a truck's steer axle either.",
+  "A vehicle cannot exceed a tire's rated speed if it is speed-restricted."]},
+{type:"content", title:"Tire & Rim Inspections", intro:"Before driving, check tires and rims for the following conditions. If any are found, get the truck to a service shop right away — keeping a wear-pattern diagram in the cab helps drivers catch irregular wear or suspension problems early.", bullets:[
+  "Incorrect tire pressure, measured when cold.",
+  "Irregular tread wear.",
+  "Cracking on the tire or wheel.",
+  "Bulges.",
+  "Inadequate tread depth.",
+  "Cuts and punctures, or foreign objects.",
+  "Improper matching of tires and rims.",
+  "Missing or loose lug nuts, or other damage."]},
+{type:"content", title:"Tire Positions & Tread Depth", sections:[
+  ["Tire Positions", [
+    "Steer tires are not interchangeable with other positions.",
+    "Drive tires can also be used as trailer tires.",
+    "Trailer tires can be used as drive tires for short distances (not recommended in winter conditions), as long as size and weight rating fit the load."]],
+  ["Tread Depth", [
+    "Steer tires: minimum 4/32 inch on every major groove — falling below that anywhere results in a citation (the thin shoulder decoupling groove is excluded).",
+    "Drive/Trailer tires: same rule, but with a 2/32 inch minimum.",
+    "Tread depth readings cannot be taken on a wear indicator bar or on debris."]]
+  ]},
+{type:"content", title:"Wear Patterns", images:["img28"], body:"Irregular wear patterns — such as center wear, edge/shoulder wear, cupping, or feathering — point to specific causes like over/under-inflation, misalignment, or suspension wear. Refer to the wear-pattern diagram (BFGoodrich Tire Maintenance & Safety resource) kept in the shop and in trucks for visual reference when diagnosing a wear issue."},
+{type:"content", title:"Signs of a Bad Tire", bullets:[
+  "Persistent air loss: a sign of a puncture, a leaking valve stem, or an improperly seated bead (temperature swings affect pressure too). Steer tires should never be plugged or regrooved.",
+  "Excessive vibration: usually means a bent, unbalanced, misaligned, or internally damaged wheel, or a tire/wheel carrying too much debris — address immediately, never ignore.",
+  "Cracking or cuts: a tire with sidewall cracks or cuts has reached the end of its life and should be replaced immediately.",
+  "Uneven tread wear: can come from incorrect tire pressure, suspension wear, improper hub seating, improper axle placement, or overweight axles — rotation can sometimes fix it if wear indicators haven't been reached yet.",
+  "Excessively worn tread: steer tires need at least 4/32 inch; drive tires may wear to 2/32 inch before replacement is required.",
+  "Bulges or blisters: replace immediately — this kind of sidewall damage is irreparable and should not be delayed."]},
+{type:"content", title:"Engine Preventative Maintenance", images:["img30"], sections:[
+  ["CORE PM CHECKS","Follow oil and filter intervals; verify air intake integrity; inspect for leaks at gaskets, seals, and fittings; review belt-driven accessories for wear, alignment, and tension. Following the PM sheet will take you to each region of the truck, to visually and physically inspect the components on the truck. When you go to the in person training you will get a hands on demonstration of this in action."],
+  ["COOLING SYSTEM RISK","Catch degraded hoses, loose clamps, coolant contamination, and radiator blockage early — small issues can escalate into overheating and catastrophic engine damage."],
+  ["TRENDING & EARLY INDICATORS","Document and trend abnormal oil consumption, fuel dilution, low coolant, or oil pressure events, and derates from neglected sensors to shift from reactive to predictive maintenance."]]},
+{type:"content", title:"Fuel, Exhaust & Emissions", images:["img31","img33","img32"], youtube:["wwe6_0SOZgE"], sections:[
+  ["FUEL SYSTEM INSPECTIONS","Check tanks, lines, fittings, and filters; focus on leak detection and abrasion points. Even small leaks create fire and environmental risk."],
+  ["AFTERTREATMENT & DEF","Understand DOC, DPF, SCR, and DEF systems. Common issues include crystallized DEF, sensor contamination, and exhaust leaks that trigger derates."],
+  ["PREVENTATIVE MAINTENANCE IMPACT","Use visual checks, proper DEF handling, and heat/vibration protection for wiring and connectors. Poor PM drives repeated regens, fuel loss, and downtime."]],
+  body:"(DPF Overview Video — see instructor-provided link.)"},
+{type:"content", title:"Electrical Systems & DOT Lighting", images:["img34","img37","img36","img35"], sections:[
+  ["PREVENTATIVE ELECTRICAL MAINTENANCE","Load-test batteries, verify alternator output, and confirm solid grounds. Secure and protect harness routing to reduce vibration wear and corrosion."],
+  ["COMMON FAILURE POINTS","Watch for corroded connectors, chafed wiring, and water intrusion. Intermittent faults are hardest to diagnose when inspections are skipped."],
+  ["DOT LIGHTING COMPLIANCE","Review headlights, markers, turn signals, brake lights, and reflective conspicuity. Reliable lighting is critical for safe night and adverse-weather operations."]]},
+{type:"test", testNum:2, title:"Test Time! — Section 2"},
+{type:"section", title:"Section 3", sub:"Tanker Systems"},
+{type:"content", title:"HazMat Tanker Design & Containment", images:["img40"], sections:[
+  ["BASIC COMPONENTS & TERMINOLOGY","Shell construction, baffles, manways, and compartment layouts define how product is contained and controlled."],
+  ["CONTAINMENT IS THE PRIMARY GOAL","Corrosion, impact damage, and improper repairs can compromise integrity and trigger hazardous releases."],
+  ["CLEANLINESS & MATERIAL COMPATIBILITY","Residue control and compatible materials are critical for chemical and corrosive cargos under regulatory scrutiny."]]},
+{type:"content", title:"Valves & Leak Prevention", images:["img41"], sections:[
+  ["HIGH-RISK COMPONENTS","Internal/external valves, bottom outlets, emergency shutoffs, gaskets, seals, and caps are common leak sources on HazMat tankers."],
+  ["INSPECTION & OPERATION","Look for wear, corrosion, misalignment, and poor seating; verify compatible materials and correct torque so seals hold under pressure."],
+  ["PREVENTATIVE MAINTENANCE","Routine lubrication, seal replacement, and functional testing prevent minor gasket failures from escalating into reportable spills."]]},
+{type:"content", title:"Pressure & Vacuum Relief Devices", images:["img42"], youtube:["hQVG702nXL4","0N17tEW_WEU","VS6IckF1CM0"], sections:[
+  ["HOW THEY PROTECT THE TANK","Prevent overpressure or shell collapse during loading, unloading, and temperature-driven expansion or contraction."],
+  ["INSPECTION & FAILURE MODES","Check certification intervals, set points, and signs of sticking, corrosion, damage, or obstruction; blocked vents can cause tanker damage or product release."],
+  ["PREVENTION & COMPLIANCE","Keep vents clean and unobstructed, document inspections, and follow HazMat requirements; case studies show small lapses can escalate quickly."]],
+  body:"Watch these videos (instructor-provided links): Rail car implodes – Vacuum; Brenner Tank Implosion Demo; Nitrogen Tanker Venting - Normal Pressure relief."},
+{type:"content", title:"Tanker Inspections", images:["img43"], bullets:[
+  "Key Inspection Intervals (49 CFR 180.407):",
+  "External Visual Inspection (V): Annual (every 1 year)",
+  "Internal Visual Inspection (I): Every 5 years (required for lined tanks or certain hazardous materials)",
+  "Leakage Test (K): Annual (every 1 year)",
+  "Pressure Test (P): Every 5 years (checks integrity of the tank under pressure)",
+  "Thickness Test (T): Every 2 years (measures shell thickness)",
+  "Upper Coupler Inspection (UC): Every 5 years (checks structural integrity of the trailer connection)"]},
+{type:"content", title:"Spill Prevention, Environmental Protection, and Response", images:["img45","img44"], youtube:["W1e28MJB5gI","WHPS2dEO7c0"], body:"Preventative maintenance directly reduces spill risk through secondary containment integrity, drip prevention measures, and early identification of leak paths. Maintenance deficiencies can escalate into reportable environmental incidents; technicians must understand reporting obligations and communicate quickly with safety and operations. Small-volume spills still create financial and reputational harm — prevent with thorough inspections, correct component replacement, and proactive coordination across teams. (See instructor-provided news coverage / case study links.)"},
+{type:"content", title:"Trailer Body Damage — 49 CFR Standards", images:["img46"], bullets:[
+  "(a) Corroded or abraded areas: minimum thickness may not be less than that prescribed in the applicable specification.",
+  "(b) Dents, cuts, digs and gouges: at welds, max allowable depth is 1/2 inch; away from welds, max depth is 1/10 of the dent's greatest dimension, never exceeding 1 inch.",
+  "(b)(2) Minimum thickness beneath a cut, dig, or gouge may not be less than that prescribed in the applicable specification.",
+  "(c) Weld or structural defects: any crack, pinhole, incomplete fusion, or structural defect takes the tank out of HazMat service until repaired.",
+  "(d) Leakage: all sources of leakage must be properly repaired before returning a tank to HazMat service.",
+  "(e) Relief valves: any valve that fails to open/reclose at the prescribed pressure must be repaired or replaced.",
+  "(f) Liner integrity: any defect shown by the test must be properly repaired.",
+  "(g) Pressure test: any tank failing acceptance criteria must be properly repaired."]},
+{type:"test", testNum:3, title:"Test Time! — Section 3 (Final Test)"},
+{type:"final", title:"Wrap-up and Review", body:"We talked about the importance of PMs on DOT compliance, reduction of emergency breakdowns, and ensuring there are no leaks or breaches of containment on tanker trailers. We went out and put hands on checking components for wear, identifying issues, and how to properly document inspections.", contact:"Kelby McAnally — 409-791-7852 — kmcanally@andrewslogistics.com"}
+];
+
+// ---------- STATE ----------
+let current = 0;
+let traineeName = "";
+let firstName = "";
+let lastName = "";
+let scores = {1:null, 2:null, 3:null};
+let pacedReading = true;
+let readSpeed = 1; // multiplier: 1, 1.5, or 2
+let videoCompleted = false;
+let assignedCredential = null;
+let assignedUnit = null;
+let completionReportSent = false;
+
+async function loadState(){
+  try{
+    const r = await window.storage.get('pm-training-state', false);
+    if(r && r.value){
+      const d = JSON.parse(r.value);
+      traineeName = d.traineeName || "";
+      firstName = d.firstName || "";
+      lastName = d.lastName || "";
+      scores = d.scores || scores;
+      pacedReading = d.pacedReading !== undefined ? d.pacedReading : true;
+      readSpeed = d.readSpeed !== undefined ? d.readSpeed : 1;
+      videoCompleted = d.videoCompleted || false;
+      assignedCredential = d.assignedCredential || null;
+      assignedUnit = d.assignedUnit || null;
+      completionReportSent = d.completionReportSent || false;
+    }
+  }catch(e){ /* no saved state yet */ }
+}
+async function saveState(){
+  try{
+    await window.storage.set('pm-training-state', JSON.stringify({traineeName, firstName, lastName, scores, pacedReading, readSpeed, videoCompleted, assignedCredential, assignedUnit, completionReportSent}), false);
+  }catch(e){ console.error('save failed', e); }
+}
+
+// ---------- RENDER ----------
+const app = document.getElementById('app');
+
+function escapeHtml(s){
+  return (s||"").replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;');
+}
+
+function buildMailto(subject, body){
+  return `mailto:${REPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+function sendCompletionReport(){
+  const result = (s)=> s === null || s === undefined ? "Not completed" : `${s}% (${s >= 80 ? "PASSED" : "DID NOT PASS"})`;
+  const subject = `PM Training Course Completion Report - ${traineeName || "Trainee"}`;
+  const body =
+`PM Training Course Completion Report
+
+Trainee: ${traineeName || "(name not entered)"}
+Date: ${new Date().toLocaleString()}
+
+Test 1 Score: ${result(scores[1])}
+Test 2 Score: ${result(scores[2])}
+Test 3 Score: ${result(scores[3])}
+(80% required to pass each section)
+
+This report was generated automatically by the PM Training interactive module upon course completion.`;
+  window.location.href = buildMailto(subject, body);
+}
+
+function sendScheduleRequest(){
+  const subject = `Request to Schedule In-Person PM Training - ${traineeName || "Trainee"}`;
+  const body =
+`Hi Kelby,
+
+I have completed and passed all three section tests for the Preventative Maintenance class (final score: ${scores[3]}%).
+
+Trainee: ${traineeName || "(name not entered)"}
+Test 1 Score: ${scores[1] ?? "N/A"}%
+Test 2 Score: ${scores[2] ?? "N/A"}%
+Test 3 Score: ${scores[3] ?? "N/A"}%
+
+I'd like to schedule my in-person hands-on training. Please let me know available dates/times.
+
+Thank you,
+${traineeName || ""}`;
+  window.location.href = buildMailto(subject, body);
+}
+
+function renderNameGate(){
+  app.innerHTML = `
+    <div class="card name-card">
+      <h2 style="color:var(--navy);margin-top:0;">Welcome</h2>
+      <p>Please enter your name to begin the training. This will be used to identify your test reports. This is the name that will appear on your PM certificate and should be your legal name.</p>
+      <input id="firstNameInput" type="text" placeholder="First name" value="${escapeHtml(firstName)}">
+      <input id="lastNameInput" type="text" placeholder="Last name" value="${escapeHtml(lastName)}">
+      <br>
+      <button class="btn-primary" id="startBtn">Start Training</button>
+    </div>`;
+  document.getElementById('startBtn').onclick = async ()=>{
+    const fn = document.getElementById('firstNameInput').value.trim();
+    const ln = document.getElementById('lastNameInput').value.trim();
+    if(!fn || !ln){ alert('Please enter both your first and last name.'); return; }
+    firstName = fn;
+    lastName = ln;
+    traineeName = `${fn} ${ln}`;
+    if(!assignedCredential){
+      assignedCredential = CREDENTIALS[Math.floor(Math.random() * CREDENTIALS.length)];
+    }
+    if(!assignedUnit){
+      assignedUnit = UNIT_NUMBERS[Math.floor(Math.random() * UNIT_NUMBERS.length)];
+    }
+    await saveState();
+    render();
+  };
+}
+
+function renderSlide(){
+  const s = slides[current];
+  const pct = Math.round((current/(slides.length-1))*100);
+  let inner = `<div class="progress-bar"><div class="progress-fill" style="width:${pct}%"></div></div>`;
+
+  if(s.type === "title"){
+    inner += `<div class="card section-card">
+      <h2>${escapeHtml(s.title)}</h2>
+      <p style="color:var(--ice);font-size:16px;margin-top:10px;">${escapeHtml(s.sub)}</p>
+      <p style="margin-top:20px;font-size:14px;">${escapeHtml(s.body)}</p>
+    </div>`;
+  } else if(s.type === "section"){
+    inner += `<div class="card section-card">
+      <p style="color:var(--ice);letter-spacing:1px;margin:0;">${escapeHtml(s.title)}</p>
+      <h2 style="margin-top:6px;">${escapeHtml(s.sub)}</h2>
+    </div>`;
+  } else if(s.type === "content"){
+    inner += `<div class="card"><div class="slide-title">${escapeHtml(s.title)}</div>`;
+    if(s.intro){
+      inner += `<p class="body-text reveal-item" style="font-style:italic;color:var(--gray);">${escapeHtml(s.intro)}</p>`;
+    }
+    if(s.showCredentials && assignedCredential){
+      inner += `<div class="credential-box">
+        <strong>Your training login for this course:</strong>
+        <div class="cred-row"><span>Name:</span> ${escapeHtml(assignedCredential.name)}</div>
+        <div class="cred-row"><span>Username:</span> ${escapeHtml(assignedCredential.username)}</div>
+        <div class="cred-row"><span>Password:</span> ${escapeHtml(assignedCredential.password)}</div>
+      </div>`;
+    }
+    if(s.showAssignment && assignedUnit){
+      inner += `<div class="credential-box">
+        <strong>Your assigned unit number:</strong>
+        <div class="cred-row"><span>Unit #:</span> ${escapeHtml(assignedUnit)}</div>
+      </div>`;
+    }
+    const galleryHtml = s.images ? `<div class="gallery${s.imageStyle==='banner' ? ' banner' : ''}">` + s.images.map(k=>`<img src="${IMG[k]}" data-full="${IMG[k]}" onclick="openLightbox(this.dataset.full)">`).join('') + `</div>` : '';
+    if(s.images && s.imagePosition !== "bottom"){
+      inner += galleryHtml;
+    }
+    if(s.video){
+      inner += `<video class="class-video" controls src="${s.video}">Your browser does not support embedded video. The video file (${s.video}) must be saved in the same folder as this page.</video>`;
+    }
+    if(s.youtube){
+      inner += s.youtube.map(id=>`<iframe class="yt" src="https://www.youtube.com/embed/${id}" title="Reference video" allowfullscreen></iframe>`).join('');
+    }
+    if(s.sections){
+      s.sections.forEach(sec=>{
+        const body = sec[1];
+        let bodyHtml;
+        if(Array.isArray(body)){
+          bodyHtml = `<ul class="sub-list">` + body.map(item=>{
+            if(item && typeof item === "object" && item.num){
+              return `<li>${item.num}. ${escapeHtml(item.text)}</li>`;
+            }
+            return `<li>${escapeHtml(item)}</li>`;
+          }).join('') + `</ul>`;
+        } else {
+          bodyHtml = `<p class="body-text">${escapeHtml(body)}</p>`;
+        }
+        inner += `<div class="reveal-item"><div class="slide-sub">${escapeHtml(sec[0])}</div>${bodyHtml}</div>`;
+      });
+    }
+    if(s.bullets){
+      inner += `<ul>` + s.bullets.map(b=>`<li class="reveal-item">${escapeHtml(b)}</li>`).join('') + `</ul>`;
+    }
+    if(s.body){
+      if(s.imageWithLastLine && s.images && s.imagePosition === "bottom"){
+        inner += `<div class="reveal-item"><p class="body-text">${escapeHtml(s.body)}</p>${galleryHtml}</div>`;
+      } else {
+        inner += `<p class="body-text reveal-item">${escapeHtml(s.body)}</p>`;
+      }
+    }
+    if(s.images && s.imagePosition === "bottom" && !(s.imageWithLastLine && s.body)){
+      inner += galleryHtml;
+    }
+    inner += `</div>`;
+  } else if(s.type === "steps"){
+    inner += `<div class="card"><div class="slide-title">${escapeHtml(s.title)}</div>`;
+    if(s.videoResource){
+      inner += `<a class="video-resource-link" onclick="openVideoModal('${s.videoResource.file}', '${escapeHtml(s.videoResource.description).replace(/'/g, "&#39;")}')">&#9654; Watch Video<span class="vrl-tooltip">${escapeHtml(s.videoResource.description)}</span></a>`;
+    }
+    if(s.intro){
+      inner += `<p class="body-text reveal-item" style="font-style:italic;color:var(--gray);">${escapeHtml(s.intro)}</p>`;
+    }
+    const renderStepRow = (step, num)=>{
+      const imgKeys = step.images ? step.images : (step.image ? [step.image] : []);
+      const imgsHtml = imgKeys.map(k=>`<img class="step-img" src="${IMG[k]}" data-full="${IMG[k]}" onclick="openLightbox(this.dataset.full)">`).join('');
+      const noteHtml = step.note ? `<div class="step-note">${escapeHtml(step.note)}</div>` : '';
+      return `<div class="step-row reveal-item">
+        <div class="step-num">${num}</div>
+        <div class="step-text">${escapeHtml(step.text)}${noteHtml}</div>
+        ${imgsHtml}
+      </div>`;
+    };
+    s.steps.forEach((step, idx)=>{ inner += renderStepRow(step, idx+1); });
+    if(s.video){
+      const doneAlready = videoCompleted;
+      inner += `<div class="video-locked-note ${doneAlready?'done':''}" id="videoLockNote">${doneAlready ? 'Video watched — you may continue.' : escapeHtml(s.videoCaption || 'You must watch the full video before continuing.')}</div>`;
+      inner += `<video class="class-video" id="gatedVideo" controls controlsList="nofastforward noplaybackrate" disablePictureInPicture src="${s.video}">Your browser does not support embedded video. The video file (${s.video}) must be saved in the same folder as this page.</video>`;
+    }
+    if(s.stepsAfter){
+      const offset = s.steps.length;
+      s.stepsAfter.forEach((step, idx)=>{ inner += renderStepRow(step, offset+idx+1); });
+    }
+    inner += `</div>`;
+  } else if(s.type === "test"){
+    const url = TEST_URLS[s.testNum];
+    const existing = scores[s.testNum];
+    inner += `<div class="card test-box">
+      <h2>${escapeHtml(s.title)}</h2>
+      <p>Scan the QR code, or click the link below, to open the quiz. Complete it, then enter your score below to continue. Your scores are emailed to the instructor once you finish the course.</p>
+      <p><a class="qr-link" href="${url}" target="_blank" rel="noopener">${url}</a></p>
+      <iframe class="form-frame" src="${url}" title="Quiz ${s.testNum}"></iframe>
+      <div class="score-entry">
+        <label for="scoreInput">Enter your quiz score (%):</label>
+        <input type="number" id="scoreInput" min="0" max="100" value="${existing ?? ''}">
+        <button class="btn-primary" id="submitScoreBtn">Submit Score</button>
+        <div id="resultMsg"></div>
+      </div>
+    </div>`;
+  } else if(s.type === "final"){
+    const allPassed = scores[1]>=80 && scores[2]>=80 && scores[3]>=80;
+    inner += `<div class="card final-card">
+      <div class="slide-title" style="text-align:center;">${escapeHtml(s.title)}</div>
+      <p class="body-text">${escapeHtml(s.body)}</p>
+      <p class="body-text"><strong>Contact:</strong> ${escapeHtml(s.contact)}</p>
+      <div class="score-summary">
+        Test 1: ${scores[1] ?? "not taken"}% &nbsp;|&nbsp;
+        Test 2: ${scores[2] ?? "not taken"}% &nbsp;|&nbsp;
+        Test 3: ${scores[3] ?? "not taken"}%
+      </div>
+      <div class="video-locked-note ${completionReportSent ? 'done' : ''}" id="completionNote">${completionReportSent ? 'Your course completion report has been emailed to Kelby.' : 'Click below to email your final course report (all three test scores) to Kelby.'}</div>
+      <button class="schedule-btn" id="completionReportBtn">Email My Course Results</button>
+      ${allPassed ? `<button class="schedule-btn" id="scheduleBtn" style="margin-left:10px;">Request In-Person Training</button>
+        <p style="font-size:13px;color:var(--gray);margin-top:8px;">All three tests passed (80%+). Click above to send a pre-filled scheduling request to Kelby.</p>`
+        : `<div class="gate">All three section tests must be passed at 80% or higher before requesting in-person training scheduling. Go back and complete any remaining or failed tests.</div>`}
+    </div>`;
+  }
+
+  const textHold = ((s.type === "content" || s.type === "steps") && pacedReading);
+  const videoHold = (s.type === "steps" && s.video && s.lockVideo && !videoCompleted);
+  const scoreHold = (s.type === "test" && (scores[s.testNum] === null || scores[s.testNum] === undefined));
+  const holdNext = textHold || videoHold || scoreHold;
+  inner += `<div class="nav">
+    <button class="btn-secondary" id="prevBtn" ${current===0?'disabled':''}>&larr; Previous</button>
+    <span class="slide-counter" id="slideCounter">Slide ${current+1} of ${slides.length}${traineeName ? " — " + escapeHtml(traineeName) : ""}${videoHold ? " — watch the full video to continue" : (textHold ? " — finish reading to continue" : (scoreHold ? " — enter your score to continue" : ""))}</span>
+    <button class="btn-primary" id="nextBtn" ${(current===slides.length-1 || holdNext)?'disabled':''}>Next &rarr;</button>
+  </div>`;
+
+  app.innerHTML = inner;
+
+  if(s.type === "content" || s.type === "steps"){
+    scheduleReveal();
+  }
+  if(s.type === "steps" && s.video){
+    setupGatedVideo(s);
+  }
+
+  document.getElementById('prevBtn').onclick = ()=>{ if(current>0){ current--; render(); } };
+  document.getElementById('nextBtn').onclick = ()=>{ if(current<slides.length-1){ current++; render(); } };
+
+  if(s.type === "test"){
+    document.getElementById('submitScoreBtn').onclick = async ()=>{
+      const val = parseInt(document.getElementById('scoreInput').value, 10);
+      if(isNaN(val) || val<0 || val>100){ alert('Please enter a valid score between 0 and 100.'); return; }
+      scores[s.testNum] = val;
+      await saveState();
+      const msg = document.getElementById('resultMsg');
+      msg.className = 'result-msg ' + (val>=80 ? 'pass' : 'fail');
+      msg.textContent = val>=80
+        ? `Score logged: ${val}%. Passed! Your results will be emailed to the instructor when you complete the course.`
+        : `Score logged: ${val}%. Not a passing score (80% required). You may retake the quiz and resubmit before continuing.`;
+      const nextBtn = document.getElementById('nextBtn');
+      const counter = document.getElementById('slideCounter');
+      if(nextBtn && current < slides.length - 1){ nextBtn.disabled = false; }
+      if(counter){ counter.textContent = `Slide ${current+1} of ${slides.length}${traineeName ? " — " + traineeName : ""}`; }
+    };
+  }
+  if(s.type === "final"){
+    const btn = document.getElementById('scheduleBtn');
+    if(btn){ btn.onclick = ()=> sendScheduleRequest(); }
+    const reportBtn = document.getElementById('completionReportBtn');
+    if(reportBtn){
+      reportBtn.onclick = async ()=>{
+        completionReportSent = true;
+        await saveState();
+        sendCompletionReport();
+        const note = document.getElementById('completionNote');
+        if(note){
+          note.textContent = 'Your course completion report has been emailed to Kelby.';
+          note.classList.add('done');
+        }
+      };
+    }
+  }
+}
+
+function render(){
+  if(!traineeName){ renderNameGate(); return; }
+  if(!assignedCredential){ assignedCredential = CREDENTIALS[Math.floor(Math.random() * CREDENTIALS.length)]; saveState(); }
+  if(!assignedUnit){ assignedUnit = UNIT_NUMBERS[Math.floor(Math.random() * UNIT_NUMBERS.length)]; saveState(); }
+  renderSlide();
+}
+
+function scheduleReveal(){
+  const items = app.querySelectorAll('.reveal-item');
+  const nextBtn = document.getElementById('nextBtn');
+  const counter = document.getElementById('slideCounter');
+  const s = slides[current];
+  const stillVideoLocked = (s.type === "steps" && s.video && s.lockVideo && !videoCompleted);
+  const finishHold = ()=>{
+    if(stillVideoLocked){
+      if(counter){ counter.textContent = `Slide ${current+1} of ${slides.length}${traineeName ? " — " + traineeName : ""} — watch the full video to continue`; }
+      return;
+    }
+    if(nextBtn && current < slides.length - 1){ nextBtn.disabled = false; }
+    if(counter){ counter.textContent = `Slide ${current+1} of ${slides.length}${traineeName ? " — " + traineeName : ""}`; }
+  };
+  if(!pacedReading){
+    items.forEach(el=> el.classList.add('visible'));
+    return;
+  }
+  if(items.length === 0){
+    finishHold();
+    return;
+  }
+  const WPM = 200 * readSpeed; // average adult reading speed, scaled by chosen speed
+  let elapsed = 0;
+  items.forEach((el, idx)=>{
+    const words = (el.textContent || "").trim().split(/\s+/).filter(Boolean).length;
+    const readMs = Math.max(600, Math.round((words / WPM) * 60000));
+    setTimeout(()=>{
+      el.classList.add('visible');
+      if(idx === items.length - 1){ finishHold(); }
+    }, elapsed);
+    elapsed += readMs;
+  });
+}
+
+document.addEventListener('DOMContentLoaded', ()=>{
+  const toggle = document.getElementById('paceToggle');
+  if(toggle){
+    toggle.checked = pacedReading;
+    toggle.addEventListener('change', async ()=>{
+      pacedReading = toggle.checked;
+      await saveState();
+      if(traineeName){ renderSlide(); }
+    });
+  }
+  const SPEED_STEPS = [1, 1.5, 2];
+  const slider = document.getElementById('speedSlider');
+  const speedLabel = document.getElementById('speedLabel');
+  if(slider){
+    slider.value = String(SPEED_STEPS.indexOf(readSpeed) >= 0 ? SPEED_STEPS.indexOf(readSpeed) : 0);
+    if(speedLabel){ speedLabel.textContent = readSpeed + "x"; }
+    slider.addEventListener('input', async ()=>{
+      readSpeed = SPEED_STEPS[parseInt(slider.value, 10)];
+      if(speedLabel){ speedLabel.textContent = readSpeed + "x"; }
+      await saveState();
+      if(traineeName){ renderSlide(); }
+    });
+  }
+});
+
+function setupGatedVideo(s){
+  const video = document.getElementById('gatedVideo');
+  if(!video) return;
+  const nextBtn = document.getElementById('nextBtn');
+  const counter = document.getElementById('slideCounter');
+  const note = document.getElementById('videoLockNote');
+
+  if(videoCompleted){
+    return; // already watched in a prior session; nav buttons already unlocked by render
+  }
+
+  let maxWatched = 0;
+
+  video.addEventListener('timeupdate', ()=>{
+    if(video.currentTime > maxWatched + 0.5){
+      // user is somehow ahead of watched progress (shouldn't happen, but guard anyway)
+      video.currentTime = maxWatched;
+    } else {
+      maxWatched = Math.max(maxWatched, video.currentTime);
+    }
+  });
+
+  video.addEventListener('seeking', ()=>{
+    if(video.currentTime > maxWatched + 0.5){
+      video.currentTime = maxWatched;
+    }
+  });
+
+  video.addEventListener('ratechange', ()=>{
+    if(video.playbackRate !== 1){ video.playbackRate = 1; }
+  });
+
+  video.addEventListener('ended', async ()=>{
+    videoCompleted = true;
+    await saveState();
+    if(note){
+      note.textContent = 'Video watched — you may continue.';
+      note.classList.add('done');
+    }
+    // only unlock Next if text reveal (if any) has also finished
+    const textHold = ((s.type === "content" || s.type === "steps") && pacedReading && app.querySelectorAll('.reveal-item:not(.visible)').length > 0);
+    if(nextBtn && !textHold && current < slides.length - 1){ nextBtn.disabled = false; }
+    if(counter){ counter.textContent = `Slide ${current+1} of ${slides.length}${traineeName ? " — " + traineeName : ""}`; }
+  });
+}
+
+function openVideoModal(file, description){
+  const overlay = document.getElementById('videoModalOverlay');
+  const player = document.getElementById('videoModalPlayer');
+  const desc = document.getElementById('videoModalDesc');
+  desc.textContent = description;
+  player.src = file;
+  overlay.classList.add('open');
+}
+function closeVideoModal(){
+  const overlay = document.getElementById('videoModalOverlay');
+  const player = document.getElementById('videoModalPlayer');
+  player.pause();
+  player.removeAttribute('src');
+  player.load();
+  overlay.classList.remove('open');
+}
+document.addEventListener('DOMContentLoaded', ()=>{
+  const closeBtn = document.getElementById('videoModalClose');
+  const overlay = document.getElementById('videoModalOverlay');
+  if(closeBtn){ closeBtn.addEventListener('click', closeVideoModal); }
+  if(overlay){
+    overlay.addEventListener('click', (e)=>{
+      if(e.target === overlay){ closeVideoModal(); }
+    });
+  }
+});
+
+function openLightbox(src){
+  document.getElementById('lightboxImg').src = src;
+  document.getElementById('lightbox').classList.add('open');
+}
+document.addEventListener('DOMContentLoaded', ()=>{
+  document.getElementById('lightbox').addEventListener('click', ()=>{
+    document.getElementById('lightbox').classList.remove('open');
+  });
+});
+
+(async function init(){
+  await loadState();
+  const toggle = document.getElementById('paceToggle');
+  if(toggle){ toggle.checked = pacedReading; }
+  const SPEED_STEPS = [1, 1.5, 2];
+  const slider = document.getElementById('speedSlider');
+  const speedLabel = document.getElementById('speedLabel');
+  if(slider){ slider.value = String(SPEED_STEPS.indexOf(readSpeed) >= 0 ? SPEED_STEPS.indexOf(readSpeed) : 0); }
+  if(speedLabel){ speedLabel.textContent = readSpeed + "x"; }
+  render();
+})();
+</script>
+</body>
+</html>
