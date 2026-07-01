@@ -1,0 +1,99 @@
+{
+  "name": "KELBY MCANALLY",
+  "testNum": 1,
+  "score": 100,
+  "passed": true,
+  "timestamp": "2026-07-01T20:36:44.532Z",
+  "answers": [
+    {
+      "question": "Under 49 CFR 396.3(a)(2), how often must pushout windows, emergency doors, and emergency door marking lights on buses be inspected?",
+      "selected": "At least every 90 days",
+      "correctAnswer": "At least every 90 days",
+      "isCorrect": true
+    },
+    {
+      "question": "What is described as the primary purpose of this PM training course?",
+      "selected": "Reduce failures, product releases, and regulatory violations through consistent, compliant, well-documented preventative maintenance",
+      "correctAnswer": "Reduce failures, product releases, and regulatory violations through consistent, compliant, well-documented preventative maintenance",
+      "isCorrect": true
+    },
+    {
+      "question": "What is Fleetrock used for at Andrew's Logistics?",
+      "selected": "The system of record for PM sheets, EDVIR repairs, and DOT compliance records",
+      "correctAnswer": "The system of record for PM sheets, EDVIR repairs, and DOT compliance records",
+      "isCorrect": true
+    },
+    {
+      "question": "Why do we perform PMs in the first place?",
+      "selected": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "correctAnswer": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "isCorrect": true
+    },
+    {
+      "question": "Which 49 CFR Parts does the course apply in real inspection scenarios?",
+      "selected": "Parts 393, 396, and 180",
+      "correctAnswer": "Parts 393, 396, and 180",
+      "isCorrect": true
+    },
+    {
+      "question": "Roughly how long should a proficient technician expect a B-PM to take?",
+      "selected": "About 2 hours",
+      "correctAnswer": "About 2 hours",
+      "isCorrect": true
+    },
+    {
+      "question": "Why does the course say consistent, documented PMs matter for audit readiness?",
+      "selected": "They ensure the company is prepared if a DOT audit follows an incident",
+      "correctAnswer": "They ensure the company is prepared if a DOT audit follows an incident",
+      "isCorrect": true
+    },
+    {
+      "question": "Which regulation covers systematic inspection, repair, and maintenance of commercial motor vehicles?",
+      "selected": "49 CFR Part 396",
+      "correctAnswer": "49 CFR Part 396",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a)(1), what condition must parts like the frame, suspension, axles, wheels, and steering be in at all times?",
+      "selected": "Safe and in proper operating condition",
+      "correctAnswer": "Safe and in proper operating condition",
+      "isCorrect": true
+    },
+    {
+      "question": "Which regulation covers vehicle components and accessories such as steering, brakes, tires, and lights?",
+      "selected": "49 CFR Part 393",
+      "correctAnswer": "49 CFR Part 393",
+      "isCorrect": true
+    },
+    {
+      "question": "Why is Fleetrock's portability (accessible from any device) useful?",
+      "selected": "You can keep working on the same inspection from another device if your tablet battery dies",
+      "correctAnswer": "You can keep working on the same inspection from another device if your tablet battery dies",
+      "isCorrect": true
+    },
+    {
+      "question": "After the banner with the \"+ Add Task\" button appears on the repair order, what is the next step?",
+      "selected": "Click start repair order, enter an expected finish date and time, then clock on the task",
+      "correctAnswer": "Click start repair order, enter an expected finish date and time, then clock on the task",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a), who is responsible for systematically inspecting, repairing, and maintaining every motor vehicle the carrier controls?",
+      "selected": "The motor carrier",
+      "correctAnswer": "The motor carrier",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following is one of the course's Terminal Learning Objectives?",
+      "selected": "Correctly classify defects as Acceptable, Needs Repair, or Out-of-Service",
+      "correctAnswer": "Correctly classify defects as Acceptable, Needs Repair, or Out-of-Service",
+      "isCorrect": true
+    },
+    {
+      "question": "Roughly how long should a proficient technician expect an A-PM to take?",
+      "selected": "About 1.5 hours",
+      "correctAnswer": "About 1.5 hours",
+      "isCorrect": true
+    }
+  ]
+}
