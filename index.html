@@ -247,7 +247,27 @@ const QUIZZES = {
     { q:"Why is Fleetrock's portability (accessible from any device) useful?", options:["It isn't useful", "You can keep working on the same inspection from another device if your tablet battery dies", "It removes the need for documentation", "It automatically completes PM sheets for you"], answer:1 },
     { q:"In Fleetrock, what is the first step immediately after receiving a unit you are assigned to PM?", options:["Attach parts", "Create a Repair Order", "Turn off the task timer", "Email the customer"], answer:1 },
     { q:"After creating a Repair Order in Fleetrock, what appears at the top of the RO for the PM you're conducting?", options:["A banner with a \"+ Add Task\" button", "An automatic email to the shop foreman", "A pop-up requesting manager approval", "Nothing — you must search for the PM manually"], answer:0 },
-    { q:"Why do we perform PMs in the first place?", options:["To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals", "Only to satisfy paperwork requirements", "To increase mileage", "PMs are optional and rarely performed"], answer:0 }
+    { q:"Why do we perform PMs in the first place?", options:["To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals", "Only to satisfy paperwork requirements", "To increase mileage", "PMs are optional and rarely performed"], answer:0 },
+    { q:"What is described as the primary purpose of this PM training course?", options:["To fill out extra paperwork", "Reduce failures, product releases, and regulatory violations through consistent, compliant, well-documented preventative maintenance", "To reduce the number of technicians needed", "To replace DOT inspections entirely"], answer:1 },
+    { q:"What does the course's scope cover?", options:["Only tanker systems", "Only power unit systems like engine and brakes", "Power unit systems (engine, brakes, suspension, electrical) plus tanker systems (valves, piping, PRDs, spill prevention)", "Only driver payroll and scheduling"], answer:2 },
+    { q:"Which topics receive extra safety emphasis in this course?", options:["Marketing and sales training", "PPE, lockout/tagout, and hazard awareness", "Fuel purchasing procedures", "Customer service scripts"], answer:1 },
+    { q:"Which of the following is one of the course's Terminal Learning Objectives?", options:["Learn to drive a commercial truck", "Correctly classify defects as Acceptable, Needs Repair, or Out-of-Service", "Design new tanker trailers", "Set fleet fuel prices"], answer:1 },
+    { q:"Which 49 CFR Parts does the course apply in real inspection scenarios?", options:["Parts 100, 200, and 300", "Parts 393, 396, and 180", "Parts 40 and 49 only", "Part 396 only"], answer:1 },
+    { q:"Which regulation covers cargo tank inspections and testing?", options:["49 CFR Part 393", "49 CFR Part 396", "49 CFR Part 180", "49 CFR Part 49"], answer:2 },
+    { q:"Which regulation covers vehicle components and accessories such as steering, brakes, tires, and lights?", options:["49 CFR Part 180", "49 CFR Part 393", "49 CFR Part 396", "49 CFR Part 178"], answer:1 },
+    { q:"Which regulation covers systematic inspection, repair, and maintenance of commercial motor vehicles?", options:["49 CFR Part 393", "49 CFR Part 180", "49 CFR Part 396", "49 CFR Part 178"], answer:2 },
+    { q:"Which DOT focus areas can quickly trigger out-of-service violations, per the course overview?", options:["Paint color and interior cleanliness", "Brakes, lights, tires, and steering", "Radio station presets", "Driver's lunch schedule"], answer:1 },
+    { q:"What does the course say non-compliance risks?", options:["Nothing significant", "Fines, CSA impacts, out-of-service orders, and civil liability", "Only a verbal warning", "A temporary pay raise"], answer:1 },
+    { q:"Under 49 CFR 396.3(a)(1), what condition must parts like the frame, suspension, axles, wheels, and steering be in at all times?", options:["New condition only", "Safe and in proper operating condition", "Freshly painted", "Under warranty"], answer:1 },
+    { q:"Under 49 CFR 396.3(a)(2), how often must pushout windows, emergency doors, and emergency door marking lights on buses be inspected?", options:["Every 30 days", "At least every 90 days", "Once a year", "Only before an audit"], answer:1 },
+    { q:"Under 49 CFR 396.3(b), what must a motor carrier's required records for each vehicle include?", options:["Only the purchase price", "Vehicle ID, due dates, inspection/repair history, and bus door tests", "Only the driver's name", "Only the fuel mileage log"], answer:1 },
+    { q:"Per the Maintenance Documentation section, who is responsible for keeping trucks in compliance with the 49 CFR?", options:["Only the drivers", "Only the Maintenance team", "Both drivers and the Maintenance team", "Only the DOT auditor"], answer:2 },
+    { q:"What is a DVIR, as described in the Maintenance Documentation section?", options:["A type of tire rating", "Where the driver communicates dash lights, issues, or damage/defects to the maintenance team", "A Fleetrock login credential", "A federal inspection sticker"], answer:1 },
+    { q:"Why does the course say consistent, documented PMs matter for audit readiness?", options:["They don't matter for audits", "They ensure the company is prepared if a DOT audit follows an incident", "They are only useful for payroll", "They replace the need for PMs entirely"], answer:1 },
+    { q:"What does the course describe as the final, essential component of a complete preventative maintenance program?", options:["A clean tool box", "Accurate documentation", "A fast technician", "A large parts inventory"], answer:1 },
+    { q:"How does proper documentation affect the overall cost of running the fleet, per the course?", options:["It has no effect on cost", "It increases cost by requiring more paperwork staff", "It lowers cost by tracking defects, trends, and corrective actions", "It only affects cost during an audit"], answer:2 },
+    { q:"Roughly how long should a proficient technician expect an A-PM to take?", options:["30 minutes", "About 1.5 hours", "About 2 hours", "8 hours"], answer:1 },
+    { q:"After the banner with the \"+ Add Task\" button appears on the repair order, what is the next step?", options:["Immediately finish the repair order", "Click start repair order, enter an expected finish date and time, then clock on the task", "Delete the repair order and start over", "Email the customer for approval"], answer:1 }
   ],
   2: [
     { q:"What is the purpose of Lockout/Tagout (LO/TO)?", options:["To speed up repairs", "To keep a hazard de-energized, such as removing a negative battery cable and locking/tagging access", "To label parts for inventory", "It only applies to electrical contractors"], answer:1 },
@@ -259,7 +279,27 @@ const QUIZZES = {
     { q:"What condition to a leaf spring makes a vehicle Out of Service?", options:["Light surface corrosion", "A broken or shifted leaf spring affecting axle location, or a missing leaf in a main spring", "Minor ride height variation", "Worn bushings only"], answer:1 },
     { q:"At what tread depth are steer tires removed at Andrew's Logistics (company minimum, not just the legal floor)?", options:["2/32 inch", "4/32 inch", "6/32 inch", "8/32 inch"], answer:2 },
     { q:"Under 49 CFR 393.75, what is the minimum tread depth required in every major groove for front tires on a truck tractor?", options:["2/32 inch", "4/32 inch", "6/32 inch", "No minimum specified"], answer:1 },
-    { q:"Bulges or blisters on a tire sidewall should be handled how?", options:["Monitored over the next few PM cycles", "Replaced immediately — this damage is irreparable", "Rotated to a less critical position", "Ignored if the tire still holds air"], answer:1 }
+    { q:"Bulges or blisters on a tire sidewall should be handled how?", options:["Monitored over the next few PM cycles", "Replaced immediately — this damage is irreparable", "Rotated to a less critical position", "Ignored if the tire still holds air"], answer:1 },
+    { q:"What is the purpose of wheel chocks?", options:["To measure tire pressure", "Wedge-shaped devices that prevent truck wheels from rolling", "To clean brake dust", "To balance the wheels"], answer:1 },
+    { q:"Why should jacks never be used alone when working under a truck?", options:["Jacks are too slow", "Jack stands should always be used as well, since they mechanically lock in place so the truck cannot fall", "Jacks are only for tire changes", "It's fine to use jacks alone if the truck is empty"], answer:1 },
+    { q:"What should you do if a safety item has an issue during a PM, per the course?", options:["Continue working and note it later", "Stop, assess, and speak with the Foreman before proceeding", "Ignore it if it seems minor", "Only report it at the end of the shift"], answer:1 },
+    { q:"When the air governor cuts in/out within manufacturer specifications and there are no audible leaks, how should the air system be classified?", options:["Out of Service", "Needs Repair", "In Service", "Unclassified"], answer:2 },
+    { q:"Which of the following classifies the air system as Needs Repair?", options:["Audible leaks affecting brake performance", "Minor fitting seepage or slow air build", "Low-air warning system inoperative", "Unable to maintain operating pressure"], answer:1 },
+    { q:"Which of the following classifies the air system as Out of Service?", options:["Reservoirs properly drained", "Minor fitting seepage", "Low-air warning system inoperative", "Air pressure builds normally"], answer:2 },
+    { q:"Which condition takes a brake chamber Out of Service?", options:["Slight binding with beginning corrosion", "Damaged rubber dust boots", "An audible chamber leak or a loose chamber", "Repeated manual adjustment noted for diagnosis"], answer:2 },
+    { q:"What condition classifies air disc brake pads as In Service?", options:["Uneven wear with pad dragging", "Even pad wear with friction material above manufacturer minimum", "Less than 1/8 inch friction material remaining", "Loose pad with oil contamination"], answer:1 },
+    { q:"Which brake drum condition takes a vehicle Out of Service?", options:["A smooth braking surface", "Minor bluing only", "Cracked, broken, or missing sections, or worn beyond the maximum inside diameter", "Slight heat discoloration"], answer:2 },
+    { q:"Which rotor condition takes a vehicle Out of Service?", options:["A smooth surface with no significant cracks", "Below minimum thickness or through-cracks", "Above minimum thickness", "Normal heat cycling marks"], answer:1 },
+    { q:"Which of the following is listed as a sign of brake fatigue?", options:["A fresh coat of paint on the brake drum", "Blue or purple discoloration, or a burnt brake odor", "New brake pads installed", "A recently replaced tire"], answer:1 },
+    { q:"Per FMCSA Appendix A, which of the following automatically fails a periodic inspection?", options:["Slightly worn brake pads within spec", "Missing braking action on any required wheel", "A recently adjusted slack adjuster", "Clean brake drums"], answer:1 },
+    { q:"What steering system condition is classified as In Service?", options:["Loose pitman arm or tie rod end", "No loose components, smooth operation, no binding, no fluid leaks", "Excessive steering wheel lash", "Broken steering component"], answer:1 },
+    { q:"Which frame condition is classified as Out of Service?", options:["Surface rust or minor corrosion", "Loose accessory brackets (non-structural)", "A cracked frame rail or broken frame member", "Paint cracking around welds"], answer:2 },
+    { q:"Which wheel bearing/kingpin condition is classified as Out of Service?", options:["Minor grease seepage", "Slight measurable play within OEM limits", "Excessive kingpin movement or loose wheel bearings", "Aging seals with proper lubrication"], answer:2 },
+    { q:"Which of the following is a steering/suspension fatigue warning sign?", options:["A freshly greased fitting", "Elongated bolt holes or metal fatigue cracks", "New tires with full tread", "A recently replaced shock absorber"], answer:1 },
+    { q:"Per FMCSA rejection items for steering, suspension, and frame, which defect requires a vehicle be rejected?", options:["Minor ride height variation", "Cracked or broken steering components, or missing steering fasteners", "Light corrosion on steering linkage", "Worn dust boots"], answer:1 },
+    { q:"Under 49 CFR 393.75, which of the following makes a vehicle unsafe to operate on its tires?", options:["A tire with less than full tread but above the legal minimum", "Ply or belt material exposed through the tread or sidewall", "A recently rotated tire", "A tire with even wear"], answer:1 },
+    { q:"What should you check during a tire & rim inspection before driving?", options:["Only the tire brand", "Incorrect tire pressure (measured cold), irregular tread wear, cracking, and bulges", "Only the rim color", "Only the DOT sticker date"], answer:1 },
+    { q:"According to Tire Positions, can steer tires be used in other positions on the vehicle?", options:["Yes, freely", "No, steer tires are not interchangeable with other positions", "Only in winter conditions", "Only on the trailer axle"], answer:1 }
   ],
   3: [
     { q:"What is the primary goal when inspecting HazMat tanker shell construction, baffles, manways, and compartments?", options:["Improving fuel economy", "Containment — preventing hazardous release", "Reducing tare weight", "Improving paint appearance"], answer:1 },
@@ -295,6 +335,20 @@ const QUIZZES = {
   ]
 };
 const QUIZ_PASS_THRESHOLD = 0.8; // 80%
+const QUIZ_QUESTIONS_PER_TEST = 15; // randomly drawn from each 30-question pool
+
+function pickRandomQuestions(pool, n){
+  const shuffled = pool.slice();
+  for(let i = shuffled.length - 1; i > 0; i--){
+    const j = Math.floor(Math.random() * (i + 1));
+    [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+  }
+  return shuffled.slice(0, n);
+}
+
+// Holds the randomly-selected 15-question subset currently in play for each test,
+// so the same questions shown to the trainee are the ones graded on submit.
+let activeQuizSets = {1:null, 2:null, 3:null};
 
 const slides = [
 {type:"title", title:"PREVENTATIVE MAINTENANCE FOR ANDREW'S LOGISTICS", sub:"Heavy-Duty Trucks & Tanker Trailers", body:"This training covers 49 CFR 396, safety-critical systems, and hazmat tanker controls."},
@@ -859,7 +913,10 @@ function renderSlide(){
     }
     inner += `</div>`;
   } else if(s.type === "test"){
-    const qData = QUIZZES[s.testNum];
+    if(!activeQuizSets[s.testNum]){
+      activeQuizSets[s.testNum] = pickRandomQuestions(QUIZZES[s.testNum], QUIZ_QUESTIONS_PER_TEST);
+    }
+    const qData = activeQuizSets[s.testNum];
     const existingScore = scores[s.testNum];
     const passed = existingScore !== null && existingScore !== undefined && existingScore >= 80;
     inner += `<div class="card test-box">
@@ -923,7 +980,7 @@ function renderSlide(){
     const submitBtn = document.getElementById('submitQuizBtn');
     if(submitBtn){
       submitBtn.onclick = async ()=>{
-        const qData = QUIZZES[s.testNum];
+        const qData = activeQuizSets[s.testNum];
         let allAnswered = true;
         let correct = 0;
         const answerLog = [];
@@ -980,7 +1037,7 @@ function renderSlide(){
           retakeBtn.className = 'btn-secondary';
           retakeBtn.style.marginTop = '10px';
           retakeBtn.textContent = 'Retake Quiz';
-          retakeBtn.onclick = ()=>{ scores[s.testNum] = null; renderSlide(); };
+          retakeBtn.onclick = ()=>{ scores[s.testNum] = null; activeQuizSets[s.testNum] = null; renderSlide(); };
           msg.after(retakeBtn);
         }
       };
