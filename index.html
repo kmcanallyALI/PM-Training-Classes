@@ -114,11 +114,6 @@
 <script>
 const IMG = {"img3": "images/img3.jpg", "img4": "images/img4.jpg", "img6": "images/img6.jpg", "img7": "images/img7.jpg", "img8": "images/img8.jpg", "img9": "images/img9.jpg", "img10": "images/img10.jpg", "img12": "images/img12.jpg", "img11": "images/img11.jpg", "img13": "images/img13.jpg", "img14": "images/img14.jpg", "img19": "images/img19.jpg", "img20": "images/img20.jpg", "img22": "images/img22.jpg", "img21": "images/img21.jpg", "img23": "images/img23.jpg", "img27": "images/img27.jpg", "img26": "images/img26.jpg", "img25": "images/img25.jpg", "img24": "images/img24.jpg", "img28": "images/img28.jpg", "img30": "images/img30.jpg", "img31": "images/img31.jpg", "img33": "images/img33.jpg", "img32": "images/img32.jpg", "img34": "images/img34.jpg", "img37": "images/img37.jpg", "img36": "images/img36.jpg", "img35": "images/img35.jpg", "img40": "images/img40.jpg", "img41": "images/img41.jpg", "img42": "images/img42.jpg", "img43": "images/img43.jpg", "img45": "images/img45.jpg", "img44": "images/img44.jpg", "img46": "images/img46.jpg", "img_step6": "images/img_step6.jpg", "img_step8": "images/img_step8.jpg", "img_step7a": "images/img_step7a.jpg", "img_step7b": "images/img_step7b.jpg", "img_step9": "images/img_step9.jpg", "img_step10": "images/img_step10.jpg"};
 // ---------- DATA ----------
-const TEST_URLS = {
-  1: "https://forms.cloud.microsoft/r/jsXjuNGr6j",
-  2: "https://forms.cloud.microsoft/r/yEwRmifaxC",
-  3: "https://forms.cloud.microsoft/r/BD1x1Wjs0r"
-};
 const REPORT_EMAIL = "kmcanally@andrewslogistics.com";
 
 const CREDENTIALS = [
@@ -130,6 +125,47 @@ const CREDENTIALS = [
 ];
 
 const UNIT_NUMBERS = ["1111","2222","3333","4444","5555"];
+
+// ---------- QUIZ QUESTION BANKS (client-side graded, replaces manual score entry) ----------
+const QUIZZES = {
+  1: [
+    { q:"Which federal agency's regulations establish the preventative maintenance inspection requirements covered in this course?", options:["OSHA","FMCSA","EPA","The state trooper's office"], answer:1 },
+    { q:"Under 49 CFR 396.3(a), who is responsible for systematically inspecting, repairing, and maintaining every motor vehicle the carrier controls?", options:["The driver only","The motor carrier","The DOT inspector","The tire manufacturer"], answer:1 },
+    { q:"Per 396.3(c), how long must maintenance records generally be kept where the vehicle is housed or maintained?", options:["30 days","6 months","1 year (or 6 months after the vehicle leaves the carrier's control)","10 years"], answer:2 },
+    { q:"What is Fleetrock used for at Andrew's Logistics?", options:["Fuel purchasing","The system of record for PM sheets, EDVIR repairs, and DOT compliance records","Driver payroll","Route dispatching only"], answer:1 },
+    { q:"On a PM sheet (a legal document), what tone/language should you use when describing an issue?", options:["Highly technical mechanic jargon","Layman's terms, since the reader may not have a mechanic background","No description is needed", "Abbreviations only"], answer:1 },
+    { q:"Roughly how long should a proficient technician expect a B-PM to take?", options:["30 minutes","About 2 hours","8 hours","It varies with no general guideline"], answer:1 },
+    { q:"Why is Fleetrock's portability (accessible from any device) useful?", options:["It isn't useful", "You can keep working on the same inspection from another device if your tablet battery dies", "It removes the need for documentation", "It automatically completes PM sheets for you"], answer:1 },
+    { q:"In Fleetrock, what is the first step immediately after receiving a unit you are assigned to PM?", options:["Attach parts", "Create a Repair Order", "Turn off the task timer", "Email the customer"], answer:1 },
+    { q:"What should you do with your assigned Fleetrock login and unit number during the hands-on practice slide?", options:["Ignore them and use your personal account", "Use them to log in and create the repair order for that unit", "Share them with another trainee", "They are not needed for this course"], answer:1 },
+    { q:"Why do we perform PMs in the first place?", options:["To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals", "Only to satisfy paperwork requirements", "To increase mileage", "PMs are optional and rarely performed"], answer:0 }
+  ],
+  2: [
+    { q:"What is the purpose of Lockout/Tagout (LO/TO)?", options:["To speed up repairs", "To keep a hazard de-energized, such as removing a negative battery cable and locking/tagging access", "To label parts for inventory", "It only applies to electrical contractors"], answer:1 },
+    { q:"Per FMCSA out-of-service criteria, what pushrod stroke condition takes a brake out of service?", options:["Any stroke at all", "Pushrod stroke beyond the legal adjustment limit", "Stroke under 1 inch", "Only if the pushrod is painted"], answer:1 },
+    { q:"What is the FMCSA minimum brake lining thickness for drum brake shoes on steering, drive, and trailer axles before it's Out of Service?", options:["1/2 inch", "1/4 inch", "1/8 inch", "There is no minimum"], answer:1 },
+    { q:"What is the FMCSA minimum friction material thickness for air disc brake pads before Out of Service?", options:["1/4 inch", "1/8 inch", "1 inch", "There is no minimum"], answer:1 },
+    { q:"Repeated need to manually adjust an automatic slack adjuster is best understood as:", options:["Completely normal and not worth noting", "A symptom indicating an underlying issue that needs diagnosis", "A sign the brakes are perfectly adjusted", "Something only relevant to steer axles"], answer:1 },
+    { q:"Which of the following is an FMCSA automatic Out-of-Service item for steering (49 CFR 396)?", options:["Minor surface rust on the steering linkage", "Loose steering gear or linkage, or missing steering fasteners", "Slight steering wheel play within OEM spec", "A recently replaced dust boot"], answer:1 },
+    { q:"What condition to a leaf spring makes a vehicle Out of Service?", options:["Light surface corrosion", "A broken or shifted leaf spring affecting axle location, or a missing leaf in a main spring", "Minor ride height variation", "Worn bushings only"], answer:1 },
+    { q:"At what tread depth are steer tires removed at Andrew's Logistics (company minimum, not just the legal floor)?", options:["2/32 inch", "4/32 inch", "6/32 inch", "8/32 inch"], answer:2 },
+    { q:"Under 49 CFR 393.75, what is the minimum tread depth required in every major groove for front tires on a truck tractor?", options:["2/32 inch", "4/32 inch", "6/32 inch", "No minimum specified"], answer:1 },
+    { q:"Bulges or blisters on a tire sidewall should be handled how?", options:["Monitored over the next few PM cycles", "Replaced immediately — this damage is irreparable", "Rotated to a less critical position", "Ignored if the tire still holds air"], answer:1 }
+  ],
+  3: [
+    { q:"What is the primary goal when inspecting HazMat tanker shell construction, baffles, manways, and compartments?", options:["Improving fuel economy", "Containment — preventing hazardous release", "Reducing tare weight", "Improving paint appearance"], answer:1 },
+    { q:"Which components are described as common high-risk leak sources on HazMat tankers?", options:["Headlights and marker lights", "Internal/external valves, bottom outlets, emergency shutoffs, gaskets, seals, and caps", "The steering wheel", "The DEF tank cap only"], answer:1 },
+    { q:"What is the function of Pressure & Vacuum Relief Devices (PRDs) on a tanker?", options:["To improve tire wear", "To prevent overpressure or shell collapse during loading, unloading, or temperature-driven expansion/contraction", "To control cabin temperature", "They have no safety function"], answer:1 },
+    { q:"Per 49 CFR 180.407, how often is the External Visual Inspection (V) required on a cargo tank?", options:["Every 5 years", "Annually (every 1 year)", "Every 2 years", "Only after an incident"], answer:1 },
+    { q:"Per 49 CFR 180.407, how often is the Pressure Test (P) required?", options:["Annually", "Every 2 years", "Every 5 years", "Never, unless requested"], answer:2 },
+    { q:"Per 49 CFR 180.407, how often is the Thickness Test (T) required?", options:["Every 2 years", "Every 5 years", "Annually", "Every 10 years"], answer:0 },
+    { q:"Why does preventative maintenance matter for spill prevention?", options:["It doesn't relate to spill prevention", "It reduces spill risk through secondary containment integrity, drip prevention, and early leak-path identification", "Only emergency response matters, not PM", "Spill prevention is solely the driver's responsibility"], answer:1 },
+    { q:"Under 49 CFR trailer body damage standards, what is the maximum allowable dent/gouge depth at a weld?", options:["1/10 inch", "1/2 inch", "1 full inch", "No limit at welds"], answer:1 },
+    { q:"What must happen if a weld or structural defect (crack, pinhole, incomplete fusion) is found on a cargo tank?", options:["Note it and continue using the tank", "The tank must be taken out of HazMat service until repaired", "Only report it if it's leaking", "Structural defects are acceptable if minor"], answer:1 },
+    { q:"What is required before returning a tank to HazMat service if any source of leakage is found?", options:["Nothing, as long as the leak is small", "All sources of leakage must be properly repaired", "Only document it for the next audit", "Leakage only matters for pressure tests"], answer:1 }
+  ]
+};
+const QUIZ_PASS_THRESHOLD = 0.8; // 80%
 
 const slides = [
 {type:"title", title:"PREVENTATIVE MAINTENANCE FOR ANDREW'S LOGISTICS", sub:"Heavy-Duty Trucks & Tanker Trailers", body:"This training covers 49 CFR 396, safety-critical systems, and hazmat tanker controls."},
@@ -461,6 +497,7 @@ let traineeName = "";
 let firstName = "";
 let lastName = "";
 let scores = {1:null, 2:null, 3:null};
+let quizAnswerLogs = {1:null, 2:null, 3:null};
 let pacedReading = true;
 let readSpeed = 1; // multiplier: 1, 1.5, or 2
 let videoCompleted = false;
@@ -470,13 +507,14 @@ let completionReportSent = false;
 
 async function loadState(){
   try{
-    const r = await window.storage.get('pm-training-state', false);
-    if(r && r.value){
-      const d = JSON.parse(r.value);
+    const raw = window.localStorage.getItem('pm-training-state');
+    if(raw){
+      const d = JSON.parse(raw);
       traineeName = d.traineeName || "";
       firstName = d.firstName || "";
       lastName = d.lastName || "";
       scores = d.scores || scores;
+      quizAnswerLogs = d.quizAnswerLogs || quizAnswerLogs;
       pacedReading = d.pacedReading !== undefined ? d.pacedReading : true;
       readSpeed = d.readSpeed !== undefined ? d.readSpeed : 1;
       videoCompleted = d.videoCompleted || false;
@@ -484,11 +522,11 @@ async function loadState(){
       assignedUnit = d.assignedUnit || null;
       completionReportSent = d.completionReportSent || false;
     }
-  }catch(e){ /* no saved state yet */ }
+  }catch(e){ /* no saved state yet, or storage unavailable */ }
 }
 async function saveState(){
   try{
-    await window.storage.set('pm-training-state', JSON.stringify({traineeName, firstName, lastName, scores, pacedReading, readSpeed, videoCompleted, assignedCredential, assignedUnit, completionReportSent}), false);
+    window.localStorage.setItem('pm-training-state', JSON.stringify({traineeName, firstName, lastName, scores, quizAnswerLogs, pacedReading, readSpeed, videoCompleted, assignedCredential, assignedUnit, completionReportSent}));
   }catch(e){ console.error('save failed', e); }
 }
 
@@ -501,6 +539,33 @@ function escapeHtml(s){
 
 function buildMailto(subject, body){
   return `mailto:${REPORT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+}
+
+// Sends a completed quiz attempt (name, score, pass/fail, and full answer log) to a
+// Netlify serverless function, which commits it to the GitHub repo as a JSON file.
+// The GitHub token lives only in the Netlify function's environment — never in this
+// client-side code — so it can't be extracted from the page source.
+async function recordResultToGit(testNum, score, passed, answerLog){
+  try{
+    const res = await fetch('/.netlify/functions/record-result', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: traineeName,
+        testNum,
+        score,
+        passed,
+        timestamp: new Date().toISOString(),
+        answers: answerLog
+      })
+    });
+    if(!res.ok){
+      const errBody = await res.text();
+      console.error('recordResultToGit: server responded with an error', res.status, errBody);
+    }
+  }catch(e){
+    console.error('recordResultToGit: failed to reach the recording function', e);
+  }
 }
 
 function sendCompletionReport(){
@@ -674,19 +739,24 @@ function renderSlide(){
     }
     inner += `</div>`;
   } else if(s.type === "test"){
-    const url = TEST_URLS[s.testNum];
-    const existing = scores[s.testNum];
+    const qData = QUIZZES[s.testNum];
+    const existingScore = scores[s.testNum];
+    const passed = existingScore !== null && existingScore !== undefined && existingScore >= 80;
     inner += `<div class="card test-box">
       <h2>${escapeHtml(s.title)}</h2>
-      <p>Scan the QR code, or click the link below, to open the quiz. Complete it, then enter your score below to continue. Your scores are emailed to the instructor once you finish the course.</p>
-      <p><a class="qr-link" href="${url}" target="_blank" rel="noopener">${url}</a></p>
-      <iframe class="form-frame" src="${url}" title="Quiz ${s.testNum}"></iframe>
-      <div class="score-entry">
-        <label for="scoreInput">Enter your quiz score (%):</label>
-        <input type="number" id="scoreInput" min="0" max="100" value="${existing ?? ''}">
-        <button class="btn-primary" id="submitScoreBtn">Submit Score</button>
-        <div id="resultMsg"></div>
-      </div>
+      <p>Answer all ${qData.length} questions below. You need <strong>80%</strong> or higher to continue. Your name, score, and answers are recorded automatically when you submit.</p>
+      ${passed ? `<div class="video-locked-note done">You already passed this test (${existingScore}%). You may continue to the next slide.</div>` : ''}
+      <div id="quizQuestions">` +
+      qData.map((item, qi)=>`
+        <div class="quiz-question" style="text-align:left;background:#fbf6f2;border-radius:8px;padding:14px 16px;margin-bottom:12px;">
+          <p style="font-weight:bold;margin:0 0 8px;">${qi+1}. ${escapeHtml(item.q)}</p>
+          ${item.options.map((opt,oi)=>`<label style="display:block;padding:5px 0;cursor:pointer;font-weight:normal;">
+            <input type="radio" name="q-${s.testNum}-${qi}" value="${oi}" ${passed?'disabled':''}> ${escapeHtml(opt)}
+          </label>`).join('')}
+        </div>`).join('') +
+      `</div>
+      <div id="resultMsg"></div>
+      ${passed ? '' : `<button class="btn-primary" id="submitQuizBtn" style="margin-top:6px;">Submit Test</button>`}
     </div>`;
   } else if(s.type === "final"){
     const allPassed = scores[1]>=80 && scores[2]>=80 && scores[3]>=80;
@@ -730,21 +800,71 @@ function renderSlide(){
   document.getElementById('nextBtn').onclick = ()=>{ if(current<slides.length-1){ current++; render(); } };
 
   if(s.type === "test"){
-    document.getElementById('submitScoreBtn').onclick = async ()=>{
-      const val = parseInt(document.getElementById('scoreInput').value, 10);
-      if(isNaN(val) || val<0 || val>100){ alert('Please enter a valid score between 0 and 100.'); return; }
-      scores[s.testNum] = val;
-      await saveState();
-      const msg = document.getElementById('resultMsg');
-      msg.className = 'result-msg ' + (val>=80 ? 'pass' : 'fail');
-      msg.textContent = val>=80
-        ? `Score logged: ${val}%. Passed! Your results will be emailed to the instructor when you complete the course.`
-        : `Score logged: ${val}%. Not a passing score (80% required). You may retake the quiz and resubmit before continuing.`;
-      const nextBtn = document.getElementById('nextBtn');
-      const counter = document.getElementById('slideCounter');
-      if(nextBtn && current < slides.length - 1){ nextBtn.disabled = false; }
-      if(counter){ counter.textContent = `Slide ${current+1} of ${slides.length}${traineeName ? " — " + traineeName : ""}`; }
-    };
+    const submitBtn = document.getElementById('submitQuizBtn');
+    if(submitBtn){
+      submitBtn.onclick = async ()=>{
+        const qData = QUIZZES[s.testNum];
+        let allAnswered = true;
+        let correct = 0;
+        const answerLog = [];
+
+        qData.forEach((item, qi)=>{
+          const sel = document.querySelector(`input[name="q-${s.testNum}-${qi}"]:checked`);
+          if(!sel){ allAnswered = false; return; }
+          const chosenIdx = parseInt(sel.value, 10);
+          const isCorrect = chosenIdx === item.answer;
+          if(isCorrect){ correct++; }
+          answerLog.push({
+            question: item.q,
+            selected: item.options[chosenIdx],
+            correctAnswer: item.options[item.answer],
+            isCorrect
+          });
+        });
+
+        if(!allAnswered){
+          alert('Please answer every question before submitting.');
+          return;
+        }
+
+        const pct = Math.round((correct / qData.length) * 100);
+        const didPass = pct >= Math.round(QUIZ_PASS_THRESHOLD * 100);
+
+        scores[s.testNum] = pct;
+        quizAnswerLogs[s.testNum] = answerLog;
+        await saveState();
+
+        // Lock in the answers visually so they can't be edited post-grading
+        document.querySelectorAll('#quizQuestions input[type="radio"]').forEach(el => el.disabled = true);
+        submitBtn.disabled = true;
+
+        const msg = document.getElementById('resultMsg');
+        msg.className = 'result-msg ' + (didPass ? 'pass' : 'fail');
+        msg.textContent = didPass
+          ? `Score: ${pct}%. Passed! Your name, score, and answers have been recorded.`
+          : `Score: ${pct}%. Not a passing score (80% required). Your attempt has been recorded. Reload this slide to retake the quiz before continuing.`;
+
+        // Record this attempt to the GitHub-backed results log via the Netlify function.
+        // This is fire-and-forget from the UI's perspective — a failure here does not
+        // block the trainee locally, but is logged to the console for troubleshooting.
+        recordResultToGit(s.testNum, pct, didPass, answerLog);
+
+        const nextBtn = document.getElementById('nextBtn');
+        const counter = document.getElementById('slideCounter');
+        if(didPass){
+          if(nextBtn && current < slides.length - 1){ nextBtn.disabled = false; }
+          if(counter){ counter.textContent = `Slide ${current+1} of ${slides.length}${traineeName ? " — " + traineeName : ""}`; }
+        } else {
+          // Give the retake button a moment to be readable, then re-render for a clean retry.
+          const retakeBtn = document.createElement('button');
+          retakeBtn.className = 'btn-secondary';
+          retakeBtn.style.marginTop = '10px';
+          retakeBtn.textContent = 'Retake Quiz';
+          retakeBtn.onclick = ()=>{ scores[s.testNum] = null; renderSlide(); };
+          msg.after(retakeBtn);
+        }
+      };
+    }
   }
   if(s.type === "final"){
     const btn = document.getElementById('scheduleBtn');
