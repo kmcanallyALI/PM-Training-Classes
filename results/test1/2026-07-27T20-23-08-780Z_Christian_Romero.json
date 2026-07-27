@@ -1,0 +1,99 @@
+{
+  "name": "Christian Romero",
+  "testNum": 1,
+  "score": 93,
+  "passed": true,
+  "timestamp": "2026-07-27T20:23:08.780Z",
+  "answers": [
+    {
+      "question": "Roughly how long should a proficient technician expect a B-PM to take?",
+      "selected": "About 2 hours",
+      "correctAnswer": "About 2 hours",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a)(2), how often must pushout windows, emergency doors, and emergency door marking lights on buses be inspected?",
+      "selected": "Every 30 days",
+      "correctAnswer": "At least every 90 days",
+      "isCorrect": false
+    },
+    {
+      "question": "After creating a Repair Order in Fleetrock, what appears at the top of the RO for the PM you're conducting?",
+      "selected": "A banner with a \"+ Add Task\" button",
+      "correctAnswer": "A banner with a \"+ Add Task\" button",
+      "isCorrect": true
+    },
+    {
+      "question": "What is a DVIR, as described in the Maintenance Documentation section?",
+      "selected": "Where the driver communicates dash lights, issues, or damage/defects to the maintenance team",
+      "correctAnswer": "Where the driver communicates dash lights, issues, or damage/defects to the maintenance team",
+      "isCorrect": true
+    },
+    {
+      "question": "Per the Maintenance Documentation section, who is responsible for keeping trucks in compliance with the 49 CFR?",
+      "selected": "Both drivers and the Maintenance team",
+      "correctAnswer": "Both drivers and the Maintenance team",
+      "isCorrect": true
+    },
+    {
+      "question": "Roughly how long should a proficient technician expect an A-PM to take?",
+      "selected": "About 1.5 hours",
+      "correctAnswer": "About 1.5 hours",
+      "isCorrect": true
+    },
+    {
+      "question": "What does the course describe as the final, essential component of a complete preventative maintenance program?",
+      "selected": "Accurate documentation",
+      "correctAnswer": "Accurate documentation",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a)(1), what condition must parts like the frame, suspension, axles, wheels, and steering be in at all times?",
+      "selected": "Safe and in proper operating condition",
+      "correctAnswer": "Safe and in proper operating condition",
+      "isCorrect": true
+    },
+    {
+      "question": "Why does the course say consistent, documented PMs matter for audit readiness?",
+      "selected": "They ensure the company is prepared if a DOT audit follows an incident",
+      "correctAnswer": "They ensure the company is prepared if a DOT audit follows an incident",
+      "isCorrect": true
+    },
+    {
+      "question": "How does proper documentation affect the overall cost of running the fleet, per the course?",
+      "selected": "It lowers cost by tracking defects, trends, and corrective actions",
+      "correctAnswer": "It lowers cost by tracking defects, trends, and corrective actions",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 396.3(c), how long must maintenance records generally be kept where the vehicle is housed or maintained?",
+      "selected": "1 year (or 6 months after the vehicle leaves the carrier's control)",
+      "correctAnswer": "1 year (or 6 months after the vehicle leaves the carrier's control)",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(b), what must a motor carrier's required records for each vehicle include?",
+      "selected": "Vehicle ID, due dates, inspection/repair history, and bus door tests",
+      "correctAnswer": "Vehicle ID, due dates, inspection/repair history, and bus door tests",
+      "isCorrect": true
+    },
+    {
+      "question": "Which federal agency's regulations establish the preventative maintenance inspection requirements covered in this course?",
+      "selected": "FMCSA",
+      "correctAnswer": "FMCSA",
+      "isCorrect": true
+    },
+    {
+      "question": "What does the course's scope cover?",
+      "selected": "Power unit systems (engine, brakes, suspension, electrical) plus tanker systems (valves, piping, PRDs, spill prevention)",
+      "correctAnswer": "Power unit systems (engine, brakes, suspension, electrical) plus tanker systems (valves, piping, PRDs, spill prevention)",
+      "isCorrect": true
+    },
+    {
+      "question": "Why do we perform PMs in the first place?",
+      "selected": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "correctAnswer": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "isCorrect": true
+    }
+  ]
+}
