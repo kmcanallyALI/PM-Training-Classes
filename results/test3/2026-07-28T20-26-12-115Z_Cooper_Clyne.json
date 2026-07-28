@@ -1,0 +1,99 @@
+{
+  "name": "Cooper Clyne",
+  "testNum": 3,
+  "score": 60,
+  "passed": false,
+  "timestamp": "2026-07-28T20:26:12.115Z",
+  "answers": [
+    {
+      "question": "Which of the following immediately takes a cargo tank Out of Service?",
+      "selected": "Minor seepage noted for the next scheduled repair",
+      "correctAnswer": "An expired cargo tank qualification required by 49 CFR §180.407",
+      "isCorrect": false
+    },
+    {
+      "question": "What must happen if a weld or structural defect (crack, pinhole, incomplete fusion) is found on a cargo tank?",
+      "selected": "The tank must be taken out of HazMat service until repaired",
+      "correctAnswer": "The tank must be taken out of HazMat service until repaired",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following is part of routine cargo tank preventative maintenance?",
+      "selected": "Lubricating valve stems, pivot points, linkage, and shutoff cables",
+      "correctAnswer": "Lubricating valve stems, pivot points, linkage, and shutoff cables",
+      "isCorrect": true
+    },
+    {
+      "question": "What should technicians inspect gaskets, seals, and O-rings for?",
+      "selected": "Hardening, swelling, cracking, compression set, cuts, and chemical deterioration",
+      "correctAnswer": "Hardening, swelling, cracking, compression set, cuts, and chemical deterioration",
+      "isCorrect": true
+    },
+    {
+      "question": "What should you check when inspecting internal valves?",
+      "selected": "Valve movement, return spring, seat condition, leakage, linkage, and actuator",
+      "correctAnswer": "Valve movement, return spring, seat condition, leakage, linkage, and actuator",
+      "isCorrect": true
+    },
+    {
+      "question": "Under the cargo tank Inspection Criteria, which condition is classified as 'Needs Repair' rather than 'Out of Service'?",
+      "selected": "A cracked shell",
+      "correctAnswer": "Minor corrosion, stiff valves, or aging seals",
+      "isCorrect": false
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Leakage Test (K) required?",
+      "selected": "Every 2 years",
+      "correctAnswer": "Annually (every 1 year)",
+      "isCorrect": false
+    },
+    {
+      "question": "What does leakage around a manway indicate?",
+      "selected": "That the sealing system has failed",
+      "correctAnswer": "That the sealing system has failed",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the External Visual Inspection (V) required on a cargo tank?",
+      "selected": "Annually (every 1 year)",
+      "correctAnswer": "Annually (every 1 year)",
+      "isCorrect": true
+    },
+    {
+      "question": "Which 49 CFR part covers cargo tank design and manufacturing specifications?",
+      "selected": "Part 396",
+      "correctAnswer": "Part 178",
+      "isCorrect": false
+    },
+    {
+      "question": "Repairs affecting pressure-retaining components on a cargo tank require proper qualification under which regulation?",
+      "selected": "49 CFR Part 396",
+      "correctAnswer": "49 CFR Part 180",
+      "isCorrect": false
+    },
+    {
+      "question": "What is required before returning a tank to HazMat service if any source of leakage is found?",
+      "selected": "All sources of leakage must be properly repaired",
+      "correctAnswer": "All sources of leakage must be properly repaired",
+      "isCorrect": true
+    },
+    {
+      "question": "Why do baffles reduce risk during braking, acceleration, and turning?",
+      "selected": "They have no effect on vehicle handling",
+      "correctAnswer": "They slow liquid movement inside the tank, improving braking, steering control, and reducing rollover risk",
+      "isCorrect": false
+    },
+    {
+      "question": "What is the main purpose of bulkheads in a cargo tank?",
+      "selected": "To divide the tank into compartments, separating products, preventing contamination, and reducing surge",
+      "correctAnswer": "To divide the tank into compartments, separating products, preventing contamination, and reducing surge",
+      "isCorrect": true
+    },
+    {
+      "question": "A Preventative Maintenance Inspection (PMI) on a cargo tank should verify all of the following EXCEPT:",
+      "selected": "The driver's personal cell phone contacts",
+      "correctAnswer": "The driver's personal cell phone contacts",
+      "isCorrect": true
+    }
+  ]
+}
