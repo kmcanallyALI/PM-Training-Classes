@@ -1,0 +1,99 @@
+{
+  "name": "Cooper Clyne",
+  "testNum": 2,
+  "score": 87,
+  "passed": true,
+  "timestamp": "2026-07-28T20:15:33.633Z",
+  "answers": [
+    {
+      "question": "Which condition takes a brake chamber Out of Service?",
+      "selected": "Slight binding with beginning corrosion",
+      "correctAnswer": "An audible chamber leak or a loose chamber",
+      "isCorrect": false
+    },
+    {
+      "question": "Bulges or blisters on a tire sidewall should be handled how?",
+      "selected": "Replaced immediately — this damage is irreparable",
+      "correctAnswer": "Replaced immediately — this damage is irreparable",
+      "isCorrect": true
+    },
+    {
+      "question": "Which wheel bearing/kingpin condition is classified as Out of Service?",
+      "selected": "Excessive kingpin movement or loose wheel bearings",
+      "correctAnswer": "Excessive kingpin movement or loose wheel bearings",
+      "isCorrect": true
+    },
+    {
+      "question": "What should you do if a safety item has an issue during a PM, per the course?",
+      "selected": "Stop, assess, and speak with the Foreman before proceeding",
+      "correctAnswer": "Stop, assess, and speak with the Foreman before proceeding",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 393.75, which of the following makes a vehicle unsafe to operate on its tires?",
+      "selected": "Ply or belt material exposed through the tread or sidewall",
+      "correctAnswer": "Ply or belt material exposed through the tread or sidewall",
+      "isCorrect": true
+    },
+    {
+      "question": "Per FMCSA rejection items for steering, suspension, and frame, which defect requires a vehicle be rejected?",
+      "selected": "Cracked or broken steering components, or missing steering fasteners",
+      "correctAnswer": "Cracked or broken steering components, or missing steering fasteners",
+      "isCorrect": true
+    },
+    {
+      "question": "Per FMCSA Appendix A, which of the following automatically fails a periodic inspection?",
+      "selected": "Missing braking action on any required wheel",
+      "correctAnswer": "Missing braking action on any required wheel",
+      "isCorrect": true
+    },
+    {
+      "question": "According to Tire Positions, can steer tires be used in other positions on the vehicle?",
+      "selected": "No, steer tires are not interchangeable with other positions",
+      "correctAnswer": "No, steer tires are not interchangeable with other positions",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following classifies the air system as Out of Service?",
+      "selected": "Minor fitting seepage",
+      "correctAnswer": "Low-air warning system inoperative",
+      "isCorrect": false
+    },
+    {
+      "question": "Which of the following is a steering/suspension fatigue warning sign?",
+      "selected": "Elongated bolt holes or metal fatigue cracks",
+      "correctAnswer": "Elongated bolt holes or metal fatigue cracks",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the purpose of Lockout/Tagout (LO/TO)?",
+      "selected": "To keep a hazard de-energized, such as removing a negative battery cable and locking/tagging access",
+      "correctAnswer": "To keep a hazard de-energized, such as removing a negative battery cable and locking/tagging access",
+      "isCorrect": true
+    },
+    {
+      "question": "Which frame condition is classified as Out of Service?",
+      "selected": "A cracked frame rail or broken frame member",
+      "correctAnswer": "A cracked frame rail or broken frame member",
+      "isCorrect": true
+    },
+    {
+      "question": "What steering system condition is classified as In Service?",
+      "selected": "No loose components, smooth operation, no binding, no fluid leaks",
+      "correctAnswer": "No loose components, smooth operation, no binding, no fluid leaks",
+      "isCorrect": true
+    },
+    {
+      "question": "What condition to a leaf spring makes a vehicle Out of Service?",
+      "selected": "A broken or shifted leaf spring affecting axle location, or a missing leaf in a main spring",
+      "correctAnswer": "A broken or shifted leaf spring affecting axle location, or a missing leaf in a main spring",
+      "isCorrect": true
+    },
+    {
+      "question": "What should you check during a tire & rim inspection before driving?",
+      "selected": "Incorrect tire pressure (measured cold), irregular tread wear, cracking, and bulges",
+      "correctAnswer": "Incorrect tire pressure (measured cold), irregular tread wear, cracking, and bulges",
+      "isCorrect": true
+    }
+  ]
+}
