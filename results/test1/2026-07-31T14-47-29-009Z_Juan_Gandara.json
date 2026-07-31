@@ -1,0 +1,99 @@
+{
+  "name": "Juan Gandara",
+  "testNum": 1,
+  "score": 87,
+  "passed": true,
+  "timestamp": "2026-07-31T14:47:29.009Z",
+  "answers": [
+    {
+      "question": "Why does the course say consistent, documented PMs matter for audit readiness?",
+      "selected": "They ensure the company is prepared if a DOT audit follows an incident",
+      "correctAnswer": "They ensure the company is prepared if a DOT audit follows an incident",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a)(1), what condition must parts like the frame, suspension, axles, wheels, and steering be in at all times?",
+      "selected": "Safe and in proper operating condition",
+      "correctAnswer": "Safe and in proper operating condition",
+      "isCorrect": true
+    },
+    {
+      "question": "Which regulation covers systematic inspection, repair, and maintenance of commercial motor vehicles?",
+      "selected": "49 CFR Part 396",
+      "correctAnswer": "49 CFR Part 396",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 396.3(c), how long must maintenance records generally be kept where the vehicle is housed or maintained?",
+      "selected": "1 year (or 6 months after the vehicle leaves the carrier's control)",
+      "correctAnswer": "1 year (or 6 months after the vehicle leaves the carrier's control)",
+      "isCorrect": true
+    },
+    {
+      "question": "What does the course's scope cover?",
+      "selected": "Power unit systems (engine, brakes, suspension, electrical) plus tanker systems (valves, piping, PRDs, spill prevention)",
+      "correctAnswer": "Power unit systems (engine, brakes, suspension, electrical) plus tanker systems (valves, piping, PRDs, spill prevention)",
+      "isCorrect": true
+    },
+    {
+      "question": "What is Fleetrock used for at Andrew's Logistics?",
+      "selected": "The system of record for PM sheets, EDVIR repairs, and DOT compliance records",
+      "correctAnswer": "The system of record for PM sheets, EDVIR repairs, and DOT compliance records",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a), who is responsible for systematically inspecting, repairing, and maintaining every motor vehicle the carrier controls?",
+      "selected": "The DOT inspector",
+      "correctAnswer": "The motor carrier",
+      "isCorrect": false
+    },
+    {
+      "question": "On a PM sheet (a legal document), what tone/language should you use when describing an issue?",
+      "selected": "Highly technical mechanic jargon",
+      "correctAnswer": "General industry terms, since the reader may not have a mechanic background",
+      "isCorrect": false
+    },
+    {
+      "question": "Why do we perform PMs in the first place?",
+      "selected": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "correctAnswer": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "isCorrect": true
+    },
+    {
+      "question": "Which regulation covers vehicle components and accessories such as steering, brakes, tires, and lights?",
+      "selected": "49 CFR Part 393",
+      "correctAnswer": "49 CFR Part 393",
+      "isCorrect": true
+    },
+    {
+      "question": "After creating a Repair Order in Fleetrock, what appears at the top of the RO for the PM you're conducting?",
+      "selected": "A banner with a \"+ Add Task\" button",
+      "correctAnswer": "A banner with a \"+ Add Task\" button",
+      "isCorrect": true
+    },
+    {
+      "question": "Roughly how long should a proficient technician expect a B-PM to take?",
+      "selected": "About 2 hours",
+      "correctAnswer": "About 2 hours",
+      "isCorrect": true
+    },
+    {
+      "question": "Which topics receive extra safety emphasis in this course?",
+      "selected": "PPE, lockout/tagout, and hazard awareness",
+      "correctAnswer": "PPE, lockout/tagout, and hazard awareness",
+      "isCorrect": true
+    },
+    {
+      "question": "Which DOT focus areas can quickly trigger out-of-service violations, per the course overview?",
+      "selected": "Brakes, lights, tires, and steering",
+      "correctAnswer": "Brakes, lights, tires, and steering",
+      "isCorrect": true
+    },
+    {
+      "question": "What does the course say non-compliance risks?",
+      "selected": "Fines, CSA impacts, out-of-service orders, and civil liability",
+      "correctAnswer": "Fines, CSA impacts, out-of-service orders, and civil liability",
+      "isCorrect": true
+    }
+  ]
+}
