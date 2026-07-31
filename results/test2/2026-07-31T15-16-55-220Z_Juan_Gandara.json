@@ -1,0 +1,99 @@
+{
+  "name": "Juan Gandara",
+  "testNum": 2,
+  "score": 93,
+  "passed": true,
+  "timestamp": "2026-07-31T15:16:55.220Z",
+  "answers": [
+    {
+      "question": "Which of the following classifies the air system as Needs Repair?",
+      "selected": "Audible leaks affecting brake performance",
+      "correctAnswer": "Minor fitting seepage or slow air build",
+      "isCorrect": false
+    },
+    {
+      "question": "Which condition takes a brake chamber Out of Service?",
+      "selected": "An audible chamber leak or a loose chamber",
+      "correctAnswer": "An audible chamber leak or a loose chamber",
+      "isCorrect": true
+    },
+    {
+      "question": "Which frame condition is classified as Out of Service?",
+      "selected": "A cracked frame rail or broken frame member",
+      "correctAnswer": "A cracked frame rail or broken frame member",
+      "isCorrect": true
+    },
+    {
+      "question": "Repeated need to manually adjust an automatic slack adjuster is best understood as:",
+      "selected": "A symptom indicating an underlying issue that needs diagnosis",
+      "correctAnswer": "A symptom indicating an underlying issue that needs diagnosis",
+      "isCorrect": true
+    },
+    {
+      "question": "Why should jacks never be used alone when working under a truck?",
+      "selected": "Jack stands should always be used as well, since they mechanically lock in place so the truck cannot fall",
+      "correctAnswer": "Jack stands should always be used as well, since they mechanically lock in place so the truck cannot fall",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 393.75, which of the following makes a vehicle unsafe to operate on its tires?",
+      "selected": "Ply or belt material exposed through the tread or sidewall",
+      "correctAnswer": "Ply or belt material exposed through the tread or sidewall",
+      "isCorrect": true
+    },
+    {
+      "question": "What condition to a leaf spring makes a vehicle Out of Service?",
+      "selected": "A broken or shifted leaf spring affecting axle location, or a missing leaf in a main spring",
+      "correctAnswer": "A broken or shifted leaf spring affecting axle location, or a missing leaf in a main spring",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following classifies the air system as Out of Service?",
+      "selected": "Low-air warning system inoperative",
+      "correctAnswer": "Low-air warning system inoperative",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the FMCSA minimum friction material thickness for air disc brake pads before Out of Service?",
+      "selected": "1/8 inch",
+      "correctAnswer": "1/8 inch",
+      "isCorrect": true
+    },
+    {
+      "question": "Which wheel bearing/kingpin condition is classified as Out of Service?",
+      "selected": "Excessive kingpin movement or loose wheel bearings",
+      "correctAnswer": "Excessive kingpin movement or loose wheel bearings",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the FMCSA minimum brake lining thickness for drum brake shoes on steering, drive, and trailer axles before it's Out of Service?",
+      "selected": "1/4 inch",
+      "correctAnswer": "1/4 inch",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 393.75, what is the minimum tread depth required in every major groove for front tires on a truck tractor?",
+      "selected": "4/32 inch",
+      "correctAnswer": "4/32 inch",
+      "isCorrect": true
+    },
+    {
+      "question": "What condition classifies air disc brake pads as In Service?",
+      "selected": "Even pad wear with friction material above manufacturer minimum",
+      "correctAnswer": "Even pad wear with friction material above manufacturer minimum",
+      "isCorrect": true
+    },
+    {
+      "question": "Per FMCSA rejection items for steering, suspension, and frame, which defect requires a vehicle be rejected?",
+      "selected": "Cracked or broken steering components, or missing steering fasteners",
+      "correctAnswer": "Cracked or broken steering components, or missing steering fasteners",
+      "isCorrect": true
+    },
+    {
+      "question": "Per FMCSA out-of-service criteria, what pushrod stroke condition takes a brake out of service?",
+      "selected": "Pushrod stroke beyond the legal adjustment limit, based on brake chamber size and the 49CFR",
+      "correctAnswer": "Pushrod stroke beyond the legal adjustment limit, based on brake chamber size and the 49CFR",
+      "isCorrect": true
+    }
+  ]
+}
