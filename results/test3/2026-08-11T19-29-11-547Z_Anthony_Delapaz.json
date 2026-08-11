@@ -1,0 +1,99 @@
+{
+  "name": "Anthony Delapaz",
+  "testNum": 3,
+  "score": 87,
+  "passed": true,
+  "timestamp": "2026-08-11T19:29:11.547Z",
+  "answers": [
+    {
+      "question": "What is the main purpose of bulkheads in a cargo tank?",
+      "selected": "To divide the tank into compartments, separating products, preventing contamination, and reducing surge",
+      "correctAnswer": "To divide the tank into compartments, separating products, preventing contamination, and reducing surge",
+      "isCorrect": true
+    },
+    {
+      "question": "Why is material compatibility important for cargo tank construction?",
+      "selected": "Incompatible materials can react with product, accelerate corrosion, and damage seals — e.g., strong acids attack carbon steel",
+      "correctAnswer": "Incompatible materials can react with product, accelerate corrosion, and damage seals — e.g., strong acids attack carbon steel",
+      "isCorrect": true
+    },
+    {
+      "question": "What must happen if a weld or structural defect (crack, pinhole, incomplete fusion) is found on a cargo tank?",
+      "selected": "The tank must be taken out of HazMat service until repaired",
+      "correctAnswer": "The tank must be taken out of HazMat service until repaired",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the primary goal when inspecting HazMat tanker shell construction, baffles, manways, and compartments?",
+      "selected": "Containment — preventing hazardous release",
+      "correctAnswer": "Containment — preventing hazardous release",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the function of Pressure & Vacuum Relief Devices (PRDs) on a tanker?",
+      "selected": "To prevent overpressure or shell collapse during loading, unloading, or temperature-driven expansion/contraction",
+      "correctAnswer": "To prevent overpressure or shell collapse during loading, unloading, or temperature-driven expansion/contraction",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following immediately takes a cargo tank Out of Service?",
+      "selected": "An expired cargo tank qualification required by 49 CFR §180.407",
+      "correctAnswer": "An expired cargo tank qualification required by 49 CFR §180.407",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Pressure Test (P) required?",
+      "selected": "Every 5 years",
+      "correctAnswer": "Every 5 years",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the External Visual Inspection (V) required on a cargo tank?",
+      "selected": "Annually (every 1 year)",
+      "correctAnswer": "Annually (every 1 year)",
+      "isCorrect": true
+    },
+    {
+      "question": "What is required before returning a tank to HazMat service if any source of leakage is found?",
+      "selected": "All sources of leakage must be properly repaired",
+      "correctAnswer": "All sources of leakage must be properly repaired",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following is part of routine cargo tank preventative maintenance?",
+      "selected": "Lubricating valve stems, pivot points, linkage, and shutoff cables",
+      "correctAnswer": "Lubricating valve stems, pivot points, linkage, and shutoff cables",
+      "isCorrect": true
+    },
+    {
+      "question": "Repairs affecting pressure-retaining components on a cargo tank require proper qualification under which regulation?",
+      "selected": "49 CFR Part 180",
+      "correctAnswer": "49 CFR Part 180",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Leakage Test (K) required?",
+      "selected": "Every 5 years",
+      "correctAnswer": "Annually (every 1 year)",
+      "isCorrect": false
+    },
+    {
+      "question": "Why does preventative maintenance matter for spill prevention?",
+      "selected": "It reduces spill risk through secondary containment integrity, drip prevention, and early leak-path identification",
+      "correctAnswer": "It reduces spill risk through secondary containment integrity, drip prevention, and early leak-path identification",
+      "isCorrect": true
+    },
+    {
+      "question": "What should you check when inspecting internal valves?",
+      "selected": "Valve movement, return spring, seat condition, leakage, linkage, and actuator",
+      "correctAnswer": "Valve movement, return spring, seat condition, leakage, linkage, and actuator",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Upper Coupler Inspection (UC) required?",
+      "selected": "Annually",
+      "correctAnswer": "Every 5 years",
+      "isCorrect": false
+    }
+  ]
+}
