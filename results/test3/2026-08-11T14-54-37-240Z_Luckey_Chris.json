@@ -1,0 +1,99 @@
+{
+  "name": "Luckey Chris",
+  "testNum": 3,
+  "score": 80,
+  "passed": true,
+  "timestamp": "2026-08-11T14:54:37.240Z",
+  "answers": [
+    {
+      "question": "Why is material compatibility important for cargo tank construction?",
+      "selected": "Incompatible materials can react with product, accelerate corrosion, and damage seals — e.g., strong acids attack carbon steel",
+      "correctAnswer": "Incompatible materials can react with product, accelerate corrosion, and damage seals — e.g., strong acids attack carbon steel",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the function of Pressure & Vacuum Relief Devices (PRDs) on a tanker?",
+      "selected": "To prevent overpressure or shell collapse during loading, unloading, or temperature-driven expansion/contraction",
+      "correctAnswer": "To prevent overpressure or shell collapse during loading, unloading, or temperature-driven expansion/contraction",
+      "isCorrect": true
+    },
+    {
+      "question": "A Preventative Maintenance Inspection (PMI) on a cargo tank should verify all of the following EXCEPT:",
+      "selected": "The driver's personal cell phone contacts",
+      "correctAnswer": "The driver's personal cell phone contacts",
+      "isCorrect": true
+    },
+    {
+      "question": "What do the front and rear heads of a cargo tank do?",
+      "selected": "Strengthen the tank and resist pressure loads",
+      "correctAnswer": "Strengthen the tank and resist pressure loads",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Upper Coupler Inspection (UC) required?",
+      "selected": "Every 5 years",
+      "correctAnswer": "Every 5 years",
+      "isCorrect": true
+    },
+    {
+      "question": "What does leakage around a manway indicate?",
+      "selected": "That the sealing system has failed",
+      "correctAnswer": "That the sealing system has failed",
+      "isCorrect": true
+    },
+    {
+      "question": "Which 49 CFR part covers cargo tank design and manufacturing specifications?",
+      "selected": "Part 180",
+      "correctAnswer": "Part 178",
+      "isCorrect": false
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Leakage Test (K) required?",
+      "selected": "Annually (every 1 year)",
+      "correctAnswer": "Annually (every 1 year)",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Thickness Test (T) required?",
+      "selected": "Every 5 years",
+      "correctAnswer": "Every 2 years",
+      "isCorrect": false
+    },
+    {
+      "question": "Which components are described as common high-risk leak sources on HazMat tankers?",
+      "selected": "Internal/external valves, bottom outlets, emergency shutoffs, gaskets, seals, and caps",
+      "correctAnswer": "Internal/external valves, bottom outlets, emergency shutoffs, gaskets, seals, and caps",
+      "isCorrect": true
+    },
+    {
+      "question": "What must happen if a weld or structural defect (crack, pinhole, incomplete fusion) is found on a cargo tank?",
+      "selected": "The tank must be taken out of HazMat service until repaired",
+      "correctAnswer": "The tank must be taken out of HazMat service until repaired",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following immediately takes a cargo tank Out of Service?",
+      "selected": "An expired cargo tank qualification required by 49 CFR §180.407",
+      "correctAnswer": "An expired cargo tank qualification required by 49 CFR §180.407",
+      "isCorrect": true
+    },
+    {
+      "question": "Repairs affecting pressure-retaining components on a cargo tank require proper qualification under which regulation?",
+      "selected": "49 CFR Part 180",
+      "correctAnswer": "49 CFR Part 180",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the primary goal when inspecting HazMat tanker shell construction, baffles, manways, and compartments?",
+      "selected": "Containment — preventing hazardous release",
+      "correctAnswer": "Containment — preventing hazardous release",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR trailer body damage standards, what is the maximum allowable dent/gouge depth at a weld?",
+      "selected": "1/10 inch",
+      "correctAnswer": "1/2 inch",
+      "isCorrect": false
+    }
+  ]
+}
