@@ -1,0 +1,99 @@
+{
+  "name": "Miguel Vega",
+  "testNum": 3,
+  "score": 87,
+  "passed": true,
+  "timestamp": "2026-08-11T04:34:52.519Z",
+  "answers": [
+    {
+      "question": "When is an external valve considered unsafe?",
+      "selected": "When it will not fully close",
+      "correctAnswer": "When it will not fully close",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Pressure Test (P) required?",
+      "selected": "Every 5 years",
+      "correctAnswer": "Every 5 years",
+      "isCorrect": true
+    },
+    {
+      "question": "What do the front and rear heads of a cargo tank do?",
+      "selected": "Strengthen the tank and resist pressure loads",
+      "correctAnswer": "Strengthen the tank and resist pressure loads",
+      "isCorrect": true
+    },
+    {
+      "question": "What does leakage around a manway indicate?",
+      "selected": "That the sealing system has failed",
+      "correctAnswer": "That the sealing system has failed",
+      "isCorrect": true
+    },
+    {
+      "question": "Since baffles are internal, how do technicians verify their condition?",
+      "selected": "Through scheduled internal inspections required by 49 CFR 180.407",
+      "correctAnswer": "Through scheduled internal inspections required by 49 CFR 180.407",
+      "isCorrect": true
+    },
+    {
+      "question": "Why is a bottom outlet assembly considered especially vulnerable?",
+      "selected": "It is exposed underneath the cargo tank and prone to road impact, corrosion, and damaged threads",
+      "correctAnswer": "It is exposed underneath the cargo tank and prone to road impact, corrosion, and damaged threads",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the primary goal when inspecting HazMat tanker shell construction, baffles, manways, and compartments?",
+      "selected": "Containment — preventing hazardous release",
+      "correctAnswer": "Containment — preventing hazardous release",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the main purpose of bulkheads in a cargo tank?",
+      "selected": "To divide the tank into compartments, separating products, preventing contamination, and reducing surge",
+      "correctAnswer": "To divide the tank into compartments, separating products, preventing contamination, and reducing surge",
+      "isCorrect": true
+    },
+    {
+      "question": "What should technicians inspect gaskets, seals, and O-rings for?",
+      "selected": "Hardening, swelling, cracking, compression set, cuts, and chemical deterioration",
+      "correctAnswer": "Hardening, swelling, cracking, compression set, cuts, and chemical deterioration",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the function of Pressure & Vacuum Relief Devices (PRDs) on a tanker?",
+      "selected": "To prevent overpressure or shell collapse during loading, unloading, or temperature-driven expansion/contraction",
+      "correctAnswer": "To prevent overpressure or shell collapse during loading, unloading, or temperature-driven expansion/contraction",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR trailer body damage standards, what is the maximum allowable dent/gouge depth at a weld?",
+      "selected": "1/10 inch",
+      "correctAnswer": "1/2 inch",
+      "isCorrect": false
+    },
+    {
+      "question": "Why do baffles reduce risk during braking, acceleration, and turning?",
+      "selected": "They slow liquid movement inside the tank, improving braking, steering control, and reducing rollover risk",
+      "correctAnswer": "They slow liquid movement inside the tank, improving braking, steering control, and reducing rollover risk",
+      "isCorrect": true
+    },
+    {
+      "question": "Repairs affecting pressure-retaining components on a cargo tank require proper qualification under which regulation?",
+      "selected": "49 CFR Part 178",
+      "correctAnswer": "49 CFR Part 180",
+      "isCorrect": false
+    },
+    {
+      "question": "What must happen if a weld or structural defect (crack, pinhole, incomplete fusion) is found on a cargo tank?",
+      "selected": "The tank must be taken out of HazMat service until repaired",
+      "correctAnswer": "The tank must be taken out of HazMat service until repaired",
+      "isCorrect": true
+    },
+    {
+      "question": "Under the cargo tank Inspection Criteria, which condition is classified as 'Needs Repair' rather than 'Out of Service'?",
+      "selected": "Minor corrosion, stiff valves, or aging seals",
+      "correctAnswer": "Minor corrosion, stiff valves, or aging seals",
+      "isCorrect": true
+    }
+  ]
+}
