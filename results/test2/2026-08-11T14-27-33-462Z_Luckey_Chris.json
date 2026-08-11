@@ -1,0 +1,99 @@
+{
+  "name": "Luckey Chris",
+  "testNum": 2,
+  "score": 93,
+  "passed": true,
+  "timestamp": "2026-08-11T14:27:33.462Z",
+  "answers": [
+    {
+      "question": "Why should jacks never be used alone when working under a truck?",
+      "selected": "Jack stands should always be used as well, since they mechanically lock in place so the truck cannot fall",
+      "correctAnswer": "Jack stands should always be used as well, since they mechanically lock in place so the truck cannot fall",
+      "isCorrect": true
+    },
+    {
+      "question": "Which brake drum condition takes a vehicle Out of Service?",
+      "selected": "Cracked, broken, or missing sections, or worn beyond the maximum inside diameter",
+      "correctAnswer": "Cracked, broken, or missing sections, or worn beyond the maximum inside diameter",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the purpose of Lockout/Tagout (LO/TO)?",
+      "selected": "To keep a hazard de-energized, such as removing a negative battery cable and locking/tagging access",
+      "correctAnswer": "To keep a hazard de-energized, such as removing a negative battery cable and locking/tagging access",
+      "isCorrect": true
+    },
+    {
+      "question": "What should you do if a safety item has an issue during a PM, per the course?",
+      "selected": "Stop, assess, and speak with the Foreman before proceeding",
+      "correctAnswer": "Stop, assess, and speak with the Foreman before proceeding",
+      "isCorrect": true
+    },
+    {
+      "question": "Which rotor condition takes a vehicle Out of Service?",
+      "selected": "Below minimum thickness or through-cracks",
+      "correctAnswer": "Below minimum thickness or through-cracks",
+      "isCorrect": true
+    },
+    {
+      "question": "Bulges or blisters on a tire sidewall should be handled how?",
+      "selected": "Replaced immediately — this damage is irreparable",
+      "correctAnswer": "Replaced immediately — this damage is irreparable",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the FMCSA minimum friction material thickness for air disc brake pads before Out of Service?",
+      "selected": "1/8 inch",
+      "correctAnswer": "1/8 inch",
+      "isCorrect": true
+    },
+    {
+      "question": "When the air governor cuts in/out within manufacturer specifications and there are no audible leaks, how should the air system be classified?",
+      "selected": "In Service",
+      "correctAnswer": "In Service",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following is a steering/suspension fatigue warning sign?",
+      "selected": "Elongated bolt holes or metal fatigue cracks",
+      "correctAnswer": "Elongated bolt holes or metal fatigue cracks",
+      "isCorrect": true
+    },
+    {
+      "question": "Which condition takes a brake chamber Out of Service?",
+      "selected": "An audible chamber leak or a loose chamber",
+      "correctAnswer": "An audible chamber leak or a loose chamber",
+      "isCorrect": true
+    },
+    {
+      "question": "What condition classifies air disc brake pads as In Service?",
+      "selected": "Even pad wear with friction material above manufacturer minimum",
+      "correctAnswer": "Even pad wear with friction material above manufacturer minimum",
+      "isCorrect": true
+    },
+    {
+      "question": "Per FMCSA out-of-service criteria, what pushrod stroke condition takes a brake out of service?",
+      "selected": "Pushrod stroke beyond the legal adjustment limit, based on brake chamber size and the 49CFR",
+      "correctAnswer": "Pushrod stroke beyond the legal adjustment limit, based on brake chamber size and the 49CFR",
+      "isCorrect": true
+    },
+    {
+      "question": "At what tread depth are steer tires removed at Andrew's Logistics (company minimum, not just the legal floor)?",
+      "selected": "4/32 inch",
+      "correctAnswer": "6/32 inch",
+      "isCorrect": false
+    },
+    {
+      "question": "What is the purpose of wheel chocks?",
+      "selected": "Wedge-shaped devices that prevent truck wheels from rolling",
+      "correctAnswer": "Wedge-shaped devices that prevent truck wheels from rolling",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the FMCSA minimum brake lining thickness for drum brake shoes on steering, drive, and trailer axles before it's Out of Service?",
+      "selected": "1/4 inch",
+      "correctAnswer": "1/4 inch",
+      "isCorrect": true
+    }
+  ]
+}
