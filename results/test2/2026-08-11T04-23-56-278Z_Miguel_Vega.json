@@ -1,0 +1,99 @@
+{
+  "name": "Miguel Vega",
+  "testNum": 2,
+  "score": 87,
+  "passed": true,
+  "timestamp": "2026-08-11T04:23:56.278Z",
+  "answers": [
+    {
+      "question": "Which rotor condition takes a vehicle Out of Service?",
+      "selected": "Below minimum thickness or through-cracks",
+      "correctAnswer": "Below minimum thickness or through-cracks",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following classifies the air system as Needs Repair?",
+      "selected": "Audible leaks affecting brake performance",
+      "correctAnswer": "Minor fitting seepage or slow air build",
+      "isCorrect": false
+    },
+    {
+      "question": "Under 49 CFR 393.75, which of the following makes a vehicle unsafe to operate on its tires?",
+      "selected": "Ply or belt material exposed through the tread or sidewall",
+      "correctAnswer": "Ply or belt material exposed through the tread or sidewall",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following classifies the air system as Out of Service?",
+      "selected": "Minor fitting seepage",
+      "correctAnswer": "Low-air warning system inoperative",
+      "isCorrect": false
+    },
+    {
+      "question": "What steering system condition is classified as In Service?",
+      "selected": "No loose components, smooth operation, no binding, no fluid leaks",
+      "correctAnswer": "No loose components, smooth operation, no binding, no fluid leaks",
+      "isCorrect": true
+    },
+    {
+      "question": "Bulges or blisters on a tire sidewall should be handled how?",
+      "selected": "Replaced immediately — this damage is irreparable",
+      "correctAnswer": "Replaced immediately — this damage is irreparable",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the purpose of Lockout/Tagout (LO/TO)?",
+      "selected": "To keep a hazard de-energized, such as removing a negative battery cable and locking/tagging access",
+      "correctAnswer": "To keep a hazard de-energized, such as removing a negative battery cable and locking/tagging access",
+      "isCorrect": true
+    },
+    {
+      "question": "Repeated need to manually adjust an automatic slack adjuster is best understood as:",
+      "selected": "A symptom indicating an underlying issue that needs diagnosis",
+      "correctAnswer": "A symptom indicating an underlying issue that needs diagnosis",
+      "isCorrect": true
+    },
+    {
+      "question": "Which brake drum condition takes a vehicle Out of Service?",
+      "selected": "Cracked, broken, or missing sections, or worn beyond the maximum inside diameter",
+      "correctAnswer": "Cracked, broken, or missing sections, or worn beyond the maximum inside diameter",
+      "isCorrect": true
+    },
+    {
+      "question": "Which wheel bearing/kingpin condition is classified as Out of Service?",
+      "selected": "Excessive kingpin movement or loose wheel bearings",
+      "correctAnswer": "Excessive kingpin movement or loose wheel bearings",
+      "isCorrect": true
+    },
+    {
+      "question": "When the air governor cuts in/out within manufacturer specifications and there are no audible leaks, how should the air system be classified?",
+      "selected": "In Service",
+      "correctAnswer": "In Service",
+      "isCorrect": true
+    },
+    {
+      "question": "What should you check during a tire & rim inspection before driving?",
+      "selected": "Incorrect tire pressure (measured cold), irregular tread wear, cracking, and bulges",
+      "correctAnswer": "Incorrect tire pressure (measured cold), irregular tread wear, cracking, and bulges",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following is listed as a sign of brake fatigue?",
+      "selected": "Blue or purple discoloration, or a burnt brake odor",
+      "correctAnswer": "Blue or purple discoloration, or a burnt brake odor",
+      "isCorrect": true
+    },
+    {
+      "question": "Per FMCSA out-of-service criteria, what pushrod stroke condition takes a brake out of service?",
+      "selected": "Pushrod stroke beyond the legal adjustment limit, based on brake chamber size and the 49CFR",
+      "correctAnswer": "Pushrod stroke beyond the legal adjustment limit, based on brake chamber size and the 49CFR",
+      "isCorrect": true
+    },
+    {
+      "question": "At what tread depth are steer tires removed at Andrew's Logistics (company minimum, not just the legal floor)?",
+      "selected": "6/32 inch",
+      "correctAnswer": "6/32 inch",
+      "isCorrect": true
+    }
+  ]
+}
