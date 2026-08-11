@@ -1,0 +1,99 @@
+{
+  "name": "Miguel Vega",
+  "testNum": 1,
+  "score": 80,
+  "passed": true,
+  "timestamp": "2026-08-11T03:51:35.126Z",
+  "answers": [
+    {
+      "question": "Which regulation covers systematic inspection, repair, and maintenance of commercial motor vehicles?",
+      "selected": "49 CFR Part 396",
+      "correctAnswer": "49 CFR Part 396",
+      "isCorrect": true
+    },
+    {
+      "question": "After the banner with the \"+ Add Task\" button appears on the repair order, what is the next step?",
+      "selected": "Click start repair order, enter an expected finish date and time, then clock on the task",
+      "correctAnswer": "Click start repair order, enter an expected finish date and time, then clock on the task",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following is one of the course's Terminal Learning Objectives?",
+      "selected": "Correctly classify defects as Acceptable, Needs Repair, or Out-of-Service",
+      "correctAnswer": "Correctly classify defects as Acceptable, Needs Repair, or Out-of-Service",
+      "isCorrect": true
+    },
+    {
+      "question": "Which 49 CFR Parts does the course apply in real inspection scenarios?",
+      "selected": "Parts 393, 396, and 180",
+      "correctAnswer": "Parts 393, 396, and 180",
+      "isCorrect": true
+    },
+    {
+      "question": "Roughly how long should a proficient technician expect an A-PM to take?",
+      "selected": "About 1.5 hours",
+      "correctAnswer": "About 1.5 hours",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a), who is responsible for systematically inspecting, repairing, and maintaining every motor vehicle the carrier controls?",
+      "selected": "The DOT inspector",
+      "correctAnswer": "The motor carrier",
+      "isCorrect": false
+    },
+    {
+      "question": "How does proper documentation affect the overall cost of running the fleet, per the course?",
+      "selected": "It has no effect on cost",
+      "correctAnswer": "It lowers cost by tracking defects, trends, and corrective actions",
+      "isCorrect": false
+    },
+    {
+      "question": "What is described as the primary purpose of this PM training course?",
+      "selected": "Reduce failures, product releases, and regulatory violations through consistent, compliant, well-documented preventative maintenance",
+      "correctAnswer": "Reduce failures, product releases, and regulatory violations through consistent, compliant, well-documented preventative maintenance",
+      "isCorrect": true
+    },
+    {
+      "question": "Why do we perform PMs in the first place?",
+      "selected": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "correctAnswer": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "isCorrect": true
+    },
+    {
+      "question": "Which regulation covers vehicle components and accessories such as steering, brakes, tires, and lights?",
+      "selected": "49 CFR Part 396",
+      "correctAnswer": "49 CFR Part 393",
+      "isCorrect": false
+    },
+    {
+      "question": "Roughly how long should a proficient technician expect a B-PM to take?",
+      "selected": "About 2 hours",
+      "correctAnswer": "About 2 hours",
+      "isCorrect": true
+    },
+    {
+      "question": "After creating a Repair Order in Fleetrock, what appears at the top of the RO for the PM you're conducting?",
+      "selected": "A banner with a \"+ Add Task\" button",
+      "correctAnswer": "A banner with a \"+ Add Task\" button",
+      "isCorrect": true
+    },
+    {
+      "question": "On a PM sheet (a legal document), what tone/language should you use when describing an issue?",
+      "selected": "General industry terms, since the reader may not have a mechanic background",
+      "correctAnswer": "General industry terms, since the reader may not have a mechanic background",
+      "isCorrect": true
+    },
+    {
+      "question": "What does the course say non-compliance risks?",
+      "selected": "Fines, CSA impacts, out-of-service orders, and civil liability",
+      "correctAnswer": "Fines, CSA impacts, out-of-service orders, and civil liability",
+      "isCorrect": true
+    },
+    {
+      "question": "Which federal agency's regulations establish the preventative maintenance inspection requirements covered in this course?",
+      "selected": "FMCSA",
+      "correctAnswer": "FMCSA",
+      "isCorrect": true
+    }
+  ]
+}
