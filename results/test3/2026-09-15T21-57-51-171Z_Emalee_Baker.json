@@ -1,0 +1,99 @@
+{
+  "name": "Emalee Baker",
+  "testNum": 3,
+  "score": 73,
+  "passed": false,
+  "timestamp": "2026-09-15T21:57:51.171Z",
+  "answers": [
+    {
+      "question": "Why is material compatibility important for cargo tank construction?",
+      "selected": "Incompatible materials can react with product, accelerate corrosion, and damage seals — e.g., strong acids attack carbon steel",
+      "correctAnswer": "Incompatible materials can react with product, accelerate corrosion, and damage seals — e.g., strong acids attack carbon steel",
+      "isCorrect": true
+    },
+    {
+      "question": "What should technicians inspect gaskets, seals, and O-rings for?",
+      "selected": "Hardening, swelling, cracking, compression set, cuts, and chemical deterioration",
+      "correctAnswer": "Hardening, swelling, cracking, compression set, cuts, and chemical deterioration",
+      "isCorrect": true
+    },
+    {
+      "question": "What do the front and rear heads of a cargo tank do?",
+      "selected": "Strengthen the tank and resist pressure loads",
+      "correctAnswer": "Strengthen the tank and resist pressure loads",
+      "isCorrect": true
+    },
+    {
+      "question": "A Preventative Maintenance Inspection (PMI) on a cargo tank should verify all of the following EXCEPT:",
+      "selected": "Leak prevention (valves, caps, flanges, gaskets, bottom outlets)",
+      "correctAnswer": "The driver's personal cell phone contacts",
+      "isCorrect": false
+    },
+    {
+      "question": "When is an external valve considered unsafe?",
+      "selected": "When it will not fully close",
+      "correctAnswer": "When it will not fully close",
+      "isCorrect": true
+    },
+    {
+      "question": "Why is a bottom outlet assembly considered especially vulnerable?",
+      "selected": "It is exposed underneath the cargo tank and prone to road impact, corrosion, and damaged threads",
+      "correctAnswer": "It is exposed underneath the cargo tank and prone to road impact, corrosion, and damaged threads",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following is part of routine cargo tank preventative maintenance?",
+      "selected": "Lubricating valve stems, pivot points, linkage, and shutoff cables",
+      "correctAnswer": "Lubricating valve stems, pivot points, linkage, and shutoff cables",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Thickness Test (T) required?",
+      "selected": "Every 5 years",
+      "correctAnswer": "Every 2 years",
+      "isCorrect": false
+    },
+    {
+      "question": "What is the function of Pressure & Vacuum Relief Devices (PRDs) on a tanker?",
+      "selected": "To prevent overpressure or shell collapse during loading, unloading, or temperature-driven expansion/contraction",
+      "correctAnswer": "To prevent overpressure or shell collapse during loading, unloading, or temperature-driven expansion/contraction",
+      "isCorrect": true
+    },
+    {
+      "question": "Repairs affecting pressure-retaining components on a cargo tank require proper qualification under which regulation?",
+      "selected": "49 CFR Part 393",
+      "correctAnswer": "49 CFR Part 180",
+      "isCorrect": false
+    },
+    {
+      "question": "What is required before returning a tank to HazMat service if any source of leakage is found?",
+      "selected": "All sources of leakage must be properly repaired",
+      "correctAnswer": "All sources of leakage must be properly repaired",
+      "isCorrect": true
+    },
+    {
+      "question": "Under the cargo tank Inspection Criteria, which condition is classified as 'Needs Repair' rather than 'Out of Service'?",
+      "selected": "Minor corrosion, stiff valves, or aging seals",
+      "correctAnswer": "Minor corrosion, stiff valves, or aging seals",
+      "isCorrect": true
+    },
+    {
+      "question": "Why does preventative maintenance matter for spill prevention?",
+      "selected": "It reduces spill risk through secondary containment integrity, drip prevention, and early leak-path identification",
+      "correctAnswer": "It reduces spill risk through secondary containment integrity, drip prevention, and early leak-path identification",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Upper Coupler Inspection (UC) required?",
+      "selected": "Annually",
+      "correctAnswer": "Every 5 years",
+      "isCorrect": false
+    },
+    {
+      "question": "What should you check when inspecting internal valves?",
+      "selected": "Valve movement, return spring, seat condition, leakage, linkage, and actuator",
+      "correctAnswer": "Valve movement, return spring, seat condition, leakage, linkage, and actuator",
+      "isCorrect": true
+    }
+  ]
+}
