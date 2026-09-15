@@ -1,0 +1,99 @@
+{
+  "name": "Dennis Wood",
+  "testNum": 3,
+  "score": 67,
+  "passed": false,
+  "timestamp": "2026-09-15T15:51:03.170Z",
+  "answers": [
+    {
+      "question": "Per 49 CFR 180.407, how often is the Internal Visual Inspection (I) required for lined tanks or certain hazardous materials?",
+      "selected": "Annually",
+      "correctAnswer": "Every 5 years",
+      "isCorrect": false
+    },
+    {
+      "question": "Under the cargo tank Inspection Criteria, which condition is classified as 'Needs Repair' rather than 'Out of Service'?",
+      "selected": "Minor corrosion, stiff valves, or aging seals",
+      "correctAnswer": "Minor corrosion, stiff valves, or aging seals",
+      "isCorrect": true
+    },
+    {
+      "question": "Which 49 CFR part covers cargo tank design and manufacturing specifications?",
+      "selected": "Part 180",
+      "correctAnswer": "Part 178",
+      "isCorrect": false
+    },
+    {
+      "question": "What is the primary goal when inspecting HazMat tanker shell construction, baffles, manways, and compartments?",
+      "selected": "Containment — preventing hazardous release",
+      "correctAnswer": "Containment — preventing hazardous release",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR trailer body damage standards, what is the maximum allowable dent/gouge depth at a weld?",
+      "selected": "1/10 inch",
+      "correctAnswer": "1/2 inch",
+      "isCorrect": false
+    },
+    {
+      "question": "What should technicians inspect gaskets, seals, and O-rings for?",
+      "selected": "Hardening, swelling, cracking, compression set, cuts, and chemical deterioration",
+      "correctAnswer": "Hardening, swelling, cracking, compression set, cuts, and chemical deterioration",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Pressure Test (P) required?",
+      "selected": "Every 2 years",
+      "correctAnswer": "Every 5 years",
+      "isCorrect": false
+    },
+    {
+      "question": "Which of the following immediately takes a cargo tank Out of Service?",
+      "selected": "An expired cargo tank qualification required by 49 CFR §180.407",
+      "correctAnswer": "An expired cargo tank qualification required by 49 CFR §180.407",
+      "isCorrect": true
+    },
+    {
+      "question": "What must happen if a weld or structural defect (crack, pinhole, incomplete fusion) is found on a cargo tank?",
+      "selected": "The tank must be taken out of HazMat service until repaired",
+      "correctAnswer": "The tank must be taken out of HazMat service until repaired",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the External Visual Inspection (V) required on a cargo tank?",
+      "selected": "Annually (every 1 year)",
+      "correctAnswer": "Annually (every 1 year)",
+      "isCorrect": true
+    },
+    {
+      "question": "Why is material compatibility important for cargo tank construction?",
+      "selected": "Incompatible materials can react with product, accelerate corrosion, and damage seals — e.g., strong acids attack carbon steel",
+      "correctAnswer": "Incompatible materials can react with product, accelerate corrosion, and damage seals — e.g., strong acids attack carbon steel",
+      "isCorrect": true
+    },
+    {
+      "question": "Per 49 CFR 180.407, how often is the Leakage Test (K) required?",
+      "selected": "Every 5 years",
+      "correctAnswer": "Annually (every 1 year)",
+      "isCorrect": false
+    },
+    {
+      "question": "Why is a bottom outlet assembly considered especially vulnerable?",
+      "selected": "It is exposed underneath the cargo tank and prone to road impact, corrosion, and damaged threads",
+      "correctAnswer": "It is exposed underneath the cargo tank and prone to road impact, corrosion, and damaged threads",
+      "isCorrect": true
+    },
+    {
+      "question": "When is an external valve considered unsafe?",
+      "selected": "When it will not fully close",
+      "correctAnswer": "When it will not fully close",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the primary purpose of the cargo tank shell?",
+      "selected": "To contain the product while withstanding internal pressure, surge, vibration, temperature change, and vehicle movement",
+      "correctAnswer": "To contain the product while withstanding internal pressure, surge, vibration, temperature change, and vehicle movement",
+      "isCorrect": true
+    }
+  ]
+}
