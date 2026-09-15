@@ -1,0 +1,99 @@
+{
+  "name": "Kadeem Tansil",
+  "testNum": 1,
+  "score": 73,
+  "passed": false,
+  "timestamp": "2026-09-15T22:17:47.170Z",
+  "answers": [
+    {
+      "question": "What does the course describe as the final, essential component of a complete preventative maintenance program?",
+      "selected": "Accurate documentation",
+      "correctAnswer": "Accurate documentation",
+      "isCorrect": true
+    },
+    {
+      "question": "Which regulation covers vehicle components and accessories such as steering, brakes, tires, and lights?",
+      "selected": "49 CFR Part 180",
+      "correctAnswer": "49 CFR Part 393",
+      "isCorrect": false
+    },
+    {
+      "question": "Why does the course say consistent, documented PMs matter for audit readiness?",
+      "selected": "They ensure the company is prepared if a DOT audit follows an incident",
+      "correctAnswer": "They ensure the company is prepared if a DOT audit follows an incident",
+      "isCorrect": true
+    },
+    {
+      "question": "Which 49 CFR Parts does the course apply in real inspection scenarios?",
+      "selected": "Parts 393, 396, and 180",
+      "correctAnswer": "Parts 393, 396, and 180",
+      "isCorrect": true
+    },
+    {
+      "question": "What does the course say non-compliance risks?",
+      "selected": "Fines, CSA impacts, out-of-service orders, and civil liability",
+      "correctAnswer": "Fines, CSA impacts, out-of-service orders, and civil liability",
+      "isCorrect": true
+    },
+    {
+      "question": "Which regulation covers systematic inspection, repair, and maintenance of commercial motor vehicles?",
+      "selected": "49 CFR Part 180",
+      "correctAnswer": "49 CFR Part 396",
+      "isCorrect": false
+    },
+    {
+      "question": "What is Fleetrock used for at Andrew's Logistics?",
+      "selected": "The system of record for PM sheets, EDVIR repairs, and DOT compliance records",
+      "correctAnswer": "The system of record for PM sheets, EDVIR repairs, and DOT compliance records",
+      "isCorrect": true
+    },
+    {
+      "question": "Roughly how long should a proficient technician expect an A-PM to take?",
+      "selected": "About 1.5 hours",
+      "correctAnswer": "About 1.5 hours",
+      "isCorrect": true
+    },
+    {
+      "question": "After creating a Repair Order in Fleetrock, what appears at the top of the RO for the PM you're conducting?",
+      "selected": "A banner with a \"+ Add Task\" button",
+      "correctAnswer": "A banner with a \"+ Add Task\" button",
+      "isCorrect": true
+    },
+    {
+      "question": "What is a DVIR, as described in the Maintenance Documentation section?",
+      "selected": "Where the driver communicates dash lights, issues, or damage/defects to the maintenance team",
+      "correctAnswer": "Where the driver communicates dash lights, issues, or damage/defects to the maintenance team",
+      "isCorrect": true
+    },
+    {
+      "question": "On a PM sheet (a legal document), what tone/language should you use when describing an issue?",
+      "selected": "No description is needed",
+      "correctAnswer": "General industry terms, since the reader may not have a mechanic background",
+      "isCorrect": false
+    },
+    {
+      "question": "Under 49 CFR 396.3(b), what must a motor carrier's required records for each vehicle include?",
+      "selected": "Vehicle ID, due dates, inspection/repair history, and bus door tests",
+      "correctAnswer": "Vehicle ID, due dates, inspection/repair history, and bus door tests",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a)(1), what condition must parts like the frame, suspension, axles, wheels, and steering be in at all times?",
+      "selected": "Safe and in proper operating condition",
+      "correctAnswer": "Safe and in proper operating condition",
+      "isCorrect": true
+    },
+    {
+      "question": "After the banner with the \"+ Add Task\" button appears on the repair order, what is the next step?",
+      "selected": "Click start repair order, enter an expected finish date and time, then clock on the task",
+      "correctAnswer": "Click start repair order, enter an expected finish date and time, then clock on the task",
+      "isCorrect": true
+    },
+    {
+      "question": "Which regulation covers cargo tank inspections and testing?",
+      "selected": "49 CFR Part 393",
+      "correctAnswer": "49 CFR Part 180",
+      "isCorrect": false
+    }
+  ]
+}
