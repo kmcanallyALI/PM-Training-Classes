@@ -1,0 +1,99 @@
+{
+  "name": "Emalee Baker",
+  "testNum": 1,
+  "score": 73,
+  "passed": false,
+  "timestamp": "2026-09-15T20:37:56.032Z",
+  "answers": [
+    {
+      "question": "Roughly how long should a proficient technician expect an A-PM to take?",
+      "selected": "About 1.5 hours",
+      "correctAnswer": "About 1.5 hours",
+      "isCorrect": true
+    },
+    {
+      "question": "Why does the course say consistent, documented PMs matter for audit readiness?",
+      "selected": "They ensure the company is prepared if a DOT audit follows an incident",
+      "correctAnswer": "They ensure the company is prepared if a DOT audit follows an incident",
+      "isCorrect": true
+    },
+    {
+      "question": "What does the course describe as the final, essential component of a complete preventative maintenance program?",
+      "selected": "Accurate documentation",
+      "correctAnswer": "Accurate documentation",
+      "isCorrect": true
+    },
+    {
+      "question": "Which 49 CFR Parts does the course apply in real inspection scenarios?",
+      "selected": "Parts 40 and 49 only",
+      "correctAnswer": "Parts 393, 396, and 180",
+      "isCorrect": false
+    },
+    {
+      "question": "On a PM sheet (a legal document), what tone/language should you use when describing an issue?",
+      "selected": "General industry terms, since the reader may not have a mechanic background",
+      "correctAnswer": "General industry terms, since the reader may not have a mechanic background",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a)(2), how often must pushout windows, emergency doors, and emergency door marking lights on buses be inspected?",
+      "selected": "Every 30 days",
+      "correctAnswer": "At least every 90 days",
+      "isCorrect": false
+    },
+    {
+      "question": "After creating a Repair Order in Fleetrock, what appears at the top of the RO for the PM you're conducting?",
+      "selected": "A banner with a \"+ Add Task\" button",
+      "correctAnswer": "A banner with a \"+ Add Task\" button",
+      "isCorrect": true
+    },
+    {
+      "question": "In Fleetrock, what is the first step immediately after receiving a unit you are assigned to PM?",
+      "selected": "Create a Repair Order",
+      "correctAnswer": "Create a Repair Order",
+      "isCorrect": true
+    },
+    {
+      "question": "Which regulation covers cargo tank inspections and testing?",
+      "selected": "49 CFR Part 396",
+      "correctAnswer": "49 CFR Part 180",
+      "isCorrect": false
+    },
+    {
+      "question": "How does proper documentation affect the overall cost of running the fleet, per the course?",
+      "selected": "It lowers cost by tracking defects, trends, and corrective actions",
+      "correctAnswer": "It lowers cost by tracking defects, trends, and corrective actions",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following is one of the course's Terminal Learning Objectives?",
+      "selected": "Correctly classify defects as Acceptable, Needs Repair, or Out-of-Service",
+      "correctAnswer": "Correctly classify defects as Acceptable, Needs Repair, or Out-of-Service",
+      "isCorrect": true
+    },
+    {
+      "question": "What is a DVIR, as described in the Maintenance Documentation section?",
+      "selected": "Where the driver communicates dash lights, issues, or damage/defects to the maintenance team",
+      "correctAnswer": "Where the driver communicates dash lights, issues, or damage/defects to the maintenance team",
+      "isCorrect": true
+    },
+    {
+      "question": "Per the Maintenance Documentation section, who is responsible for keeping trucks in compliance with the 49 CFR?",
+      "selected": "Both drivers and the Maintenance team",
+      "correctAnswer": "Both drivers and the Maintenance team",
+      "isCorrect": true
+    },
+    {
+      "question": "Why is Fleetrock's portability (accessible from any device) useful?",
+      "selected": "You can keep working on the same inspection from another device if your tablet battery dies",
+      "correctAnswer": "You can keep working on the same inspection from another device if your tablet battery dies",
+      "isCorrect": true
+    },
+    {
+      "question": "Which regulation covers vehicle components and accessories such as steering, brakes, tires, and lights?",
+      "selected": "49 CFR Part 180",
+      "correctAnswer": "49 CFR Part 393",
+      "isCorrect": false
+    }
+  ]
+}
