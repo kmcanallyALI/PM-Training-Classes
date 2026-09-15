@@ -1,0 +1,99 @@
+{
+  "name": "Emalee Baker",
+  "testNum": 2,
+  "score": 80,
+  "passed": true,
+  "timestamp": "2026-09-15T21:35:38.391Z",
+  "answers": [
+    {
+      "question": "Under 49 CFR 393.75, which of the following makes a vehicle unsafe to operate on its tires?",
+      "selected": "A tire with less than full tread but above the legal minimum",
+      "correctAnswer": "Ply or belt material exposed through the tread or sidewall",
+      "isCorrect": false
+    },
+    {
+      "question": "What condition classifies air disc brake pads as In Service?",
+      "selected": "Even pad wear with friction material above manufacturer minimum",
+      "correctAnswer": "Even pad wear with friction material above manufacturer minimum",
+      "isCorrect": true
+    },
+    {
+      "question": "Per FMCSA out-of-service criteria, what pushrod stroke condition takes a brake out of service?",
+      "selected": "Pushrod stroke beyond the legal adjustment limit, based on brake chamber size and the 49CFR",
+      "correctAnswer": "Pushrod stroke beyond the legal adjustment limit, based on brake chamber size and the 49CFR",
+      "isCorrect": true
+    },
+    {
+      "question": "Which condition takes a brake chamber Out of Service?",
+      "selected": "An audible chamber leak or a loose chamber",
+      "correctAnswer": "An audible chamber leak or a loose chamber",
+      "isCorrect": true
+    },
+    {
+      "question": "According to Tire Positions, can steer tires be used in other positions on the vehicle?",
+      "selected": "Only on the trailer axle",
+      "correctAnswer": "No, steer tires are not interchangeable with other positions",
+      "isCorrect": false
+    },
+    {
+      "question": "At what tread depth are steer tires removed at Andrew's Logistics (company minimum, not just the legal floor)?",
+      "selected": "8/32 inch",
+      "correctAnswer": "6/32 inch",
+      "isCorrect": false
+    },
+    {
+      "question": "Which of the following classifies the air system as Needs Repair?",
+      "selected": "Minor fitting seepage or slow air build",
+      "correctAnswer": "Minor fitting seepage or slow air build",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 393.75, what is the minimum tread depth required in every major groove for front tires on a truck tractor?",
+      "selected": "4/32 inch",
+      "correctAnswer": "4/32 inch",
+      "isCorrect": true
+    },
+    {
+      "question": "What condition to a leaf spring makes a vehicle Out of Service?",
+      "selected": "A broken or shifted leaf spring affecting axle location, or a missing leaf in a main spring",
+      "correctAnswer": "A broken or shifted leaf spring affecting axle location, or a missing leaf in a main spring",
+      "isCorrect": true
+    },
+    {
+      "question": "Which brake drum condition takes a vehicle Out of Service?",
+      "selected": "Cracked, broken, or missing sections, or worn beyond the maximum inside diameter",
+      "correctAnswer": "Cracked, broken, or missing sections, or worn beyond the maximum inside diameter",
+      "isCorrect": true
+    },
+    {
+      "question": "Bulges or blisters on a tire sidewall should be handled how?",
+      "selected": "Replaced immediately — this damage is irreparable",
+      "correctAnswer": "Replaced immediately — this damage is irreparable",
+      "isCorrect": true
+    },
+    {
+      "question": "Repeated need to manually adjust an automatic slack adjuster is best understood as:",
+      "selected": "A symptom indicating an underlying issue that needs diagnosis",
+      "correctAnswer": "A symptom indicating an underlying issue that needs diagnosis",
+      "isCorrect": true
+    },
+    {
+      "question": "What should you check during a tire & rim inspection before driving?",
+      "selected": "Incorrect tire pressure (measured cold), irregular tread wear, cracking, and bulges",
+      "correctAnswer": "Incorrect tire pressure (measured cold), irregular tread wear, cracking, and bulges",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the purpose of Lockout/Tagout (LO/TO)?",
+      "selected": "To keep a hazard de-energized, such as removing a negative battery cable and locking/tagging access",
+      "correctAnswer": "To keep a hazard de-energized, such as removing a negative battery cable and locking/tagging access",
+      "isCorrect": true
+    },
+    {
+      "question": "When the air governor cuts in/out within manufacturer specifications and there are no audible leaks, how should the air system be classified?",
+      "selected": "In Service",
+      "correctAnswer": "In Service",
+      "isCorrect": true
+    }
+  ]
+}
