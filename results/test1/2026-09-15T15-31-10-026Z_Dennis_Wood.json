@@ -1,0 +1,99 @@
+{
+  "name": "Dennis Wood",
+  "testNum": 1,
+  "score": 93,
+  "passed": true,
+  "timestamp": "2026-09-15T15:31:10.026Z",
+  "answers": [
+    {
+      "question": "Which regulation covers vehicle components and accessories such as steering, brakes, tires, and lights?",
+      "selected": "49 CFR Part 396",
+      "correctAnswer": "49 CFR Part 393",
+      "isCorrect": false
+    },
+    {
+      "question": "Roughly how long should a proficient technician expect a B-PM to take?",
+      "selected": "About 2 hours",
+      "correctAnswer": "About 2 hours",
+      "isCorrect": true
+    },
+    {
+      "question": "What does the course say non-compliance risks?",
+      "selected": "Fines, CSA impacts, out-of-service orders, and civil liability",
+      "correctAnswer": "Fines, CSA impacts, out-of-service orders, and civil liability",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a)(1), what condition must parts like the frame, suspension, axles, wheels, and steering be in at all times?",
+      "selected": "Safe and in proper operating condition",
+      "correctAnswer": "Safe and in proper operating condition",
+      "isCorrect": true
+    },
+    {
+      "question": "Why does the course say consistent, documented PMs matter for audit readiness?",
+      "selected": "They ensure the company is prepared if a DOT audit follows an incident",
+      "correctAnswer": "They ensure the company is prepared if a DOT audit follows an incident",
+      "isCorrect": true
+    },
+    {
+      "question": "On a PM sheet (a legal document), what tone/language should you use when describing an issue?",
+      "selected": "General industry terms, since the reader may not have a mechanic background",
+      "correctAnswer": "General industry terms, since the reader may not have a mechanic background",
+      "isCorrect": true
+    },
+    {
+      "question": "Which regulation covers systematic inspection, repair, and maintenance of commercial motor vehicles?",
+      "selected": "49 CFR Part 396",
+      "correctAnswer": "49 CFR Part 396",
+      "isCorrect": true
+    },
+    {
+      "question": "What does the course describe as the final, essential component of a complete preventative maintenance program?",
+      "selected": "Accurate documentation",
+      "correctAnswer": "Accurate documentation",
+      "isCorrect": true
+    },
+    {
+      "question": "Which 49 CFR Parts does the course apply in real inspection scenarios?",
+      "selected": "Parts 393, 396, and 180",
+      "correctAnswer": "Parts 393, 396, and 180",
+      "isCorrect": true
+    },
+    {
+      "question": "Which DOT focus areas can quickly trigger out-of-service violations, per the course overview?",
+      "selected": "Brakes, lights, tires, and steering",
+      "correctAnswer": "Brakes, lights, tires, and steering",
+      "isCorrect": true
+    },
+    {
+      "question": "Why do we perform PMs in the first place?",
+      "selected": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "correctAnswer": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a)(2), how often must pushout windows, emergency doors, and emergency door marking lights on buses be inspected?",
+      "selected": "At least every 90 days",
+      "correctAnswer": "At least every 90 days",
+      "isCorrect": true
+    },
+    {
+      "question": "Per the Maintenance Documentation section, who is responsible for keeping trucks in compliance with the 49 CFR?",
+      "selected": "Both drivers and the Maintenance team",
+      "correctAnswer": "Both drivers and the Maintenance team",
+      "isCorrect": true
+    },
+    {
+      "question": "Roughly how long should a proficient technician expect an A-PM to take?",
+      "selected": "About 1.5 hours",
+      "correctAnswer": "About 1.5 hours",
+      "isCorrect": true
+    },
+    {
+      "question": "After creating a Repair Order in Fleetrock, what appears at the top of the RO for the PM you're conducting?",
+      "selected": "A banner with a \"+ Add Task\" button",
+      "correctAnswer": "A banner with a \"+ Add Task\" button",
+      "isCorrect": true
+    }
+  ]
+}
