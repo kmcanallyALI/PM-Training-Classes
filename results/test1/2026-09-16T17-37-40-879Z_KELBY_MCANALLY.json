@@ -1,0 +1,99 @@
+{
+  "name": "KELBY MCANALLY",
+  "testNum": 1,
+  "score": 100,
+  "passed": true,
+  "timestamp": "2026-09-16T17:37:40.879Z",
+  "answers": [
+    {
+      "question": "Which regulation covers systematic inspection, repair, and maintenance of commercial motor vehicles?",
+      "selected": "49 CFR Part 396",
+      "correctAnswer": "49 CFR Part 396",
+      "isCorrect": true
+    },
+    {
+      "question": "What does the course say non-compliance risks?",
+      "selected": "Fines, CSA impacts, out-of-service orders, and civil liability",
+      "correctAnswer": "Fines, CSA impacts, out-of-service orders, and civil liability",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following is one of the course's Terminal Learning Objectives?",
+      "selected": "Correctly classify defects as Acceptable, Needs Repair, or Out-of-Service",
+      "correctAnswer": "Correctly classify defects as Acceptable, Needs Repair, or Out-of-Service",
+      "isCorrect": true
+    },
+    {
+      "question": "What does the course's scope cover?",
+      "selected": "Power unit systems (engine, brakes, suspension, electrical) plus tanker systems (valves, piping, PRDs, spill prevention)",
+      "correctAnswer": "Power unit systems (engine, brakes, suspension, electrical) plus tanker systems (valves, piping, PRDs, spill prevention)",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a)(1), what condition must parts like the frame, suspension, axles, wheels, and steering be in at all times?",
+      "selected": "Safe and in proper operating condition",
+      "correctAnswer": "Safe and in proper operating condition",
+      "isCorrect": true
+    },
+    {
+      "question": "Why does the course say consistent, documented PMs matter for audit readiness?",
+      "selected": "They ensure the company is prepared if a DOT audit follows an incident",
+      "correctAnswer": "They ensure the company is prepared if a DOT audit follows an incident",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(b), what must a motor carrier's required records for each vehicle include?",
+      "selected": "Vehicle ID, due dates, inspection/repair history, and bus door tests",
+      "correctAnswer": "Vehicle ID, due dates, inspection/repair history, and bus door tests",
+      "isCorrect": true
+    },
+    {
+      "question": "Why do we perform PMs in the first place?",
+      "selected": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "correctAnswer": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "isCorrect": true
+    },
+    {
+      "question": "After creating a Repair Order in Fleetrock, what appears at the top of the RO for the PM you're conducting?",
+      "selected": "A banner with a \"+ Add Task\" button",
+      "correctAnswer": "A banner with a \"+ Add Task\" button",
+      "isCorrect": true
+    },
+    {
+      "question": "Roughly how long should a proficient technician expect a B-PM to take?",
+      "selected": "About 2 hours",
+      "correctAnswer": "About 2 hours",
+      "isCorrect": true
+    },
+    {
+      "question": "How does proper documentation affect the overall cost of running the fleet, per the course?",
+      "selected": "It lowers cost by tracking defects, trends, and corrective actions",
+      "correctAnswer": "It lowers cost by tracking defects, trends, and corrective actions",
+      "isCorrect": true
+    },
+    {
+      "question": "Which DOT focus areas can quickly trigger out-of-service violations, per the course overview?",
+      "selected": "Brakes, lights, tires, and steering",
+      "correctAnswer": "Brakes, lights, tires, and steering",
+      "isCorrect": true
+    },
+    {
+      "question": "What is Fleetrock used for at Andrew's Logistics?",
+      "selected": "The system of record for PM sheets, EDVIR repairs, and DOT compliance records",
+      "correctAnswer": "The system of record for PM sheets, EDVIR repairs, and DOT compliance records",
+      "isCorrect": true
+    },
+    {
+      "question": "What is a DVIR, as described in the Maintenance Documentation section?",
+      "selected": "Where the driver communicates dash lights, issues, or damage/defects to the maintenance team",
+      "correctAnswer": "Where the driver communicates dash lights, issues, or damage/defects to the maintenance team",
+      "isCorrect": true
+    },
+    {
+      "question": "What does the course describe as the final, essential component of a complete preventative maintenance program?",
+      "selected": "Accurate documentation",
+      "correctAnswer": "Accurate documentation",
+      "isCorrect": true
+    }
+  ]
+}
