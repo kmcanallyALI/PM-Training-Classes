@@ -947,12 +947,10 @@ function renderSlide(){
         Test 2: ${scores[2] ?? "not taken"}% &nbsp;|&nbsp;
         Test 3: ${scores[3] ?? "not taken"}%
       </div>
-      <div class="video-locked-note ${completionReportSent ? 'done' : ''}" id="completionNote">${completionReportSent ? (allPassed ? 'Your course completion report and in-person training request have been emailed to Kelby.' : 'Your course completion report has been emailed to Kelby.') : (allPassed ? 'Click below to email your final course report and request in-person training scheduling — all in one message to Kelby.' : 'Click below to email your final course report (all three test scores) to Kelby.')}</div>
-      <button class="schedule-btn" id="completionReportBtn">${allPassed ? 'Email My Results & Request In-Person Training' : 'Email My Course Results'}</button>
-      ${allPassed ? `<button class="schedule-btn" id="certBtn" style="margin-left:10px;background:var(--navy);">View / Print My Certificate</button>
-        <p style="font-size:13px;color:var(--gray);margin-top:8px;">All three tests passed (80%+). Your certificate of completion is now available — print or save it as a PDF, then attach it to the email above before sending (email attachments can't be added automatically from this page).</p>`
-        : `<div class="gate">All three section tests must be passed at 80% or higher before your certificate becomes available and before you can request in-person training scheduling. Go back and complete any remaining or failed tests.</div>`}
-    </div>`;
+        ${allPassed ? `<div class="video-locked-note done">All three tests passed! Your certificate of completion has been automatically emailed to Kelby.</div>
+        <button class="schedule-btn" id="certBtn" style="background:var(--navy);">View / Print My Certificate</button>
+        <p style="font-size:13px;color:var(--gray);margin-top:8px;">You can also print or save your certificate as a PDF for your own records.</p>`
+        : `<div class="gate">All three section tests must be passed at 80% or higher to complete this course. Go back and complete any remaining or failed tests.</div>`}
   }
 
   const textHold = ((s.type === "content" || s.type === "steps") && pacedReading);
@@ -1026,6 +1024,9 @@ function renderSlide(){
         // This is fire-and-forget from the UI's perspective — a failure here does not
         // block the trainee locally, but is logged to the console for troubleshooting.
         recordResultToGit(s.testNum, pct, didPass, answerLog);
+        
+        // If this submission completes all three passing scores, fire the certificate email.
+        await maybeSendCertificateEmail();
 
         const nextBtn = document.getElementById('nextBtn');
         const counter = document.getElementById('slideCounter');
@@ -1045,24 +1046,9 @@ function renderSlide(){
     }
   }
   if(s.type === "final"){
-    const allPassed = scores[1]>=80 && scores[2]>=80 && scores[3]>=80;
     const certBtn = document.getElementById('certBtn');
     if(certBtn){ certBtn.onclick = ()=> openCertificate(); }
-    const reportBtn = document.getElementById('completionReportBtn');
-    if(reportBtn){
-      reportBtn.onclick = async ()=>{
-        completionReportSent = true;
-        await saveState();
-        sendCompletionReport();
-        const note = document.getElementById('completionNote');
-        if(note){
-          note.textContent = allPassed ? 'Your course completion report and in-person training request have been emailed to Kelby.' : 'Your course completion report has been emailed to Kelby.';
-          note.classList.add('done');
-        }
-      };
-    }
   }
-}
 
 function render(){
   if(!traineeName){ renderNameGate(); return; }
