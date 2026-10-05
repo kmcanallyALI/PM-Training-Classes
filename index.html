@@ -688,6 +688,7 @@ let videoCompleted = false;
 let assignedCredential = null;
 let assignedUnit = null;
 let completionReportSent = false;
+let certEmailSent = false; // true once the certificate email + GitHub record have been sent successfully
 
 async function loadState(){
   try{
@@ -705,12 +706,13 @@ async function loadState(){
       assignedCredential = d.assignedCredential || null;
       assignedUnit = d.assignedUnit || null;
       completionReportSent = d.completionReportSent || false;
+      certEmailSent = d.certEmailSent || false;
     }
   }catch(e){ /* no saved state yet, or storage unavailable */ }
 }
 async function saveState(){
   try{
-    window.localStorage.setItem('pm-training-state', JSON.stringify({traineeName, firstName, lastName, scores, quizAnswerLogs, pacedReading, readSpeed, videoCompleted, assignedCredential, assignedUnit, completionReportSent}));
+    window.localStorage.setItem('pm-training-state', JSON.stringify({traineeName, firstName, lastName, scores, quizAnswerLogs, pacedReading, readSpeed, videoCompleted, assignedCredential, assignedUnit, completionReportSent, certEmailSent}));
   }catch(e){ console.error('save failed', e); }
 }
 
@@ -749,6 +751,35 @@ async function recordResultToGit(testNum, score, passed, answerLog){
     }
   }catch(e){
     console.error('recordResultToGit: failed to reach the recording function', e);
+  }
+}
+
+// Fires once, the moment all three tests are passed. Calls the Netlify function that
+// (1) commits the certificate record to GitHub and (2) emails the certificate.
+// Safe to call after every quiz submit: it does nothing until all three scores are
+// 80%+, and it will not send twice once it has succeeded.
+async function maybeSendCertificateEmail(){
+  const allPassed = scores[1]>=80 && scores[2]>=80 && scores[3]>=80;
+  if(!allPassed || certEmailSent || !traineeName) return;
+  try{
+    const res = await fetch('/.netlify/functions/send-certificate', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({
+        name: traineeName,
+        date: new Date().toLocaleDateString('en-US', { year:'numeric', month:'long', day:'numeric' }),
+        timestamp: new Date().toISOString(),
+        scores: { test1: scores[1], test2: scores[2], test3: scores[3] }
+      })
+    });
+    if(res.ok){
+      certEmailSent = true;
+      await saveState();
+    } else {
+      console.error('maybeSendCertificateEmail: server responded with an error', res.status, await res.text());
+    }
+  }catch(e){
+    console.error('maybeSendCertificateEmail: failed to reach the certificate function', e);
   }
 }
 
@@ -951,6 +982,7 @@ function renderSlide(){
         <button class="schedule-btn" id="certBtn" style="background:var(--navy);">View / Print My Certificate</button>
         <p style="font-size:13px;color:var(--gray);margin-top:8px;">You can also print or save your certificate as a PDF for your own records.</p>`
         : `<div class="gate">All three section tests must be passed at 80% or higher to complete this course. Go back and complete any remaining or failed tests.</div>`}
+    </div>`;
   }
 
   const textHold = ((s.type === "content" || s.type === "steps") && pacedReading);
@@ -1049,6 +1081,7 @@ function renderSlide(){
     const certBtn = document.getElementById('certBtn');
     if(certBtn){ certBtn.onclick = ()=> openCertificate(); }
   }
+}
 
 function render(){
   if(!traineeName){ renderNameGate(); return; }
