@@ -1,82 +1,155 @@
 // netlify/functions/send-certificate.js
 //
-// Sends a "Certificate of Completion" email to Kelby via Resend, automatically
-// triggered by the training page the moment a trainee passes all three tests.
+// Runs when a trainee passes all three PM tests. Does two independent things:
+//   1. Commits the certificate to the GitHub repo (certificates/<name>_<date>.json + .html)
+//   2. Emails the certificate to Kelby via Resend
 //
-// REQUIRED Netlify environment variable:
-//   RESEND_API_KEY  - your Resend API key (Site settings -> Environment variables)
+// Both are attempted every time, so a failure in one never blocks the other.
+// The GitHub commit is idempotent (same trainee + same day = same file path), so the
+// page can safely retry this call after a failure without creating duplicates.
 //
-// The email is sent from Resend's shared sandbox address (onboarding@resend.dev),
-// which requires no domain verification but can only deliver to the email address
-// on the Resend account itself — which is fine here since the only recipient is
-// Kelby's own address.
+// REQUIRED Netlify environment variables:
+//   RESEND_API_KEY  - Resend API key (account must be registered to the recipient email)
+//   GITHUB_TOKEN    - fine-grained PAT, this repo only, "Contents: Read and write"
+//   GITHUB_REPO     - "owner/repo-name", e.g. "kmcanallyALI/PM-Training-Classes"
+// OPTIONAL:
+//   GITHUB_BRANCH   - defaults to "main"
+//   CERT_EMAIL_TO   - defaults to kmcanally@andrewslogistics.com
+//   CERT_EMAIL_FROM - defaults to "PM Training Course <onboarding@resend.dev>"
 
-const RECIPIENT_EMAIL = "kmcanally@andrewslogistics.com";
+const COURSE_NAME = 'Preventative Maintenance Training';
+const PASS_MARK = 80;
 
 exports.handler = async function (event) {
   if (event.httpMethod !== 'POST') {
-    return { statusCode: 405, body: JSON.stringify({ error: 'Method Not Allowed' }) };
-  }
-
-  const RESEND_API_KEY = process.env.RESEND_API_KEY;
-  if (!RESEND_API_KEY) {
-    return {
-      statusCode: 500,
-      body: JSON.stringify({ error: 'Server not configured. Set RESEND_API_KEY as an environment variable in the Netlify dashboard.' })
-    };
+    return json(405, { error: 'Method Not Allowed' });
   }
 
   let payload;
   try {
     payload = JSON.parse(event.body || '{}');
   } catch (e) {
-    return { statusCode: 400, body: JSON.stringify({ error: 'Invalid JSON body.' }) };
+    return json(400, { error: 'Invalid JSON body.' });
   }
 
-  const { name, date, scores } = payload;
+  const { name, date, timestamp, scores } = payload;
   if (!name || !scores) {
-    return { statusCode: 400, body: JSON.stringify({ error: 'Missing required fields: name and scores are required.' }) };
+    return json(400, { error: 'Missing required fields: name and scores are required.' });
   }
 
-  const safeName = escapeHtml(name);
-  const safeDate = escapeHtml(date || new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' }));
-  const finalScore = Math.round(((scores.test1 || 0) + (scores.test2 || 0) + (scores.test3 || 0)) / 3);
+  const t = [scores.test1, scores.test2, scores.test3];
+  if (!t.every((n) => typeof n === 'number' && n >= PASS_MARK)) {
+    return json(400, { error: `A certificate requires a ${PASS_MARK}%+ score on all three tests.` });
+  }
+
+  const ts = timestamp || new Date().toISOString();
+  const dateText = date || new Date(ts).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' });
+  const finalScore = Math.round((t[0] + t[1] + t[2]) / 3);
 
   const html = buildCertificateHtml({
-    name: safeName,
-    date: safeDate,
+    name: escapeHtml(name),
+    date: escapeHtml(dateText),
     finalScore,
     test1: scores.test1,
     test2: scores.test2,
     test3: scores.test3
   });
 
-  try {
-    const res = await fetch('https://api.resend.com/emails', {
-      method: 'POST',
+  const record = {
+    name: String(name),
+    course: COURSE_NAME,
+    completed: dateText,
+    timestamp: ts,
+    scores: { test1: scores.test1, test2: scores.test2, test3: scores.test3 },
+    finalScore
+  };
+
+  const [gh, mail] = await Promise.allSettled([
+    commitCertificateToGitHub(record, html),
+    sendCertificateEmail(String(name), html)
+  ]);
+
+  const result = {
+    github: gh.status === 'fulfilled' ? gh.value : { ok: false, error: String(gh.reason) },
+    email: mail.status === 'fulfilled' ? mail.value : { ok: false, error: String(mail.reason) }
+  };
+
+  // 200 only when BOTH succeeded, so the page keeps retrying until both have.
+  const allOk = result.github.ok && result.email.ok;
+  return json(allOk ? 200 : 502, { ok: allOk, ...result });
+};
+
+function json(statusCode, obj) {
+  return { statusCode, body: JSON.stringify(obj) };
+}
+
+async function sendCertificateEmail(name, html) {
+  const key = process.env.RESEND_API_KEY;
+  if (!key) return { ok: false, error: 'RESEND_API_KEY is not set in Netlify.' };
+
+  const res = await fetch('https://api.resend.com/emails', {
+    method: 'POST',
+    headers: { Authorization: `Bearer ${key}`, 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      from: process.env.CERT_EMAIL_FROM || 'PM Training Course <onboarding@resend.dev>',
+      to: [process.env.CERT_EMAIL_TO || 'kmcanally@andrewslogistics.com'],
+      subject: `PM Training Certificate of Completion — ${name}`,
+      html
+    })
+  });
+  const data = await res.json().catch(() => ({}));
+  return res.ok ? { ok: true, id: data.id || null } : { ok: false, status: res.status, details: data };
+}
+
+// Writes certificates/<name>_<YYYY-MM-DD>.json and .html. If a file for that trainee and
+// day already exists, that counts as success (it is already stored).
+async function commitCertificateToGitHub(record, html) {
+  const token = process.env.GITHUB_TOKEN;
+  const repo = process.env.GITHUB_REPO;
+  const branch = process.env.GITHUB_BRANCH || 'main';
+  if (!token || !repo) return { ok: false, error: 'GITHUB_TOKEN and GITHUB_REPO must be set in Netlify.' };
+
+  const safeName = record.name.trim().replace(/[^a-zA-Z0-9]+/g, '_').slice(0, 60) || 'unknown';
+  const day = record.timestamp.slice(0, 10);
+  const base = `certificates/${safeName}_${day}`;
+
+  const files = [
+    { path: `${base}.json`, content: JSON.stringify(record, null, 2) },
+    { path: `${base}.html`, content: html }
+  ];
+
+  const out = [];
+  for (const f of files) {
+    const url = `https://api.github.com/repos/${repo}/contents/${f.path.split('/').map(encodeURIComponent).join('/')}`;
+    const res = await fetch(url, {
+      method: 'PUT',
       headers: {
-        Authorization: `Bearer ${RESEND_API_KEY}`,
-        'Content-Type': 'application/json'
+        Authorization: `Bearer ${token}`,
+        'Content-Type': 'application/json',
+        'User-Agent': 'pm-training-certificate-recorder',
+        Accept: 'application/vnd.github+json'
       },
       body: JSON.stringify({
-        from: 'PM Training Course <onboarding@resend.dev>',
-        to: [RECIPIENT_EMAIL],
-        subject: `PM Training Certificate of Completion — ${name}`,
-        html
+        message: `Certificate: ${record.name} — ${record.course} — ${record.finalScore}%`,
+        content: Buffer.from(f.content, 'utf-8').toString('base64'),
+        branch
       })
     });
-
-    const data = await res.json();
-
-    if (!res.ok) {
-      return { statusCode: res.status, body: JSON.stringify({ error: 'Resend API rejected the email.', details: data }) };
+    if (res.ok) {
+      out.push({ path: f.path, stored: true, alreadyExisted: false });
+      continue;
     }
-
-    return { statusCode: 200, body: JSON.stringify({ ok: true, id: data.id || null }) };
-  } catch (err) {
-    return { statusCode: 500, body: JSON.stringify({ error: 'Failed to reach the Resend API.', details: String(err) }) };
+    const body = await res.json().catch(() => ({}));
+    // GitHub answers 422 "sha wasn't supplied" when the file already exists at this path,
+    // which means it is already stored. Any other 422 (e.g. bad branch) is a real error.
+    if (res.status === 422 && /sha/i.test(String(body.message || ''))) {
+      out.push({ path: f.path, stored: true, alreadyExisted: true });
+    } else {
+      return { ok: false, status: res.status, path: f.path, details: body };
+    }
   }
-};
+  return { ok: true, files: out };
+}
 
 function escapeHtml(s) {
   return String(s || '').replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
