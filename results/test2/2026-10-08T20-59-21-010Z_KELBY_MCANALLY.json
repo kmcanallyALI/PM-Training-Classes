@@ -1,0 +1,99 @@
+{
+  "name": "KELBY MCANALLY",
+  "testNum": 2,
+  "score": 93,
+  "passed": true,
+  "timestamp": "2026-10-08T20:59:21.010Z",
+  "answers": [
+    {
+      "question": "Which wheel bearing/kingpin condition is classified as Out of Service?",
+      "selected": "Excessive kingpin movement or loose wheel bearings",
+      "correctAnswer": "Excessive kingpin movement or loose wheel bearings",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following is an FMCSA automatic Out-of-Service item for steering (49 CFR 396)?",
+      "selected": "Loose steering gear or linkage, or missing steering fasteners",
+      "correctAnswer": "Loose steering gear or linkage, or missing steering fasteners",
+      "isCorrect": true
+    },
+    {
+      "question": "What condition classifies air disc brake pads as In Service?",
+      "selected": "Even pad wear with friction material above manufacturer minimum",
+      "correctAnswer": "Even pad wear with friction material above manufacturer minimum",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following classifies the air system as Out of Service?",
+      "selected": "Low-air warning system inoperative",
+      "correctAnswer": "Low-air warning system inoperative",
+      "isCorrect": true
+    },
+    {
+      "question": "What should you do if a safety item has an issue during a PM, per the course?",
+      "selected": "Stop, assess, and speak with the Foreman before proceeding",
+      "correctAnswer": "Stop, assess, and speak with the Foreman before proceeding",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the FMCSA minimum friction material thickness for air disc brake pads before Out of Service?",
+      "selected": "1/8 inch",
+      "correctAnswer": "1/8 inch",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following is listed as a sign of brake fatigue?",
+      "selected": "Blue or purple discoloration, or a burnt brake odor",
+      "correctAnswer": "Blue or purple discoloration, or a burnt brake odor",
+      "isCorrect": true
+    },
+    {
+      "question": "When the air governor cuts in/out within manufacturer specifications and there are no audible leaks, how should the air system be classified?",
+      "selected": "In Service",
+      "correctAnswer": "In Service",
+      "isCorrect": true
+    },
+    {
+      "question": "Per FMCSA out-of-service criteria, what pushrod stroke condition takes a brake out of service?",
+      "selected": "Pushrod stroke beyond the legal adjustment limit, based on brake chamber size and the 49CFR",
+      "correctAnswer": "Pushrod stroke beyond the legal adjustment limit, based on brake chamber size and the 49CFR",
+      "isCorrect": true
+    },
+    {
+      "question": "What should you check during a tire & rim inspection before driving?",
+      "selected": "Incorrect tire pressure (measured cold), irregular tread wear, cracking, and bulges",
+      "correctAnswer": "Incorrect tire pressure (measured cold), irregular tread wear, cracking, and bulges",
+      "isCorrect": true
+    },
+    {
+      "question": "According to Tire Positions, can steer tires be used in other positions on the vehicle?",
+      "selected": "Yes, freely",
+      "correctAnswer": "No, steer tires are not interchangeable with other positions",
+      "isCorrect": false
+    },
+    {
+      "question": "What condition to a leaf spring makes a vehicle Out of Service?",
+      "selected": "A broken or shifted leaf spring affecting axle location, or a missing leaf in a main spring",
+      "correctAnswer": "A broken or shifted leaf spring affecting axle location, or a missing leaf in a main spring",
+      "isCorrect": true
+    },
+    {
+      "question": "What is the FMCSA minimum brake lining thickness for drum brake shoes on steering, drive, and trailer axles before it's Out of Service?",
+      "selected": "1/4 inch",
+      "correctAnswer": "1/4 inch",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 393.75, what is the minimum tread depth required in every major groove for front tires on a truck tractor?",
+      "selected": "4/32 inch",
+      "correctAnswer": "4/32 inch",
+      "isCorrect": true
+    },
+    {
+      "question": "Per FMCSA Appendix A, which of the following automatically fails a periodic inspection?",
+      "selected": "Missing braking action on any required wheel",
+      "correctAnswer": "Missing braking action on any required wheel",
+      "isCorrect": true
+    }
+  ]
+}
