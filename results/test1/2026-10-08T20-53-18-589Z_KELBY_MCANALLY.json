@@ -1,0 +1,99 @@
+{
+  "name": "KELBY MCANALLY",
+  "testNum": 1,
+  "score": 93,
+  "passed": true,
+  "timestamp": "2026-10-08T20:53:18.589Z",
+  "answers": [
+    {
+      "question": "Which regulation covers systematic inspection, repair, and maintenance of commercial motor vehicles?",
+      "selected": "49 CFR Part 396",
+      "correctAnswer": "49 CFR Part 396",
+      "isCorrect": true
+    },
+    {
+      "question": "What is a DVIR, as described in the Maintenance Documentation section?",
+      "selected": "Where the driver communicates dash lights, issues, or damage/defects to the maintenance team",
+      "correctAnswer": "Where the driver communicates dash lights, issues, or damage/defects to the maintenance team",
+      "isCorrect": true
+    },
+    {
+      "question": "What does the course describe as the final, essential component of a complete preventative maintenance program?",
+      "selected": "Accurate documentation",
+      "correctAnswer": "Accurate documentation",
+      "isCorrect": true
+    },
+    {
+      "question": "Which of the following is one of the course's Terminal Learning Objectives?",
+      "selected": "Correctly classify defects as Acceptable, Needs Repair, or Out-of-Service",
+      "correctAnswer": "Correctly classify defects as Acceptable, Needs Repair, or Out-of-Service",
+      "isCorrect": true
+    },
+    {
+      "question": "Which regulation covers cargo tank inspections and testing?",
+      "selected": "49 CFR Part 180",
+      "correctAnswer": "49 CFR Part 180",
+      "isCorrect": true
+    },
+    {
+      "question": "Why does the course say consistent, documented PMs matter for audit readiness?",
+      "selected": "They ensure the company is prepared if a DOT audit follows an incident",
+      "correctAnswer": "They ensure the company is prepared if a DOT audit follows an incident",
+      "isCorrect": true
+    },
+    {
+      "question": "Which federal agency's regulations establish the preventative maintenance inspection requirements covered in this course?",
+      "selected": "FMCSA",
+      "correctAnswer": "FMCSA",
+      "isCorrect": true
+    },
+    {
+      "question": "After the banner with the \"+ Add Task\" button appears on the repair order, what is the next step?",
+      "selected": "Click start repair order, enter an expected finish date and time, then clock on the task",
+      "correctAnswer": "Click start repair order, enter an expected finish date and time, then clock on the task",
+      "isCorrect": true
+    },
+    {
+      "question": "What is described as the primary purpose of this PM training course?",
+      "selected": "Reduce failures, product releases, and regulatory violations through consistent, compliant, well-documented preventative maintenance",
+      "correctAnswer": "Reduce failures, product releases, and regulatory violations through consistent, compliant, well-documented preventative maintenance",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a)(1), what condition must parts like the frame, suspension, axles, wheels, and steering be in at all times?",
+      "selected": "Safe and in proper operating condition",
+      "correctAnswer": "Safe and in proper operating condition",
+      "isCorrect": true
+    },
+    {
+      "question": "Why do we perform PMs in the first place?",
+      "selected": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "correctAnswer": "To prevent failures, on-the-road breakdowns, and emergency service calls outside our terminals",
+      "isCorrect": true
+    },
+    {
+      "question": "In Fleetrock, what is the first step immediately after receiving a unit you are assigned to PM?",
+      "selected": "Create a Repair Order",
+      "correctAnswer": "Create a Repair Order",
+      "isCorrect": true
+    },
+    {
+      "question": "After creating a Repair Order in Fleetrock, what appears at the top of the RO for the PM you're conducting?",
+      "selected": "A banner with a \"+ Add Task\" button",
+      "correctAnswer": "A banner with a \"+ Add Task\" button",
+      "isCorrect": true
+    },
+    {
+      "question": "Under 49 CFR 396.3(a)(2), how often must pushout windows, emergency doors, and emergency door marking lights on buses be inspected?",
+      "selected": "Every 30 days",
+      "correctAnswer": "At least every 90 days",
+      "isCorrect": false
+    },
+    {
+      "question": "Which 49 CFR Parts does the course apply in real inspection scenarios?",
+      "selected": "Parts 393, 396, and 180",
+      "correctAnswer": "Parts 393, 396, and 180",
+      "isCorrect": true
+    }
+  ]
+}
